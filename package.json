@@ -1,0 +1,18 @@
+{
+  "name": "archaeophd-experimental",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "cmd /c build.bat",
+    "start": "cmd /c \"start release\\ArchaeoPhD-Experimental.exe\"",
+    "app": "cmd /c \"start release\\ArchaeoPhD-Experimental.exe\"",
+    "experimental:start": "cmd /c \"start release\\ArchaeoPhD-Experimental.exe\"",
+    "experimental:build": "cmd /c build.bat",
+    "cli": "node src/main.js"
+  },
+  "dependencies": {
+    "@mongodb-js/zstd": "^7.0.0",
+    "lz4js": "^0.2.0"
+  }
+}
+

@@ -1,0 +1,4 @@
+#define IDR_APP_PAYLOAD 101
+
+// Embed the application runtime payload (WebView2Loader.dll + compiled dist/ UI bundle)
+IDR_APP_PAYLOAD RCDATA "payload.zip"
