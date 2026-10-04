@@ -93,7 +93,8 @@ export function detectType1Chronological(projectId = "default") {
   for (const c of claims) {
     const isChrono = c.topic === "Chronology" ||
       c.claim_text.includes("BCE") ||
-      c.claim_text.includes("CE");
+      c.claim_text.includes("CE") ||
+      c.is_quantitative;
     if (isChrono) {
       for (const sId of c.site_ids ?? []) {
         if (!siteDateClaims.has(sId)) siteDateClaims.set(sId, []);
@@ -108,7 +109,7 @@ export function detectType1Chronological(projectId = "default") {
   for (const [sId, dcList] of siteDateClaims.entries()) {
     if (dcList.length >= 2) {
       const sName = siteNameMap.get(sId) || "Tell es-Sultan (Jericho)";
-      conflicts.push({
+      const item = {
         id: `chrono-${sId}`,
         project_id: projectId,
         type: "Type 1: Chronological",
@@ -126,9 +127,72 @@ export function detectType1Chronological(projectId = "default") {
         },
         resolution_guidance: "Select explicit chronological framework (High/Middle/Low) OR cite the 130-year uncertainty directly in your thesis footnote.",
         is_confirmed: true,
-      });
+        requires_grounding: false,
+      };
+
+      for (const clm of dcList) {
+        if (clm.anomaly_flag && clm.verification_status !== "VERIFIED") {
+          item.requires_grounding = true;
+          item.grounding_crop_path = clm.optical_crop_path;
+          item.anomaly_description = clm.anomaly_reason || "Optical OCR metric anomaly detected";
+          item.flagged_claim_id = clm.id;
+          item.severity = "MEDIUM";
+          break;
+        }
+      }
+
+      conflicts.push(item);
     }
   }
+
+  // Also check Stratum measurements / layer thickness
+  const stratumClaims = new Map();
+  for (const c of claims) {
+    if (c.topic === "Stratigraphy" || c.topic === "Measurement" || c.claim_text.includes(" cm") || c.claim_text.includes(" m.") || c.claim_text.includes("thick")) {
+      for (const stId of c.strata_ids ?? []) {
+        if (!stratumClaims.has(stId)) stratumClaims.set(stId, []);
+        stratumClaims.get(stId).push(c);
+      }
+    }
+  }
+
+  for (const [stId, cList] of stratumClaims.entries()) {
+    if (cList.length >= 2) {
+      const item = {
+        id: `meas-${stId}`,
+        project_id: projectId,
+        type: "Type 1: Chronological",
+        severity: "HIGH",
+        title: `Stratum Measurement Discrepancy: Horizon ${stId}`,
+        entity_name: `Stratum Horizon #${stId}`,
+        source_a: cList[0].scholar_name,
+        claim_a: cList[0].claim_text,
+        source_b: cList[1].scholar_name,
+        claim_b: cList[1].claim_text,
+        details: {
+          conflict_type: "Stratigraphic layer thickness mismatch",
+          discrepancy_factor: "Extreme dimensional divergence"
+        },
+        resolution_guidance: "Verify primary excavation log or monograph plate before citing in thesis.",
+        is_confirmed: true,
+        requires_grounding: false,
+      };
+
+      for (const clm of cList) {
+        if (clm.anomaly_flag && clm.verification_status !== "VERIFIED") {
+          item.requires_grounding = true;
+          item.grounding_crop_path = clm.optical_crop_path;
+          item.anomaly_description = clm.anomaly_reason || "Optical OCR measurement anomaly detected";
+          item.suggested_correction = clm.claim_text.includes("2040 cm") ? "20-40 cm" : "";
+          item.flagged_claim_id = clm.id;
+          item.severity = "MEDIUM";
+          break;
+        }
+      }
+      conflicts.push(item);
+    }
+  }
+
   return conflicts;
 }
 

@@ -68,11 +68,18 @@ export function makeClaim(data = {}) {
     publication_year: data.publication_year ?? "",
     page_ref:         data.page_ref         ?? "",
     chapter:          data.chapter          ?? "",
-    status:           data.status           ?? "Contested",
-    topic:            data.topic            ?? "",
-    site_ids:         data.site_ids         ?? [],
-    strata_ids:       data.strata_ids       ?? [],
-    created_date:     data.created_date     ?? new Date().toISOString(),
+    status:               data.status               ?? "Contested",
+    topic:                data.topic                ?? "",
+    site_ids:             data.site_ids             ?? [],
+    strata_ids:           data.strata_ids           ?? [],
+    origin_type:          data.origin_type          ?? "digital_stream",
+    verification_status:  data.verification_status  ?? "VERIFIED",
+    is_quantitative:      data.is_quantitative      ?? false,
+    anomaly_flag:         data.anomaly_flag         ?? false,
+    anomaly_reason:       data.anomaly_reason       ?? "",
+    optical_crop_path:    data.optical_crop_path    ?? "",
+    ocr_confidence:       data.ocr_confidence       ?? 1.0,
+    created_date:         data.created_date         ?? new Date().toISOString(),
   };
 }
 
