@@ -1,0 +1,1293 @@
+[
+  {
+    "id": 1,
+    "words": [
+      "chirki",
+      "discovered"
+    ]
+  },
+  {
+    "id": 2,
+    "words": [
+      "corvinus",
+      "decided",
+      "excavate"
+    ]
+  },
+  {
+    "id": 3,
+    "words": [
+      "excavation",
+      "season"
+    ]
+  },
+  {
+    "id": 4,
+    "words": [
+      "thickness",
+      "alluvium",
+      "rock"
+    ]
+  },
+  {
+    "id": 5,
+    "words": [
+      "exposed",
+      "horizon",
+      "area"
+    ]
+  },
+  {
+    "id": 6,
+    "words": [
+      "early",
+      "stone",
+      "tools",
+      "recovered"
+    ]
+  },
+  {
+    "id": 7,
+    "words": [
+      "rubble",
+      "horizon",
+      "trap",
+      "basalt"
+    ]
+  },
+  {
+    "id": 8,
+    "words": [
+      "bedrock",
+      "depth",
+      "river",
+      "bed"
+    ]
+  },
+  {
+    "id": 9,
+    "words": [
+      "large",
+      "cores",
+      "trench"
+    ]
+  },
+  {
+    "id": 10,
+    "words": [
+      "assemblage",
+      "acheulian",
+      "industry"
+    ]
+  },
+  {
+    "id": 11,
+    "words": [
+      "tools",
+      "unfinished",
+      "finished"
+    ]
+  },
+  {
+    "id": 12,
+    "words": [
+      "cores",
+      "assemblage",
+      "detailed"
+    ]
+  },
+  {
+    "id": 13,
+    "words": [
+      "waste",
+      "flakes",
+      "analysis"
+    ]
+  },
+  {
+    "id": 14,
+    "words": [
+      "handaxes",
+      "pebble"
+    ]
+  },
+  {
+    "id": 15,
+    "words": [
+      "choppers",
+      "polyhedrons"
+    ]
+  },
+  {
+    "id": 16,
+    "words": [
+      "pebble",
+      "subtotal"
+    ]
+  },
+  {
+    "id": 17,
+    "words": [
+      "handaxes",
+      "flake"
+    ]
+  },
+  {
+    "id": 18,
+    "words": [
+      "cleavers",
+      "flake"
+    ]
+  },
+  {
+    "id": 19,
+    "words": [
+      "scrappers",
+      "knives",
+      "borers"
+    ]
+  },
+  {
+    "id": 20,
+    "words": [
+      "worked",
+      "flakes"
+    ]
+  },
+  {
+    "id": 21,
+    "words": [
+      "waste",
+      "flakes",
+      "group"
+    ]
+  },
+  {
+    "id": 22,
+    "words": [
+      "cortex",
+      "flakes"
+    ]
+  },
+  {
+    "id": 23,
+    "words": [
+      "platform",
+      "angle",
+      "flake"
+    ]
+  },
+  {
+    "id": 24,
+    "words": [
+      "stone",
+      "circles",
+      "junapani"
+    ]
+  },
+  {
+    "id": 25,
+    "words": [
+      "stone",
+      "circles",
+      "mahurjhari"
+    ]
+  },
+  {
+    "id": 26,
+    "words": [
+      "megalithic",
+      "period",
+      "proposed"
+    ]
+  },
+  {
+    "id": 27,
+    "words": [
+      "paunar",
+      "excavation"
+    ]
+  },
+  {
+    "id": 28,
+    "words": [
+      "takalghat",
+      "khapa",
+      "exploration"
+    ]
+  },
+  {
+    "id": 29,
+    "words": [
+      "height",
+      "takalghat",
+      "mound"
+    ]
+  },
+  {
+    "id": 30,
+    "words": [
+      "takalghat",
+      "phase"
+    ]
+  },
+  {
+    "id": 31,
+    "words": [
+      "hallur",
+      "neolithic",
+      "megalithic"
+    ]
+  },
+  {
+    "id": 32,
+    "words": [
+      "glory",
+      "gujarat"
+    ]
+  },
+  {
+    "id": 33,
+    "words": [
+      "prehistoric",
+      "expedition",
+      "microlithic"
+    ]
+  },
+  {
+    "id": 34,
+    "words": [
+      "studies",
+      "prehistory",
+      "deccan",
+      "godavari"
+    ]
+  },
+  {
+    "id": 35,
+    "words": [
+      "deccan",
+      "college",
+      "research",
+      "bulletin"
+    ]
+  },
+  {
+    "id": 36,
+    "words": [
+      "palaeolithic",
+      "handaxe",
+      "sabarmati"
+    ]
+  },
+  {
+    "id": 37,
+    "words": [
+      "brain",
+      "surgery",
+      "continental"
+    ]
+  },
+  {
+    "id": 38,
+    "words": [
+      "brain",
+      "surgery",
+      "years"
+    ]
+  },
+  {
+    "id": 39,
+    "words": [
+      "primitive",
+      "microlithic",
+      "culture",
+      "karve"
+    ]
+  },
+  {
+    "id": 40,
+    "words": [
+      "prehistory",
+      "karnatak",
+      "subba"
+    ]
+  },
+  {
+    "id": 41,
+    "words": [
+      "ancient",
+      "prehistoric",
+      "maharashtra"
+    ]
+  },
+  {
+    "id": 42,
+    "words": [
+      "excavations",
+      "langhnaj"
+    ]
+  },
+  {
+    "id": 43,
+    "words": [
+      "microlithic",
+      "industry",
+      "langhnaj"
+    ]
+  },
+  {
+    "id": 44,
+    "words": [
+      "palaeolithic",
+      "site",
+      "rajputana"
+    ]
+  },
+  {
+    "id": 45,
+    "words": [
+      "burkitt",
+      "cammiade",
+      "light",
+      "stone"
+    ]
+  },
+  {
+    "id": 46,
+    "words": [
+      "charlesworth",
+      "quaternary",
+      "era"
+    ]
+  },
+  {
+    "id": 47,
+    "words": [
+      "terra",
+      "paterson",
+      "ice",
+      "age"
+    ]
+  },
+  {
+    "id": 48,
+    "words": [
+      "terra",
+      "movius",
+      "early",
+      "burma"
+    ]
+  },
+  {
+    "id": 49,
+    "words": [
+      "fairbridge",
+      "ice",
+      "age",
+      "problems"
+    ]
+  },
+  {
+    "id": 50,
+    "words": [
+      "theobald",
+      "kangra",
+      "glaciers"
+    ]
+  },
+  {
+    "id": 51,
+    "words": [
+      "yellow",
+      "kankary",
+      "silt"
+    ]
+  },
+  {
+    "id": 52,
+    "words": [
+      "sub",
+      "recent",
+      "alluvium",
+      "thickness"
+    ]
+  },
+  {
+    "id": 53,
+    "words": [
+      "pot",
+      "holes",
+      "gravel"
+    ]
+  },
+  {
+    "id": 54,
+    "words": [
+      "marriage",
+      "rudrasena"
+    ]
+  },
+  {
+    "id": 55,
+    "words": [
+      "death",
+      "rudrasena"
+    ]
+  },
+  {
+    "id": 56,
+    "words": [
+      "death",
+      "divakarasena"
+    ]
+  },
+  {
+    "id": 57,
+    "words": [
+      "pravarasena",
+      "ascension"
+    ]
+  },
+  {
+    "id": 58,
+    "words": [
+      "pravarasena",
+      "reign",
+      "duration"
+    ]
+  },
+  {
+    "id": 59,
+    "words": [
+      "death",
+      "father"
+    ]
+  },
+  {
+    "id": 60,
+    "words": [
+      "birth",
+      "prithivishena"
+    ]
+  },
+  {
+    "id": 61,
+    "words": [
+      "death",
+      "father"
+    ]
+  },
+  {
+    "id": 62,
+    "words": [
+      "gazetteer",
+      "bombay",
+      "presidency"
+    ]
+  },
+  {
+    "id": 63,
+    "words": [
+      "arrival",
+      "portugal"
+    ]
+  },
+  {
+    "id": 64,
+    "words": [
+      "castro",
+      "india"
+    ]
+  },
+  {
+    "id": 65,
+    "words": [
+      "viceroy",
+      "goa",
+      "term"
+    ]
+  },
+  {
+    "id": 66,
+    "words": [
+      "universal",
+      "cosmography",
+      "paris"
+    ]
+  },
+  {
+    "id": 67,
+    "words": [
+      "italian",
+      "publication",
+      "elephanta"
+    ]
+  },
+  {
+    "id": 68,
+    "words": [
+      "bignes",
+      "village",
+      "houses"
+    ]
+  },
+  {
+    "id": 69,
+    "words": [
+      "galleries",
+      "four"
+    ]
+  },
+  {
+    "id": 70,
+    "words": [
+      "couto",
+      "seventh",
+      "decade"
+    ]
+  },
+  {
+    "id": 71,
+    "words": [
+      "fryer",
+      "kanheri",
+      "elephanta"
+    ]
+  },
+  {
+    "id": 72,
+    "words": [
+      "ovington",
+      "saw"
+    ]
+  },
+  {
+    "id": 73,
+    "words": [
+      "captain",
+      "pyke",
+      "journal",
+      "bombay"
+    ]
+  },
+  {
+    "id": 74,
+    "words": [
+      "archaeologia",
+      "publication"
+    ]
+  },
+  {
+    "id": 75,
+    "words": [
+      "grose",
+      "elephanta"
+    ]
+  },
+  {
+    "id": 76,
+    "words": [
+      "gemelli",
+      "careri",
+      "elephanta"
+    ]
+  },
+  {
+    "id": 77,
+    "words": [
+      "thevenot",
+      "ellora"
+    ]
+  },
+  {
+    "id": 78,
+    "words": [
+      "streynsham",
+      "master",
+      "diaries"
+    ]
+  },
+  {
+    "id": 79,
+    "words": [
+      "second",
+      "edition",
+      "publication"
+    ]
+  },
+  {
+    "id": 80,
+    "words": [
+      "anquetil",
+      "perron",
+      "arrival"
+    ]
+  },
+  {
+    "id": 81,
+    "words": [
+      "examination",
+      "ellora",
+      "caves"
+    ]
+  },
+  {
+    "id": 82,
+    "words": [
+      "perron",
+      "elephanta",
+      "investigation"
+    ]
+  },
+  {
+    "id": 83,
+    "words": [
+      "carsten",
+      "niebuhr",
+      "bombay"
+    ]
+  },
+  {
+    "id": 84,
+    "words": [
+      "voyage",
+      "arabie",
+      "amsterdam"
+    ]
+  },
+  {
+    "id": 85,
+    "words": [
+      "english",
+      "translation",
+      "edinburgh"
+    ]
+  },
+  {
+    "id": 86,
+    "words": [
+      "stuart",
+      "piggott",
+      "writing"
+    ]
+  },
+  {
+    "id": 87,
+    "words": [
+      "marshall",
+      "period"
+    ]
+  },
+  {
+    "id": 88,
+    "words": [
+      "james",
+      "burgess",
+      "retirement"
+    ]
+  },
+  {
+    "id": 89,
+    "words": [
+      "curzon",
+      "viceroy"
+    ]
+  },
+  {
+    "id": 90,
+    "words": [
+      "asiatic",
+      "society",
+      "speech"
+    ]
+  },
+  {
+    "id": 91,
+    "words": [
+      "blanford",
+      "discovery",
+      "sindh"
+    ]
+  },
+  {
+    "id": 92,
+    "words": [
+      "blanford",
+      "sutkagendor"
+    ]
+  },
+  {
+    "id": 93,
+    "words": [
+      "distance",
+      "north",
+      "west",
+      "gwadar"
+    ]
+  },
+  {
+    "id": 94,
+    "words": [
+      "panchanan",
+      "mitra",
+      "prehistoric",
+      "india"
+    ]
+  },
+  {
+    "id": 95,
+    "words": [
+      "panchanan",
+      "mitra",
+      "second",
+      "edition"
+    ]
+  },
+  {
+    "id": 96,
+    "words": [
+      "creation",
+      "rabbinical",
+      "world"
+    ]
+  },
+  {
+    "id": 97,
+    "words": [
+      "clement",
+      "creation"
+    ]
+  },
+  {
+    "id": 98,
+    "words": [
+      "james",
+      "ussher",
+      "creation"
+    ]
+  },
+  {
+    "id": 99,
+    "words": [
+      "cyriacus",
+      "ancona",
+      "fire"
+    ]
+  },
+  {
+    "id": 100,
+    "words": [
+      "vesuvius",
+      "eruption",
+      "pompeii"
+    ]
+  },
+  {
+    "id": 101,
+    "words": [
+      "winckelmann",
+      "ancient",
+      "art"
+    ]
+  },
+  {
+    "id": 102,
+    "words": [
+      "napoleon",
+      "invasion",
+      "egypt"
+    ]
+  },
+  {
+    "id": 103,
+    "words": [
+      "description",
+      "egypte"
+    ]
+  },
+  {
+    "id": 104,
+    "words": [
+      "rosette",
+      "stone",
+      "discovery"
+    ]
+  },
+  {
+    "id": 105,
+    "words": [
+      "champollion",
+      "script"
+    ]
+  },
+  {
+    "id": 106,
+    "words": [
+      "mariette",
+      "egyptian",
+      "monuments"
+    ]
+  },
+  {
+    "id": 107,
+    "words": [
+      "cuneiform",
+      "inscriptions",
+      "europe"
+    ]
+  },
+  {
+    "id": 108,
+    "words": [
+      "rawlinson",
+      "decipherment"
+    ]
+  },
+  {
+    "id": 109,
+    "words": [
+      "sweden",
+      "denmark",
+      "separation"
+    ]
+  },
+  {
+    "id": 110,
+    "words": [
+      "gustavus",
+      "adolphus"
+    ]
+  },
+  {
+    "id": 111,
+    "words": [
+      "christian",
+      "king"
+    ]
+  },
+  {
+    "id": 112,
+    "words": [
+      "hesiod",
+      "epic",
+      "poem"
+    ]
+  },
+  {
+    "id": 113,
+    "words": [
+      "lucretius",
+      "carus"
+    ]
+  },
+  {
+    "id": 114,
+    "words": [
+      "michel",
+      "mercati"
+    ]
+  },
+  {
+    "id": 115,
+    "words": [
+      "nicolas",
+      "mahudel",
+      "three"
+    ]
+  },
+  {
+    "id": 116,
+    "words": [
+      "thomsen",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 117,
+    "words": [
+      "thomsen",
+      "royal",
+      "commission"
+    ]
+  },
+  {
+    "id": 118,
+    "words": [
+      "museum",
+      "arrangements",
+      "public"
+    ]
+  },
+  {
+    "id": 119,
+    "words": [
+      "ledetraad",
+      "publication"
+    ]
+  },
+  {
+    "id": 120,
+    "words": [
+      "guide",
+      "northern",
+      "antiquities"
+    ]
+  },
+  {
+    "id": 121,
+    "words": [
+      "boucher",
+      "perthes",
+      "somme"
+    ]
+  },
+  {
+    "id": 122,
+    "words": [
+      "charles",
+      "lyell",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 123,
+    "words": [
+      "origin",
+      "species",
+      "darwin"
+    ]
+  },
+  {
+    "id": 124,
+    "words": [
+      "herbert",
+      "spencer",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 125,
+    "words": [
+      "descent",
+      "man"
+    ]
+  },
+  {
+    "id": 126,
+    "words": [
+      "lubbock",
+      "prehistoric",
+      "times"
+    ]
+  },
+  {
+    "id": 127,
+    "words": [
+      "edouard",
+      "lartet",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 128,
+    "words": [
+      "isaac",
+      "peyrere",
+      "adam"
+    ]
+  },
+  {
+    "id": 129,
+    "words": [
+      "edward",
+      "long"
+    ]
+  },
+  {
+    "id": 130,
+    "words": [
+      "louis",
+      "agassiz",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 131,
+    "words": [
+      "nott",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 132,
+    "words": [
+      "gliddon",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 133,
+    "words": [
+      "types",
+      "mankind",
+      "publication"
+    ]
+  },
+  {
+    "id": 134,
+    "words": [
+      "john",
+      "lubbock",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 135,
+    "words": [
+      "origin",
+      "civilisation"
+    ]
+  },
+  {
+    "id": 136,
+    "words": [
+      "unification",
+      "germany"
+    ]
+  },
+  {
+    "id": 137,
+    "words": [
+      "firuz",
+      "shah",
+      "tughlak"
+    ]
+  },
+  {
+    "id": 138,
+    "words": [
+      "francis",
+      "xavier",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 139,
+    "words": [
+      "arrived",
+      "goa"
+    ]
+  },
+  {
+    "id": 140,
+    "words": [
+      "sanskrit",
+      "invocation",
+      "letter"
+    ]
+  },
+  {
+    "id": 141,
+    "words": [
+      "arrival",
+      "madurai"
+    ]
+  },
+  {
+    "id": 142,
+    "words": [
+      "roberto",
+      "nobili",
+      "lifespan"
+    ]
+  },
+  {
+    "id": 143,
+    "words": [
+      "pulicat",
+      "chaplain"
+    ]
+  },
+  {
+    "id": 144,
+    "words": [
+      "mortimer",
+      "wheeler",
+      "citation"
+    ]
+  },
+  {
+    "id": 145,
+    "words": [
+      "field",
+      "techniques",
+      "development"
+    ]
+  },
+  {
+    "id": 146,
+    "words": [
+      "glyn",
+      "daniel",
+      "years"
+    ]
+  },
+  {
+    "id": 147,
+    "words": [
+      "archaeology",
+      "earth",
+      "publication"
+    ]
+  },
+  {
+    "id": 148,
+    "words": [
+      "beginning",
+      "archaeology"
+    ]
+  },
+  {
+    "id": 149,
+    "words": [
+      "harris",
+      "matrix",
+      "invention"
+    ]
+  },
+  {
+    "id": 150,
+    "words": [
+      "principles",
+      "archaeological",
+      "stratigraphy"
+    ]
+  },
+  {
+    "id": 151,
+    "words": [
+      "formic",
+      "acid",
+      "bronze"
+    ]
+  },
+  {
+    "id": 152,
+    "words": [
+      "immersion",
+      "copper",
+      "chlorides"
+    ]
+  },
+  {
+    "id": 153,
+    "words": [
+      "benzotriazole",
+      "distilled",
+      "water"
+    ]
+  },
+  {
+    "id": 154,
+    "words": [
+      "benzotriazole",
+      "alcohol"
+    ]
+  },
+  {
+    "id": 155,
+    "words": [
+      "radio",
+      "carbon",
+      "dating",
+      "invention"
+    ]
+  },
+  {
+    "id": 156,
+    "words": [
+      "standard",
+      "range",
+      "limit"
+    ]
+  },
+  {
+    "id": 157,
+    "words": [
+      "isotope",
+      "enrichment"
+    ]
+  },
+  {
+    "id": 158,
+    "words": [
+      "potassium",
+      "argon",
+      "dating"
+    ]
+  },
+  {
+    "id": 159,
+    "words": [
+      "potassium",
+      "argon",
+      "time",
+      "range"
+    ]
+  },
+  {
+    "id": 160,
+    "words": [
+      "thermoluminescence",
+      "invention"
+    ]
+  },
+  {
+    "id": 161,
+    "words": [
+      "thermoluminescence",
+      "time",
+      "range"
+    ]
+  },
+  {
+    "id": 162,
+    "words": [
+      "fission",
+      "track",
+      "dating"
+    ]
+  },
+  {
+    "id": 163,
+    "words": [
+      "varves",
+      "dating",
+      "invention"
+    ]
+  },
+  {
+    "id": 164,
+    "words": [
+      "dendrochronology",
+      "invention"
+    ]
+  },
+  {
+    "id": 165,
+    "words": [
+      "dendrochronology",
+      "time",
+      "range"
+    ]
+  },
+  {
+    "id": 166,
+    "words": [
+      "archaeomagnetism",
+      "time",
+      "range"
+    ]
+  }
+]

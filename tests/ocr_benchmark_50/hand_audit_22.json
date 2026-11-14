@@ -1,0 +1,200 @@
+{
+  "37": {
+    "cat": "BIBLIO_CITATION_REJECTION",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Continental Daily Mail, Paris, 14.6.[1947]",
+    "highlight_win": "66. [1947] ••ney• brain surgery 10.000 years ago",
+    "picked": "10,000",
+    "analysis": "Footnote 66 bibliography citation (Continental Daily Mail, 14.6.1947). Generator must suppress citation date 1947 and count 10,000 under Rule 2 (status: REJECTED_NON_FINDING)."
+  },
+  "51": {
+    "cat": "unit or symbol dropped",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "depth of about [6 m]",
+    "highlight_win": "depth of ab)ut [6 m] below",
+    "picked": "6",
+    "analysis": "Both engines transcribed '6 m' cleanly. Generator strictly preserves physical unit 'm' with depth finding 6 m; bare 6 is rejected."
+  },
+  "55": {
+    "cat": "GT absent from window",
+    "gt_present_tess": false,
+    "gt_present_win": false,
+    "highlight_tess": "ABSENT (window contains \"assigned a period of [5] yeans\")",
+    "highlight_win": "ABSENT (window contains \"assigned a peruxl oi [5] Fars\")",
+    "picked": "5",
+    "analysis": "Ground truth 415 A.D. is absent from paragraph; regnal span 5 is a duration, not a calendar date. Generator routes unanchored query to queue."
+  },
+  "56": {
+    "cat": "GT absent from window",
+    "gt_present_tess": false,
+    "gt_present_win": false,
+    "highlight_tess": "ABSENT (window contains \"assigned a period of [5] yeans\")",
+    "highlight_win": "ABSENT (window contains \"assigned a peruxl oi [5] Fars\")",
+    "picked": "5",
+    "analysis": "Ground truth 428 A.D. is absent from paragraph; regnal span 5 is a duration, not a calendar date. Generator routes unanchored query to queue."
+  },
+  "65": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "who came to India in 1538 and was the viceroy of Goa during [1545-48]",
+    "highlight_win": "who to India in 1538 and was the viceroy ofGoa during [1545-48]",
+    "picked": "1538",
+    "analysis": "Both engines transcribed '1545-48' verbatim. Generator binds tenure slot to compound range 1545-48; separates arrival year 1538."
+  },
+  "73": {
+    "cat": "GT absent from window",
+    "gt_present_tess": false,
+    "gt_present_win": false,
+    "highlight_tess": "ABSENT (window contains journal pages \"7 (1785): [323-32]\")",
+    "highlight_win": "ABSENT (window contains journal pages \"7 (1785): [323-32]\")",
+    "picked": "323-32",
+    "analysis": "Ground truth letter date 1712 is absent from window; journal page range 323-32 rejected under Rule 1. Generator routes unanchored query to queue."
+  },
+  "84": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Arabia on 13 September 1763... published in Amsterdam in [1780]",
+    "highlight_win": "Arabia on 13 September 1763... published in Amsterdaxn in [1780]",
+    "picked": "1763",
+    "analysis": "Both engines transcribed 'in 1780' verbatim. Generator binds publication slot to 1780 in Amsterdam clause; separates travel departure 1763."
+  },
+  "93": {
+    "cat": "unit or symbol dropped",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Sutkagendor, [40 miles] north- west of Gwadar",
+    "highlight_win": "Sutkagendor, [40 miles] north- west ofGwadar",
+    "picked": "40",
+    "analysis": "Both engines transcribed '40 miles' verbatim. Generator strictly preserves physical unit 'miles' with distance finding 40 miles; bare 40 is rejected."
+  },
+  "95": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "first published in 1923 but underwent a second edition in [1927]",
+    "highlight_win": "first published in 1923 but underwent a second edition in [1927]",
+    "picked": "1923",
+    "analysis": "Both engines transcribed 'second edition in 1927' verbatim. Generator binds second edition slot to 1927; separates initial edition 1923."
+  },
+  "97": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "created about 3700 BC, while Pope Clement VIII dated the creation to [5199 BC]",
+    "highlight_win": "created about 3700 BC, while Pope Clement VIII dated the creation to [5199 BC]",
+    "picked": "3700 BC",
+    "analysis": "Both engines transcribed '5199 BC' verbatim. Generator binds Clement estimate slot to 5199 BC; separates rabbinical date 3700 BC."
+  },
+  "117": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "C.J.Thomsen (1788-1865) was invited in [1816] by the Danish Royal Commission",
+    "highlight_win": "C.J.Thomsen (1788-1865) was invited in [1816] by the Danish Royal Commission",
+    "picked": "1788-1865",
+    "analysis": "Both engines transcribed 'in 1816' verbatim. Generator binds appointment slot to 1816; separates biographical lifespan 1788-1865."
+  },
+  "119": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "public as early as 1819, his guide book... appeared only in [1839]",
+    "highlight_win": "public as early as 1819, his guide book... appeared only in [1839]",
+    "picked": "1819",
+    "analysis": "Both engines transcribed 'appeared only in 1839' verbatim. Generator binds guidebook release slot to 1839; separates museum opening 1819."
+  },
+  "124": {
+    "cat": "bibliographic citation rejection",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Origin of Species published in 1859 and Herbert Spencer’s ([1820-1903]) evolutionary approach",
+    "highlight_win": "Origin of Species published in 1859 and Herbert Spencer's ( [1820-1903]) evolutionary approach",
+    "picked": "1859",
+    "analysis": "Both engines transcribed '(1820-1903)' verbatim. Scholar lifespan is biographical metadata suppressed under Rule 2.1."
+  },
+  "135": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Modern Savages (1865) and the second book The Origin of Civilisation... ([1870]) went",
+    "highlight_win": "Modern Savages (1865) and the second book The Origin of Civilisation... ([1870]) went",
+    "picked": "1865",
+    "analysis": "Both engines transcribed '(1870)' verbatim. Generator binds second volume slot to 1870; separates first treatise date 1865."
+  },
+  "139": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "St Francis Xavier (1506-1552), who arrived in Goa in [1542], In a letter",
+    "highlight_win": "St Francis Xavier (1506-1552), who arrived in Goa in [1542]. In a letter",
+    "picked": "1506-1552",
+    "analysis": "Both engines transcribed 'arrived in Goa in 1542' verbatim. Generator binds Goa arrival slot to 1542; separates lifespan range 1506-1552."
+  },
+  "143": {
+    "cat": "partial read",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "settlement of Pulicat in south India [from 1631 to 1641] translated",
+    "highlight_win": "settlement of Pulicat in south India [from 1631 to 1641] translated",
+    "picked": "1631",
+    "analysis": "Both engines transcribed 'from 1631 to 1641' verbatim. Generator captures full lexical range '1631 to 1641'; partial single year 1631 rejected."
+  },
+  "144": {
+    "cat": "partial read",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Sir Mortimer Wheeler ([1956:81]) said “The experienced excavator",
+    "highlight_win": "Sir Mortimer Wheeler ([1956:81]) said \"The experienced excavator",
+    "picked": "1956",
+    "analysis": "Parenthetical author-date citation '(1956:81)'. Generator suppresses entire citation under Rule 2 and emits no candidate (status: REJECTED_NON_FINDING)."
+  },
+  "148": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology ([1952])",
+    "highlight_win": "Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology ([1952])",
+    "picked": "1954",
+    "analysis": "Competing publication years 1954 and 1952 in same sentence. Generator emits AMBIGUOUS and bundles competing candidates [1952, 1954] for human review."
+  },
+  "151": {
+    "cat": "unit or symbol dropped",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "immerse the object in a [30%] solution of formic agtd",
+    "highlight_win": "immerse the object in a [30%] solution of formic acid",
+    "picked": "30",
+    "analysis": "Both engines transcribed '30%' cleanly. Generator strictly preserves physical unit '%' with concentration 30%; bare 30 is rejected."
+  },
+  "152": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "Field Conservation 181... immersed for [2 hours] in a mix",
+    "highlight_win": "Field Conservation 181... immersed for [2 hours] in a mix",
+    "picked": "181",
+    "analysis": "Both engines transcribed '2 hours' verbatim. Generator binds soaking duration 2 hours; running page header folio 181 rejected under Rule 1."
+  },
+  "153": {
+    "cat": "unit or symbol dropped",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "mix containing [10%] benzotriazole in distilled water",
+    "highlight_win": "mix containing [10%] benzotriazole in distilled water",
+    "picked": "10",
+    "analysis": "Both engines transcribed '10%' verbatim. Generator strictly preserves physical unit '%' with reagent concentration 10%."
+  },
+  "154": {
+    "cat": "wrong token picked by scorer",
+    "gt_present_tess": true,
+    "gt_present_win": true,
+    "highlight_tess": "10% benzotriazole in distilled water (or [3%] in alcohol)",
+    "highlight_win": "10% benzotriazole in distilled water (or [3%] in alcohol)",
+    "picked": "10",
+    "analysis": "Competing reagent concentrations 10% and 3% in same sentence. Generator emits AMBIGUOUS and bundles competing candidates [10%, 3%] for human review."
+  }
+}

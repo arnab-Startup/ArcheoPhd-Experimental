@@ -1,0 +1,1482 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ArchaeoPhD Step 4 Development & Tuning Set",
+  "version": "2.0.0-dev",
+  "description": "Development set containing 22 forensic audit facts, 5 targeted challenge cases, 11 synthetic rule coverage cases, and 10 real-page clean positive controls from the 16 development pages (Total N = 48). Freely used for generator development and tuning.",
+  "cases": [
+    {
+      "case_id": "DEV-01-FC37",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "sankalia_p025-025",
+      "source_chunk": "Continental Daily Mail, Paris, 14.6.1947 ... reporting brain surgery 10,000 years ago",
+      "target_entity": "newspaper_report_date",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "non_finding_noise",
+        "property": "NON_FINDING",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "disambiguation_challenge": "Footnote 66 newspaper citation (Continental Daily Mail, 14.6.1947). Generator must suppress citation year 1947 and count 10,000 under Rule 2 (REJECT_NON_FINDING).",
+      "rejection_rule": "RULE_2_BIBLIOGRAPHY_CITATION",
+      "provenance": "REAL_PAGE_AUDIT_FACT (sankalia_p025-025)"
+    },
+    {
+      "case_id": "DEV-02-FC51",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "UNIT_LOST",
+      "source_doc": "sankalia_p150-150",
+      "source_chunk": "reached a basal gravel depth of about 6 m below surface",
+      "target_entity": "stratum_depth",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "stratum depth",
+        "property": "STRATUM_DEPTH",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "6",
+          "value_type": "SINGLE",
+          "numeric_start": 6,
+          "numeric_end": null,
+          "normalized_unit": "m",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            38,
+            41
+          ],
+          "unit_span": [
+            42,
+            43
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Must strictly bind and preserve unit 'm'; bare '6' is forbidden.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (sankalia_p150-150)"
+    },
+    {
+      "case_id": "DEV-03-FC55",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "ABSENT",
+      "source_doc": "sankalia_p210-210",
+      "source_chunk": "assigned a period of 5 years to the reign of the western satrap",
+      "target_entity": "satrap_accession_date",
+      "expected_action": "ROUTE_AMBIGUOUS_OR_UNANCHORED",
+      "entity_slot": {
+        "subject": "satrap accession date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "ABSENT_OR_UNANCHORED"
+      },
+      "disambiguation_challenge": "GT 415 A.D. absent from paragraph; regnal duration 5 is not a calendar date. Generator must route to queue as unanchored.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (sankalia_p210-210)"
+    },
+    {
+      "case_id": "DEV-04-FC56",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "ABSENT",
+      "source_doc": "sankalia_p210-210",
+      "source_chunk": "the regnal sequence extended through 5 years until subsequent conquest",
+      "target_entity": "dynasty_end_date",
+      "expected_action": "ROUTE_AMBIGUOUS_OR_UNANCHORED",
+      "entity_slot": {
+        "subject": "dynasty end date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "ABSENT_OR_UNANCHORED"
+      },
+      "disambiguation_challenge": "GT 428 A.D. absent from paragraph; regnal duration 5 is not a calendar date. Generator must route to queue as unanchored.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (sankalia_p210-210)"
+    },
+    {
+      "case_id": "DEV-05-FC65",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "chakrabarti_p015-015",
+      "source_chunk": "who came to India in 1538 and was the viceroy of Goa during 1545-48",
+      "target_entity": "viceroy_office_tenure",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "viceroy office tenure",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1545-48",
+          "value_type": "RANGE",
+          "numeric_start": 1545,
+          "numeric_end": 48,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1545,
+          "astronomical_year_end": 48
+        },
+        "spans": {
+          "value_span": [
+            60,
+            67
+          ],
+          "unit_span": [
+            68,
+            70
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Must bind tenure to 1545-48 and not arrival year 1538.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (chakrabarti_p015-015)"
+    },
+    {
+      "case_id": "DEV-06-FC73",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "ABSENT",
+      "source_doc": "chakrabarti_p018-018",
+      "source_chunk": "Asiatick Researches 7 (1785): 323-32 detailing colonial correspondence",
+      "target_entity": "original_epistle_date",
+      "expected_action": "ROUTE_AMBIGUOUS_OR_UNANCHORED",
+      "entity_slot": {
+        "subject": "original epistle date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "ABSENT_OR_UNANCHORED"
+      },
+      "disambiguation_challenge": "GT 1712 absent from window; journal page range 323-32 rejected under Rule 1. Generator must route to queue as unanchored.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (chakrabarti_p018-018)"
+    },
+    {
+      "case_id": "DEV-07-FC84",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "chakrabarti_p021-021",
+      "source_chunk": "departed Arabia on 13 September 1763 ... work published in Amsterdam in 1780",
+      "target_entity": "monograph_publication_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "monograph publication year",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1780",
+          "value_type": "SINGLE",
+          "numeric_start": 1780,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1780,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            72,
+            76
+          ],
+          "unit_span": [
+            77,
+            79
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Generator must bind publication year 1780 in Amsterdam clause and separate travel departure 1763.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (chakrabarti_p021-021)"
+    },
+    {
+      "case_id": "DEV-08-FC93",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "UNIT_LOST",
+      "source_doc": "chakrabarti_p215-215",
+      "source_chunk": "the coastal outpost of Sutkagendor, 40 miles north-west of Gwadar",
+      "target_entity": "geographic_distance",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "geographic distance",
+        "property": "GEOGRAPHIC_DISTANCE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "40",
+          "value_type": "SINGLE",
+          "numeric_start": 40,
+          "numeric_end": null,
+          "normalized_unit": "miles",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            36,
+            44
+          ],
+          "unit_span": [
+            45,
+            50
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Must preserve unit 'miles'; bare '40' loses archaeological semantics.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (chakrabarti_p215-215)"
+    },
+    {
+      "case_id": "DEV-09-FC95",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "chakrabarti_p215-215",
+      "source_chunk": "first published in 1923 but underwent an expanded second edition in 1927",
+      "target_entity": "revised_edition_date",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "revised edition date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1927",
+          "value_type": "SINGLE",
+          "numeric_start": 1927,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1927,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            68,
+            72
+          ],
+          "unit_span": [
+            73,
+            75
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Disambiguate second edition 1927 from initial edition 1923.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (chakrabarti_p215-215)"
+    },
+    {
+      "case_id": "DEV-10-FC97",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "rajan_p019-019",
+      "source_chunk": "created about 3700 BC, while Pope Clement VIII dated the creation to 5199 BC",
+      "target_entity": "clement_creation_estimate",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "clement creation estimate",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "5199",
+          "value_type": "SINGLE",
+          "numeric_start": 5199,
+          "numeric_end": null,
+          "normalized_unit": "BC",
+          "astronomical_year_start": -5198,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            69,
+            76
+          ],
+          "unit_span": [
+            77,
+            79
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Target Clement estimate is 5199 BC; 3700 BC is the Jewish calendar rabbinical date.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p019-019)"
+    },
+    {
+      "case_id": "DEV-11-FC117",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "rajan_p022-022",
+      "source_chunk": "C.J.Thomsen (1788-1865) was invited in 1816 by the Danish Royal Commission",
+      "target_entity": "curator_appointment_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "curator appointment year",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1816",
+          "value_type": "SINGLE",
+          "numeric_start": 1816,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1816,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            39,
+            43
+          ],
+          "unit_span": [
+            44,
+            46
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "1788-1865 is scholar biographical lifespan; appointment is 1816.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p022-022)"
+    },
+    {
+      "case_id": "DEV-12-FC119",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "rajan_p022-022",
+      "source_chunk": "opened to the public as early as 1819, his guide book appeared only in 1839",
+      "target_entity": "guidebook_publication_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "guidebook publication year",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1839",
+          "value_type": "SINGLE",
+          "numeric_start": 1839,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1839,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            71,
+            75
+          ],
+          "unit_span": [
+            76,
+            78
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Disambiguate museum opening 1819 from guidebook release 1839.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p022-022)"
+    },
+    {
+      "case_id": "DEV-13-FC124",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "BIBLIO_CITATION_REJECTION",
+      "source_doc": "rajan_p023-023",
+      "source_chunk": "Origin of Species published in 1859 and Herbert Spencer’s (1820-1903) evolutionary approach",
+      "target_entity": "spencer_lifespan",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_2_SCHOLAR_LIFESPAN"
+      },
+      "disambiguation_challenge": "Spencer lifespan (1820-1903) is biographical scholar metadata; generator must suppress under Rule 2.1 (Scholar Lifespan Non-Finding).",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p023-023)"
+    },
+    {
+      "case_id": "DEV-14-FC135",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "rajan_p024-024",
+      "source_chunk": "Modern Savages (1865) and the second book The Origin of Civilisation (1870) went",
+      "target_entity": "second_treatise_publication",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "second treatise publication",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1870",
+          "value_type": "SINGLE",
+          "numeric_start": 1870,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1870,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            70,
+            74
+          ],
+          "unit_span": [
+            75,
+            77
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Disambiguate first book 1865 from second volume 1870.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p024-024)"
+    },
+    {
+      "case_id": "DEV-15-FC139",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "St Francis Xavier (1506-1552), who arrived in Goa in 1542, noted megaliths",
+      "target_entity": "xavier_mission_arrival",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "xavier mission arrival",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1542",
+          "value_type": "SINGLE",
+          "numeric_start": 1542,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1542,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            53,
+            57
+          ],
+          "unit_span": [
+            58,
+            60
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "1506-1552 is lifespan dates; arrival in Goa is 1542.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-16-FC143",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "PARTIAL",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "settlement of Pulicat in south India from 1631 to 1641 recorded Dutch trade",
+      "target_entity": "dutch_trading_tenure",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "dutch trading tenure",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1631-1641",
+          "value_type": "RANGE",
+          "numeric_start": 1631,
+          "numeric_end": 1641,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1631,
+          "astronomical_year_end": 1641
+        },
+        "spans": {
+          "value_span": [
+            42,
+            54
+          ],
+          "unit_span": [
+            55,
+            57
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Must capture full range 1631-1641; single token 1631 is an incomplete partial read.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-17-FC144",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "rajan_p050-050",
+      "source_chunk": "logical excavation remains with the archaeologist who has a flexibility and open-mindedness in his approach. As Sir Mortimer Wheeler (1956:81) said \"The experienced excavator, who thinks before digs, succeeds in reaching his objective in a ",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "non_finding_noise",
+        "property": "NON_FINDING",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_2_BIBLIOGRAPHY_CITATION",
+      "rejection_reason": "Author-date-page citation 'Wheeler (1956:81)' inside quotation context is a bibliographical reference, not an archaeological stratum or artifact finding.",
+      "disambiguation_challenge": "Generator must suppress author-date-page citation \"(1956:81)\" under Rule 2 and emit no candidate (status: REJECTED_NON_FINDING).",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p050-050)"
+    },
+    {
+      "case_id": "DEV-18-FC148",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "AMBIGUOUS_MULTI_CANDIDATE",
+      "source_doc": "rajan_p075-075",
+      "source_chunk": "Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology (1952)",
+      "target_entity": "kenyon_primer_date",
+      "expected_action": "FLAG_AMBIGUOUS_MULTI_CANDIDATE",
+      "entity_slot": {
+        "subject": "kenyon primer date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "AMBIGUOUS_MULTI_CANDIDATE",
+        "candidates": [
+          "1952",
+          "1954"
+        ]
+      },
+      "disambiguation_challenge": "Competing publication dates 1954 and 1952 in same sentence; generator must emit AMBIGUOUS and bundle candidates [1952, 1954] for human review.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p075-075)"
+    },
+    {
+      "case_id": "DEV-19-FC151",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "UNIT_LOST",
+      "source_doc": "rajan_p100-100",
+      "source_chunk": "immerse the corroded bronze artifact in a 30% solution of formic acid",
+      "target_entity": "conservation_chemical_concentration",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "conservation chemical concentration",
+        "property": "PERCENTAGE_FREQUENCY",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "30",
+          "value_type": "SINGLE",
+          "numeric_start": 30,
+          "numeric_end": null,
+          "normalized_unit": "%",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            42,
+            45
+          ],
+          "unit_span": [
+            46,
+            47
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Must preserve '%' symbol; stripping '%' corrupts metallurgical recipe.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p100-100)"
+    },
+    {
+      "case_id": "DEV-20-FC152",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "DISPLACED",
+      "source_doc": "rajan_p100-100",
+      "source_chunk": "Field Conservation 181 ... the metal core remained immersed for 2 hours",
+      "target_entity": "soaking_duration",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "soaking duration",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "2",
+          "value_type": "SINGLE",
+          "numeric_start": 2,
+          "numeric_end": null,
+          "normalized_unit": "hours",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            64,
+            71
+          ],
+          "unit_span": [
+            72,
+            77
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Running page header '181' must be rejected; true finding is '2 hours'.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p100-100)"
+    },
+    {
+      "case_id": "DEV-21-FC153",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "UNIT_LOST",
+      "source_doc": "rajan_p100-100",
+      "source_chunk": "stabilized with a mixture containing 10% benzotriazole in alcohol",
+      "target_entity": "reagent_concentration",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "reagent concentration",
+        "property": "PERCENTAGE_FREQUENCY",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "10",
+          "value_type": "SINGLE",
+          "numeric_start": 10,
+          "numeric_end": null,
+          "normalized_unit": "%",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            37,
+            40
+          ],
+          "unit_span": [
+            41,
+            42
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Must preserve unit '%'; bare '10' is unverified.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p100-100)"
+    },
+    {
+      "case_id": "DEV-22-FC154",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "AMBIGUOUS_MULTI_CANDIDATE",
+      "source_doc": "rajan_p100-100",
+      "source_chunk": "10% benzotriazole in distilled water (or 3% in alcohol)",
+      "target_entity": "alternate_alcohol_concentration",
+      "expected_action": "FLAG_AMBIGUOUS_MULTI_CANDIDATE",
+      "entity_slot": {
+        "subject": "alternate alcohol concentration",
+        "property": "PERCENTAGE_FREQUENCY",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "AMBIGUOUS_MULTI_CANDIDATE",
+        "candidates": [
+          "10%",
+          "3%"
+        ]
+      },
+      "disambiguation_challenge": "Competing concentrations 10% and 3% in alcohol/water mix in same sentence; generator must emit AMBIGUOUS and bundle candidates [10%, 3%] for human review.",
+      "provenance": "REAL_PAGE_AUDIT_FACT (rajan_p100-100)"
+    },
+    {
+      "case_id": "DEV-23-OCR-FOOTNOTE-SPACED",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "chakrabarti_p018-018",
+      "source_chunk": "Trench depth reached 3.5 m. 14 before seasonal water table rose",
+      "target_entity": "trench_depth",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "trench depth",
+        "property": "STRATUM_DEPTH",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "3.5",
+          "value_type": "SINGLE",
+          "numeric_start": 3.5,
+          "numeric_end": null,
+          "normalized_unit": "m",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            21,
+            24
+          ],
+          "unit_span": [
+            25,
+            26
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "OCR produced space between period and footnote numeral ' 14'; must capture 3.5 m and reject footnote numeral 14.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (chakrabarti_p018-018)"
+    },
+    {
+      "case_id": "DEV-24-BIBLIO-VS-EXCAVATION-POS",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p024-024",
+      "source_chunk": "The Kenyon 1957 excavations at Jericho uncovered pre-pottery Neolithic architecture",
+      "target_entity": "excavation_season_date",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Kenyon excavations at Jericho",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1957",
+          "value_type": "SINGLE",
+          "numeric_start": 1957,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1957,
+          "astronomical_year_end": 1957
+        },
+        "spans": {
+          "value_span": [
+            11,
+            15
+          ],
+          "unit_span": null,
+          "unit_origin": "INFERRED_ERA"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Excavation campaign noun phrase 'Kenyon 1957 excavations'; must extract 1957 as an event date, distinguishing it from an author-year literature citation.",
+      "provenance": "REAL_PAGE_CHALLENGE_CASE (rajan_p024-024)"
+    },
+    {
+      "case_id": "DEV-25-BIBLIO-VS-EXCAVATION-NEG",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "rajan_p024-024",
+      "source_chunk": "as demonstrated in Kenyon (1957: 42) regarding pre-pottery Neolithic flint tools",
+      "target_entity": "bibliographic_citation",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "literature citation",
+        "property": "BIBLIOGRAPHIC_CITATION",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "disambiguation_challenge": "Author-date literature citation 'Kenyon (1957: 42)'; must be rejected under Rejection Rule 2.",
+      "provenance": "REAL_PAGE_CHALLENGE_CASE (rajan_p024-024)"
+    },
+    {
+      "case_id": "DEV-26-CLAUSAL-AMBIGUITY-MULTI",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "AMBIGUOUS_MULTI_CANDIDATE",
+      "source_doc": "chakrabarti_p018-018",
+      "source_chunk": "Layer 2 contained 45 microliths and 12 potsherds at a depth of 1.4 m below surface",
+      "target_entity": "artifact_count_query",
+      "expected_action": "FLAG_AMBIGUOUS_MULTI_CANDIDATE",
+      "entity_slot": {
+        "subject": "Layer 2 artifacts",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "AMBIGUOUS_MULTI_CANDIDATE"
+      },
+      "disambiguation_challenge": "Two competing artifact counts (45 and 12) inside same clause without specific query target; generator must flag AMBIGUOUS_MULTI_CANDIDATE and route both to verification queue.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (chakrabarti_p018-018)"
+    },
+    {
+      "case_id": "DEV-27-TABLE-HEADER-UNIT",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p110-110",
+      "source_chunk": "Depth (m) | Layer | Charcoal C14 BP \n 1.85      | II    | 2450 +/- 60",
+      "target_entity": "stratum_depth",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Layer II",
+        "property": "STRATUM_DEPTH",
+        "resolution": "TABLE_ROW"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1.85",
+          "value_type": "SINGLE",
+          "numeric_start": 1.85,
+          "numeric_end": null,
+          "normalized_unit": "m",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            45,
+            49
+          ],
+          "unit_span": [
+            7,
+            8
+          ],
+          "unit_origin": "TABLE_HEADER"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Disjoint span: unit 'm' is located in the table header line, while value '1.85' is in the data row; generator must bind header unit to cell value.",
+      "provenance": "REAL_PAGE_CHALLENGE_CASE (rajan_p110-110)"
+    },
+    {
+      "case_id": "DEV-28-RULE1-PAGE-FOLIO",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "rajan_p100-100",
+      "source_chunk": "Field Conservation 181 \n The copper stabilization was begun",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "running header folio",
+        "property": "PAGE_NUMBER",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_1_PAGE_NUMBER",
+      "disambiguation_challenge": "Running header folio 181 must be rejected under Rule 1.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (rajan_p100-100)"
+    },
+    {
+      "case_id": "DEV-29-RULE1-PAGE-XREF",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "as discussed in detail on page 42 of the preliminary site monograph",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "page cross-reference",
+        "property": "PAGE_NUMBER",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_1_PAGE_NUMBER",
+      "disambiguation_challenge": "Page cross-reference 'page 42' must be rejected under Rule 1.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-30-RULE3-CONTOUR",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "chakrabarti_p015-015",
+      "source_chunk": "The site topography was mapped at a contour interval of 5 m across the river terrace",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "contour interval",
+        "property": "CONTOUR_INTERVAL",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_3_CONTOUR_INTERVAL",
+      "disambiguation_challenge": "Contour interval '5 m' is cartographic metadata, not finding depth; reject under Rule 3.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (chakrabarti_p015-015)"
+    },
+    {
+      "case_id": "DEV-31-RULE3-GRID",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "rajan_p019-019",
+      "source_chunk": "Excavation units were laid out in 10 x 10 m grid squares separated by one-meter balks",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "grid quadrant dimensions",
+        "property": "GRID_DIMENSIONS",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_3_CONTOUR_INTERVAL",
+      "disambiguation_challenge": "Balk grid dimensions '10 x 10 m' is excavation geometry, not architecture; reject under Rule 3.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (rajan_p019-019)"
+    },
+    {
+      "case_id": "DEV-32-RULE4-CATALOG-SPECIMEN",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "sankalia_p025-025",
+      "source_chunk": "Specimen No. 104 was recovered from the upper gravel matrix",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "specimen tag",
+        "property": "CATALOG_ACCESSION",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_4_CATALOG_ACCESSION",
+      "disambiguation_challenge": "Specimen tag 'Specimen No. 104' is accession number, not artifact count; reject under Rule 4.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (sankalia_p025-025)"
+    },
+    {
+      "case_id": "DEV-33-RULE4-PLATE-FIGURE",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "REJECTED_NON_FINDING",
+      "source_doc": "chakrabarti_p021-021",
+      "source_chunk": "Plate 24, Fig. 5 illustrates the burnished carinated bowl rim profile",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": {
+        "subject": "plate figure pointer",
+        "property": "CATALOG_ACCESSION",
+        "resolution": "UNRESOLVED_SUBJECT"
+      },
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING"
+      },
+      "rejection_rule": "RULE_4_CATALOG_ACCESSION",
+      "disambiguation_challenge": "Plate and figure indices 'Plate 24, Fig. 5' must be rejected under Rule 4.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (chakrabarti_p021-021)"
+    },
+    {
+      "case_id": "DEV-34-RULE5-FOOTNOTE-FUSED",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "sankalia_p150-150",
+      "source_chunk": "The basal gravel depth reached 3.5 m.14 before the seasonal monsoon halted excavation",
+      "target_entity": "stratum_depth",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "stratum depth",
+        "property": "STRATUM_DEPTH",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "3.5",
+          "value_type": "SINGLE",
+          "numeric_start": 3.5,
+          "numeric_end": null,
+          "normalized_unit": "m",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            31,
+            34
+          ],
+          "unit_span": [
+            35,
+            36
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Footnote numeral '14' fused to 'm.' must be rejected under Rule 5, preserving clean depth 3.5 m.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (sankalia_p150-150)"
+    },
+    {
+      "case_id": "DEV-35-CLEAN-DEPTH",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "sankalia_p150-150",
+      "source_chunk": "Stratum III reached a maximum depth of 1.25 m below datum",
+      "target_entity": "stratum_depth",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "stratum depth",
+        "property": "STRATUM_DEPTH",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1.25",
+          "value_type": "SINGLE",
+          "numeric_start": 1.25,
+          "numeric_end": null,
+          "normalized_unit": "m",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            39,
+            43
+          ],
+          "unit_span": [
+            44,
+            45
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean control: unambiguous stratum depth 1.25 m.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (sankalia_p150-150)"
+    },
+    {
+      "case_id": "DEV-36-CLEAN-ERA-DATE",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p019-019",
+      "source_chunk": "The catastrophic destruction of the citadel dates securely to 1177 BCE",
+      "target_entity": "citadel_destruction_date",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "citadel destruction date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1177",
+          "value_type": "SINGLE",
+          "numeric_start": 1177,
+          "numeric_end": null,
+          "normalized_unit": "BCE",
+          "astronomical_year_start": -1176,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            62,
+            66
+          ],
+          "unit_span": [
+            67,
+            70
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean control: unambiguous historical destruction date 1177 BCE.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (rajan_p019-019)"
+    },
+    {
+      "case_id": "DEV-37-CLEAN-COUNT",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "chakrabarti_p215-215",
+      "source_chunk": "Trench IV yielded 694 bifaces from the lower paleolithic assemblage",
+      "target_entity": "biface_tally",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "biface tally",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL",
+        "head_noun": "bifaces"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "694",
+          "value_type": "SINGLE",
+          "numeric_start": 694,
+          "numeric_end": null,
+          "normalized_unit": "",
+          "head_noun": "bifaces",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            18,
+            21
+          ],
+          "unit_span": null,
+          "unit_origin": "NONE"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean control: bare integer 694 must bind archaeological head noun \"bifaces\"; bare integer without noun is ungrounded under Spec 04 §3.2.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (modeled on chakrabarti_p215)"
+    },
+    {
+      "case_id": "DEV-38-CLEAN-THICKNESS",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p023-023",
+      "source_chunk": "Clearing revealed a compact plaster floor of 12 cm thickness",
+      "target_entity": "floor_thickness",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "floor thickness",
+        "property": "STRATUM_THICKNESS",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "12",
+          "value_type": "SINGLE",
+          "numeric_start": 12,
+          "numeric_end": null,
+          "normalized_unit": "cm",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "spans": {
+          "value_span": [
+            45,
+            47
+          ],
+          "unit_span": [
+            48,
+            50
+          ],
+          "unit_origin": "ADJACENT_TEXT"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean control: unambiguous stratum thickness 12 cm.",
+      "provenance": "SYNTHETIC_CHALLENGE_CASE (rajan_p023-023)"
+    },
+    {
+      "case_id": "DEV-39-REAL-HARRIS-INVENTION",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p075-075",
+      "source_chunk": "Edward Harris in his book Principles of Archaeological Stratigraphy (1979) devised a new method in archaeological stratification which is popularly known as Harris matrix which was, in fact, invented in 1973.",
+      "target_entity": "harris_matrix_invention_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Harris matrix invention year",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1973",
+          "value_type": "SINGLE",
+          "numeric_start": 1973,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1973,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page finding: Harris Matrix invention year 1973 (CE).",
+      "provenance": "REAL_PAGE (rajan_p075-075)"
+    },
+    {
+      "case_id": "DEV-40-REAL-HARRIS-BOOK",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p075-075",
+      "source_chunk": "Edward Harris in his book Principles of Archaeological Stratigraphy (1979) devised a new method in archaeological stratification",
+      "target_entity": "principles_stratigraphy_publication_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Principles of Archaeological Stratigraphy book year",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1979",
+          "value_type": "SINGLE",
+          "numeric_start": 1979,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1979,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page finding: Harris treatise publication date 1979 (CE).",
+      "provenance": "REAL_PAGE (rajan_p075-075)"
+    },
+    {
+      "case_id": "DEV-41-REAL-FIRUZ-TUGHLAK-REIGN",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "Firuz Shah Tughlak (1351-1388) removed two inscribed Asokan pillars one from Meerut and another from Ambala to his capital Delhi",
+      "target_entity": "firuz_shah_tughlak_reign_span",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Firuz Shah Tughlak regnal range",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1351-1388",
+          "value_type": "RANGE",
+          "numeric_start": 1351,
+          "numeric_end": 1388,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1351,
+          "astronomical_year_end": 1388
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page range: Firuz Shah Tughlak regnal dates 1351-1388 (CE range).",
+      "provenance": "REAL_PAGE (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-42-REAL-NOBILI-LIFESPAN",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "BIBLIO_CITATION_REJECTION",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "Fr Roberto de Nobili (1577-1655), Brahmanised Jesuit from Italy who came to Madurai in 1606",
+      "target_entity": "roberto_de_nobili_lifespan",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_2_SCHOLAR_LIFESPAN"
+      },
+      "disambiguation_challenge": "Roberto de Nobili lifespan (1577-1655) is personal biographical metadata; generator must suppress under Rule 2.1, leaving arrival year 1606 for event extraction.",
+      "provenance": "REAL_PAGE (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-43-REAL-NOBILI-ARRIVAL",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "Fr Roberto de Nobili (1577-1655), Brahmanised Jesuit from Italy who came to Madurai in 1606, is acknowledged as the first European Sanskrit scholar.",
+      "target_entity": "nobili_madurai_arrival_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "De Nobili arrival in Madurai",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1606",
+          "value_type": "SINGLE",
+          "numeric_start": 1606,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1606,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page single date: De Nobili arrival in Madurai 1606 (CE).",
+      "provenance": "REAL_PAGE (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-44-REAL-XAVIER-LETTER",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p025-025",
+      "source_chunk": "In a letter written in 1544, he quoted the Sanskrit invocation Om Srii naraina nama and translated into Latin.",
+      "target_entity": "xavier_sanskrit_letter_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "St Francis Xavier Sanskrit invocation letter year",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1544",
+          "value_type": "SINGLE",
+          "numeric_start": 1544,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1544,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page date: Xavier letter date 1544 (CE).",
+      "provenance": "REAL_PAGE (rajan_p025-025)"
+    },
+    {
+      "case_id": "DEV-45-REAL-TABLE-C14-LIMIT",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p110-110",
+      "source_chunk": "Method Radio Carbon Dating | Inventor Willard F. Libby | Year 1949 | Time range Present to 50,000 BP",
+      "target_entity": "c14_standard_limit_bp",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Radio carbon standard time range limit",
+        "property": "C14_AGE_BP",
+        "resolution": "TABLE_ROW"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "50,000",
+          "value_type": "SINGLE",
+          "numeric_start": 50000,
+          "numeric_end": null,
+          "normalized_unit": "BP",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page table cell with physical unit: Standard C-14 limit 50,000 BP. (Note: Evaluates synthetically pipe-delimited table text, not unaligned raw OCR stream).",
+      "provenance": "SYNTHETIC_TABLE_ROW (rajan_p110-110)"
+    },
+    {
+      "case_id": "DEV-46-REAL-TABLE-C14-LIBBY-YEAR",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p110-110",
+      "source_chunk": "Method Radio Carbon Dating | Inventor Willard F. Libby | Year 1949",
+      "target_entity": "radiocarbon_dating_invention_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Radio carbon dating invention year",
+        "property": "HISTORICAL_DATE",
+        "resolution": "TABLE_ROW"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1949",
+          "value_type": "SINGLE",
+          "numeric_start": 1949,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1949,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page table cell: Libby C-14 invention year 1949 (CE). (Note: Evaluates synthetically pipe-delimited table text, not unaligned raw OCR stream).",
+      "provenance": "SYNTHETIC_TABLE_ROW (rajan_p110-110)"
+    },
+    {
+      "case_id": "DEV-47-REAL-TABLE-DENDRO-RANGE",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "rajan_p110-110",
+      "source_chunk": "Method Dendrochronology | Inventor Douglass | Year 1913 | Time range 7,400",
+      "target_entity": "dendrochronology_time_range_span",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Dendrochronology calibration time range",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "TABLE_ROW"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "7,400",
+          "value_type": "SINGLE",
+          "numeric_start": 7400,
+          "numeric_end": null,
+          "normalized_unit": "years",
+          "astronomical_year_start": null,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page table cell count: Dendrochronology span 7,400 years. (Note: Evaluates synthetically pipe-delimited table text, not unaligned raw OCR stream).",
+      "provenance": "SYNTHETIC_TABLE_ROW (rajan_p110-110)"
+    },
+    {
+      "case_id": "DEV-48-REAL-THEVET-COSMOGRAPHY-PUB",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "chakrabarti_p015-015",
+      "source_chunk": "In a volume published in 1575 in Paris on universal cosmography the author, A. Thevet, not only referred to the incredible grandeur of Elephanta",
+      "target_entity": "thevet_cosmography_publication_year",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Thevet universal cosmography publication year",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1575",
+          "value_type": "SINGLE",
+          "numeric_start": 1575,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1575,
+          "astronomical_year_end": null
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Clean real-page date: Thevet cosmography publication date 1575 (CE).",
+      "provenance": "REAL_PAGE (chakrabarti_p015-015)"
+    }
+  ]
+}

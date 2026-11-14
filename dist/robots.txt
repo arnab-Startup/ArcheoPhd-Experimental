@@ -1,0 +1,71 @@
+# robots.txt for ArchaeoPhD — https://archaeophd.com/
+# Public marketing + blog content is fully crawlable. Authenticated, private
+# research workspaces are disallowed so users' unpublished research is never
+# indexed.
+
+User-agent: *
+Allow: /
+Allow: /blog
+Allow: /security
+Allow: /privacy
+
+# Private, authenticated app areas — never index
+Disallow: /dashboard
+Disallow: /onboarding
+Disallow: /projects
+Disallow: /library
+Disallow: /ai-research
+Disallow: /claims
+Disallow: /evidence-graph
+Disallow: /sites
+Disallow: /artifacts
+Disallow: /chronology
+Disallow: /research-map
+Disallow: /thesis
+Disallow: /notes
+Disallow: /settings
+Disallow: /export-center
+Disallow: /notifications
+Disallow: /help
+Disallow: /demo
+Disallow: /research-inbox
+Disallow: /site-comparison
+Disallow: /contradiction-detector
+Disallow: /gap-explorer
+Disallow: /argument-builder
+Disallow: /literature-graph
+Disallow: /matrix
+Disallow: /visualize
+Disallow: /analytics
+
+# Authentication/account pages — do not index
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+
+# --- Generative engines & AI training crawlers: explicitly allowed ---
+# These power GEO (generative engine optimization) so ChatGPT, Perplexity,
+# Claude, and Google AI Overviews can surface ArchaeoPhD content.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://archaeophd.com/sitemap.xml

@@ -1,0 +1,4447 @@
+[
+  {
+    "id": 1,
+    "page_id": "sankalia_p052-052",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1963",
+    "norm_gt": "1963",
+    "description": "Year Chirki site was discovered",
+    "anchor_words": [
+      "chirki",
+      "discovered"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1063",
+      "norm": "1063",
+      "windowText": "THE ACHEULIAN WORKSHOP AT CHIRKI ON THE PRAVARA RIVER, MAHARASHTRA  Gudrun Corvisus  THE ACHEULIAN site Chirki on (he Pravie was discovered i 1063 curing i geomorphological survey of thw Pravars river valley. The writer underto"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "THE ACHEULIAN WORKSHOP AT CHIRKI ON TIJE PRAVARA RIVER, MAHARASHTRA Gudrun CORVINUS Tilt: ACIJEVI.JAN site Chirki on Pranca sea* di«overed in a geomo"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 2,
+    "page_id": "sankalia_p052-052",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1966",
+    "norm_gt": "1966",
+    "description": "Year Corvinus decided to excavate",
+    "anchor_words": [
+      "corvinus",
+      "decided",
+      "excavate"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1966",
+      "norm": "1966",
+      "windowText": "nce of & small tributary, Chirki, with the Pravara, 2 miles downstream from Nevisa. But it was only In 1966 that she decided 1o excavate the site, when a grantsin-aid from the Wenner  \\  3 p l-— =t AN (NI v a PN .\\ 2N VA e = b x= . - oM ‘ l"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "THE ACHEULIAN WORKSHOP AT CHIRKI ON TIJE PRAVARA RIVER, MAHARASHTRA Gudrun CORVINUS Tilt: ACIJEVI.JAN site Chirki on Pranca sea* di«overed in a geomorphological survey 01 the Prat.ata rivet salley. T"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 3,
+    "page_id": "sankalia_p053-053",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1966 to 1969",
+    "norm_gt": "1966 to 1969",
+    "description": "Excavation season year range",
+    "anchor_words": [
+      "excavation",
+      "season"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "3",
+      "norm": "3",
+      "windowText": " from the Council of Scientific and Industrial Research, Delhi, through the kind help of M. R. Saunt, Lucknow, The excavations went on for 3 Winer sessons, from 1966 to 1969,  In the first year’s dig, the stress lay on finding the horizon o"
+    },
+    "win_cand": {
+      "raw": "00",
+      "norm": "00",
+      "windowText": "f Eariy Man\". from Council 01 Scientific and Industrial Delhi, through the kirxl help of M. R. SAHNi. Lucknow, The excavations went 00 lor 3 Winer seasons. trom to 1969. In the first yer's dig, the stres lay an linding the of the Early Ston"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 4,
+    "page_id": "sankalia_p053-053",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "8 m.",
+    "norm_gt": "8 m",
+    "description": "Thickness of alluvium over rock",
+    "anchor_words": [
+      "thickness",
+      "alluvium",
+      "rock"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "8",
+      "norm": "8",
+      "windowText": "is alluvium. The first 6 trenches did not reveal any Early Stone Age (ES.A) horizon. The trenches wete cut into (he alluvium, which at places was 8 m. thick, overlying rock. Middle Stone Age (M.SA,) tools were found dispersed throughout the"
+    },
+    "win_cand": {
+      "raw": "6",
+      "norm": "6",
+      "windowText": "surface tools in the gullies of the Chirki area, This area consists ot bad lands, cut into young Pieistocene gravel alluvium The tools were eroded out from this aituvium. The first 6 trenches did not any Early Stone Age (E.S.A.) horizon, Th"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 5,
+    "page_id": "sankalia_p053-053",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "74 mtrs",
+    "norm_gt": "74 mtrs",
+    "description": "Exposed horizon area in meters",
+    "anchor_words": [
+      "exposed",
+      "horizon",
+      "area"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "694",
+      "norm": "694",
+      "windowText": "in trench VII that at the end of the first season a very rich ESA Horizon was uncovered, 74 mies of the horizon were exposed and 694 ES.A 100ls recovered from @ rubble boulder horizon, which was sealed by the above mentioned alluvial gravel"
+    },
+    "win_cand": {
+      "raw": "6",
+      "norm": "6",
+      "windowText": "vel alluvium The tools were eroded out from this aituvium. The first 6 trenches did not any Early Stone Age (E.S.A.) horizon, The trenches were cut into the alluvju.m, which at places was 8 m. thick. overlying texk. Sliddle Stone Age (M.S.A"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 6,
+    "page_id": "sankalia_p053-053",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "694",
+    "norm_gt": "694",
+    "description": "Number of Early Stone Age tools recovered",
+    "anchor_words": [
+      "early",
+      "stone",
+      "tools",
+      "recovered"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "s well as of the Middle Stone Age industry or the Nevasian, so termed alter Sankalla first found it near Nevasa,  The Early Stone Age tools had been lound as surface tools in the gullies of the Chirki area. This srea consists of bad lands. "
+    },
+    "win_cand": {
+      "raw": "1969.",
+      "norm": "1969",
+      "windowText": "he excavations went 00 lor 3 Winer seasons. trom to 1969. In the first yer's dig, the stres lay an linding the of the Early Stone Age tools. as 'svell as of the Middle Stone Age irxlustry or tlu• Nevasian. so termed after Sankalia first Khi"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 7,
+    "page_id": "sankalia_p053-053",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "20-40 cm",
+    "norm_gt": "20-40 cm",
+    "description": "Thickness of rubble horizon overlying trap basalt",
+    "anchor_words": [
+      "rubble",
+      "horizon",
+      "trap",
+      "basalt"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "20-40 cm",
+      "norm": "20-40 cm",
+      "windowText": "00ls recovered from @ rubble boulder horizon, which was sealed by the above mentioned alluvial gravel (Fig. 5a). The rubble horizon was 20-40 cm Uick, overlying the bedrock of trap basalt (Fig. 5h).  - - . -  "
+    },
+    "win_cand": {
+      "raw": "20-40 cm",
+      "norm": "20-40 cm",
+      "windowText": "@'d and 69.' E.S.A. from a rubble boulder horizon. which nas sealed by the mentioned alluvial xra•.el (Fig. Sa). The rubble horizon was 20-40 cm Ilitck. overlying the bedrock ot trap basalt (Fig. 5b'. Fig 5b The season was us«f to extend Tr"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 8,
+    "page_id": "sankalia_p054-054",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "7 m.",
+    "norm_gt": "7 m",
+    "description": "Bedrock depth below present river bed",
+    "anchor_words": [
+      "bedrock",
+      "depth",
+      "river",
+      "bed"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "Enyironment  The excavated arca consists of alluvial bod fands tn the right nver bink ol the Pravara. The undulating bedrock level underneath. the wlhuvitm f= @ few meters higher than in the present river bed. The encountered on the other b"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": " Environment The excmated area g»nsists 01 aliuviai bad lands on the right over bauk n' the Prat.artL The undulating bedrock level underneath the alluvium is a few meters higher than present beci. Tile ü•cpest tock teu•is are encountered on"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 9,
+    "page_id": "sankalia_p055-055",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "6 pieces",
+    "norm_gt": "6 pieces",
+    "description": "Number of large cores found in Trench B",
+    "anchor_words": [
+      "large",
+      "cores",
+      "trench"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "6 pieces",
+      "norm": "6 pieces",
+      "windowText": " finished 100ls but of waste and unfinished tools. Unfortunately, however, the amount of small dressing flakes is not large as one should have expected.  Finally a number of large cores has been found. most of them in Tr. B (6 pieces) and a"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "e is not 01 finished tools but of waste and unfintshed Unfortunately, however, the amount of •mail dressing flakes is large as otu• should have expect«l. Finally a number 01 large cores has been found. rnmt of in Tr. B (6 pieces' and a lew "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 10,
+    "page_id": "sankalia_p056-056",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "2050",
+    "norm_gt": "2050",
+    "description": "Total assemblage count of Acheulian industry",
+    "anchor_words": [
+      "assemblage",
+      "acheulian",
+      "industry"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "p . - :  THE ACHEULIAN WORKSHOF AT CHIRKL  {o find & tool or two. That means that the whole, ratber undulating. tock and boulder surface "
+    },
+    "win_cand": {
+      "raw": "20.7",
+      "norm": "20.7",
+      "windowText": "o explain Ibe rxjn.existenee ot a unconformity between the two horizons of boul&rs argl graseL B. The workshop The assemblage ot thc Acheulean indtbtry consist' of 20.7) of 1511 tools (unfintsh«l and fint9hedJ. 441 wa.«te (There will more c"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 11,
+    "page_id": "sankalia_p056-056",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "1511",
+    "norm_gt": "1511",
+    "description": "Count of finished and unfinished tools",
+    "anchor_words": [
+      "tools",
+      "unfinished",
+      "finished"
+    ],
+    "tess_anchor": false,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "1511",
+      "norm": "1511",
+      "windowText": "wo horizons of boul&rs argl graseL B. The workshop The assemblage ot thc Acheulean indtbtry consist' of 20.7) of 1511 tools (unfintsh«l and fint9hedJ. 441 wa.«te (There will more cores after t}u• detailed analysis ig completed. because I am"
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 12,
+    "page_id": "sankalia_p056-056",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "95",
+    "norm_gt": "95",
+    "description": "Count of cores in assemblage",
+    "anchor_words": [
+      "cores",
+      "assemblage",
+      "detailed"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "scrapers, borers, points, some of them well retouched. The bulk of the artifacis is, however, unworked flakes, chips, cores and slightly worked pebbled, Thia industry was found in great abundance on the surface, where they got centrated as "
+    },
+    "win_cand": {
+      "raw": "441",
+      "norm": "441",
+      "windowText": "lage ot thc Acheulean indtbtry consist' of 20.7) of 1511 tools (unfintsh«l and fint9hedJ. 441 wa.«te (There will more cores after t}u• detailed analysis ig completed. because I am sure that a number ot the so called pylyhedtotB are core.) T"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 13,
+    "page_id": "sankalia_p056-056",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "444",
+    "norm_gt": "444",
+    "description": "Count of waste flakes",
+    "anchor_words": [
+      "waste",
+      "flakes",
+      "analysis"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "industry with scrapers, borers, points, some of them well retouched. The bulk of the artifacis is, however, unworked flakes, chips, cores and slightly worked pebbled, Thia industry was found in great abundance on the surface, where they got"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "ke itriustry scrapers. borers, potnts, sotnc 01 them well retouch«i. The bulk ot the artifacts is, howes«. unwork€xi flakes. cues and slightly qorked industry gas found in great abundance on the surface, they goi cone centrated as the large"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 14,
+    "page_id": "sankalia_p057-057",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "330",
+    "norm_gt": "330",
+    "description": "Handaxes in pebble group",
+    "anchor_words": [
+      "handaxes",
+      "pebble"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "330\n\n2",
+      "norm": "330 2",
+      "windowText": "GUDRUN CORVINUS  The pebble group consists of |  | FHandaxes (picks. pointed axes, ovates, borers ele.) 330  2 Unifacial choppers  3 Bifacial choppers  4 Polyhedral choppers  5"
+    },
+    "win_cand": {
+      "raw": "95",
+      "norm": "95",
+      "windowText": "roids Hammerstones Cores That means i A bandaxe group 2 A chopcr.polyhcdroo group 3 A core group 95 (3.30) (95) The handaxes are madc trom elongate pebbles or from yplit '*bbies, With alternate flaking and with secondary flaking at the poin"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 15,
+    "page_id": "sankalia_p057-057",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "546",
+    "norm_gt": "546",
+    "description": "Choppers and polyhedrons count",
+    "anchor_words": [
+      "choppers",
+      "polyhedrons"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": "| FHandaxes (picks. pointed axes, ovates, borers ele.) 330  2 Unifacial choppers  3 Bifacial choppers  4 Polyhedral choppers  5 Backed choppers 546  6 Discoidal choppers 1  7 Polyhedrons !  8§ Spheroids |  9 Hammerstones J  10 Cores 9 That "
+    },
+    "win_cand": {
+      "raw": "2 3 5 6 7 8 9",
+      "norm": "2 3 5 6 7 8 9",
+      "windowText": "group consists of : J landaxes (Picks. pointed axes, mates, tx»rery etc.) 2 3 5 6 7 8 9 Unifacial chopsYrs Bifacial choppers Polyhedral choprxry Backed choprx•rs Diya»idal chopjxrg Polyhedrons Spheroids Hammerstones Cores That means i A ban"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 16,
+    "page_id": "sankalia_p057-057",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "971",
+    "norm_gt": "971",
+    "description": "Pebble group subtotal count",
+    "anchor_words": [
+      "pebble",
+      "subtotal"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "330\n\n2",
+      "norm": "330 2",
+      "windowText": "GUDRUN CORVINUS  The pebble group consists of |  | FHandaxes (picks. pointed axes, ovates, borers ele.) 330  2 Unifacial choppers  3 Bifacial ch"
+    },
+    "win_cand": {
+      "raw": "2 3 5 6 7 8 9",
+      "norm": "2 3 5 6 7 8 9",
+      "windowText": "CORVINUS The pebble group consists of : J landaxes (Picks. pointed axes, mates, tx»rery etc.) 2 3 5 6 7 8 9 Unifacial chopsYrs Bifacial "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 17,
+    "page_id": "sankalia_p058-058",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "186",
+    "norm_gt": "186",
+    "description": "Handaxes in flake group",
+    "anchor_words": [
+      "handaxes",
+      "flake"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1",
+      "norm": "1",
+      "windowText": " the manufacture of small fokes of which there wre quite o number In Chirki.  The flake group group consists of : 1 handaxes . 186  2 cleavers -+ intermedinte [orms of various cutting tools &s : cleavers with lateral cutting edge, reduced c"
+    },
+    "win_cand": {
+      "raw": "2 3 4 6",
+      "norm": "2 3 4 6",
+      "windowText": "anufacture 01 •mall flakes or which there are quite o mnnber in Chirki. The flake group group consists of : 2 3 4 6 handaxes cleavers + intermediate torm 01 various cutting tcx»ls as : cleavers with lateral cutting edge, reduced cleavers wi"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 18,
+    "page_id": "sankalia_p058-058",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "382",
+    "norm_gt": "382",
+    "description": "Cleavers count in flake group",
+    "anchor_words": [
+      "cleavers",
+      "flake"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "186\n\n2",
+      "norm": "186 2",
+      "windowText": "f small fokes of which there wre quite o number In Chirki.  The flake group group consists of : 1 handaxes . 186  2 cleavers -+ intermedinte [orms of various cutting tools &s : cleavers with lateral cutting edge, reduced cleavers with lat, "
+    },
+    "win_cand": {
+      "raw": "2 3 4 6",
+      "norm": "2 3 4 6",
+      "windowText": "e 01 •mall flakes or which there are quite o mnnber in Chirki. The flake group group consists of : 2 3 4 6 handaxes cleavers + intermediate torm 01 various cutting tcx»ls as : cleavers with lateral cutting edge, reduced cleavers with lat. e"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 19,
+    "page_id": "sankalia_p058-058",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "66",
+    "norm_gt": "66",
+    "description": "Scrappers, knives, borers count",
+    "anchor_words": [
+      "scrappers",
+      "knives",
+      "borers"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "382\n3",
+      "norm": "382 3",
+      "windowText": "utting tools &s : cleavers with lateral cutting edge, reduced cleavers with lat,  edge, points with lat. edge 382 3 scrappers, knives, chisels Dorers 66 4 worked flakes 276 5 waste flakes 48 6 cortex flakes, dressing fakes, light duty fakes"
+    },
+    "win_cand": {
+      "raw": "186 276 48 1",
+      "norm": "186 276 48 1",
+      "windowText": "ious cutting tcx»ls as : cleavers with lateral cutting edge, reduced cleavers with lat. edge. points with lat. edge scrappers, ktuves, chisels, Ixyrers worked flakes waste flakes cortex flakes, dreging flakes, light duty flakes 186 276 48 1"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 20,
+    "page_id": "sankalia_p058-058",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "276",
+    "norm_gt": "276",
+    "description": "Worked flakes count",
+    "anchor_words": [
+      "worked",
+      "flakes"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "66\n4",
+      "norm": "66 4",
+      "windowText": "l cutting edge, reduced cleavers with lat,  edge, points with lat. edge 382 3 scrappers, knives, chisels Dorers 66 4 worked flakes 276 5 waste flakes 48 6 cortex flakes, dressing fakes, light duty fakes: 152  All the flakes and flake tools,"
+    },
+    "win_cand": {
+      "raw": "186 276 48 152",
+      "norm": "186 276 48 152",
+      "windowText": "ith lateral cutting edge, reduced cleavers with lat. edge. points with lat. edge scrappers, ktuves, chisels, Ixyrers worked flakes waste flakes cortex flakes, dreging flakes, light duty flakes 186 276 48 152 Ail the flakes and flake tools, "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 21,
+    "page_id": "sankalia_p058-058",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "48",
+    "norm_gt": "48",
+    "description": "Waste flakes count in flake group",
+    "anchor_words": [
+      "waste",
+      "flakes",
+      "group"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "276\n5",
+      "norm": "276 5",
+      "windowText": "uced cleavers with lat,  edge, points with lat. edge 382 3 scrappers, knives, chisels Dorers 66 4 worked flakes 276 5 waste flakes 48 6 cortex flakes, dressing fakes, light duty fakes: 152  All the flakes and flake tools, apart from the lig"
+    },
+    "win_cand": {
+      "raw": "186 276 48 152",
+      "norm": "186 276 48 152",
+      "windowText": "utting edge, reduced cleavers with lat. edge. points with lat. edge scrappers, ktuves, chisels, Ixyrers worked flakes waste flakes cortex flakes, dreging flakes, light duty flakes 186 276 48 152 Ail the flakes and flake tools, trom the tigh"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 22,
+    "page_id": "sankalia_p058-058",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "152",
+    "norm_gt": "152",
+    "description": "Cortex and light duty flakes count",
+    "anchor_words": [
+      "cortex",
+      "flakes"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "48\n6",
+      "norm": "48 6",
+      "windowText": "lat,  edge, points with lat. edge 382 3 scrappers, knives, chisels Dorers 66 4 worked flakes 276 5 waste flakes 48 6 cortex flakes, dressing fakes, light duty fakes: 152  All the flakes and flake tools, apart from the light duty fakes smd d"
+    },
+    "win_cand": {
+      "raw": "186 276 48 152",
+      "norm": "186 276 48 152",
+      "windowText": "educed cleavers with lat. edge. points with lat. edge scrappers, ktuves, chisels, Ixyrers worked flakes waste flakes cortex flakes, dreging flakes, light duty flakes 186 276 48 152 Ail the flakes and flake tools, trom the tight duty flakes "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 23,
+    "page_id": "sankalia_p059-059",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "110",
+    "norm_gt": "110",
+    "description": "Platform angle to flake surface",
+    "anchor_words": [
+      "platform",
+      "angle",
+      "flake"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "110",
+      "norm": "110",
+      "windowText": "tlumskcrand the thicker butt end is away from the maker, while the flake surface is on the left. The angle from the platform to the flake surface is about 110°. The platform was usually unprepared before detachment. But after detachment the"
+    },
+    "win_cand": {
+      "raw": "110",
+      "norm": "110",
+      "windowText": "e maker aryl the thick« butt end is away from the maker, white the flake surface is on the left. TIE angle from the platform to the flake surface is atxnJt 110\", The platform was usually unprepared before detachment. Bu! alter the platiorm•"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 24,
+    "page_id": "sankalia_p061-061",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "300",
+    "norm_gt": "300",
+    "description": "Stone circles at Junapani",
+    "anchor_words": [
+      "stone",
+      "circles",
+      "junapani"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "ich are sturrounded by the nearhy reglons of the States ol Madhya Pradesh and Andhra Pradesh which also have numerous Stone Circles and other monuments of the megalithic tradition. No such monuments have so far been reported i wesderns Vida"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "desh bolds out possibilities oi l«ating data even Vidarbha. As stated abne. the region or eastern Vldarbha abounds in Stone Circles. tt is aly» well known that at Junapani and Mahur1Tiari near Nagpur are re- p»rted largest concentrations of"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 25,
+    "page_id": "sankalia_p061-061",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "150",
+    "norm_gt": "150",
+    "description": "Stone circles at Mahurjhari",
+    "anchor_words": [
+      "stone",
+      "circles",
+      "mahurjhari"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "ich are sturrounded by the nearhy reglons of the States ol Madhya Pradesh and Andhra Pradesh which also have numerous Stone Circles and other monuments of the megalithic tradition. No such monuments have so far been reported i wesderns Vida"
+    },
+    "win_cand": {
+      "raw": "1",
+      "norm": "1",
+      "windowText": "apani and Mahur1Tiari near Nagpur are re- p»rted largest concentrations of tlwse- At the place there are as many 3(1) Stone Circles. while at Mahurjhari there are udi over 150 Circles. these two. there are a number ot 0thcr Sites which have"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 26,
+    "page_id": "sankalia_p064-064",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "2000 B.C.",
+    "norm_gt": "2000 BC",
+    "description": "Proposed stratigraphic date for megalithic period",
+    "anchor_words": [
+      "megalithic",
+      "period",
+      "proposed"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "10",
+      "norm": "10",
+      "windowText": " the existence of a new cullural personality sym. bolised by = painted pottery unknown from the megalithic and noo-megalithic eastern and western sectors on the flanks ol Vidarbha.  The dating proposed for this, however, appears 10 be rathe"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "dinyapura• have revealed the existeme ot the car• best habitauon which has been destgnated by the excavator as of \"Megalithic Pertcxl\", It was characterised by the W.tery, etched carncljun beads with typtcaiiy southern or megalithic decorat"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 27,
+    "page_id": "sankalia_p065-065",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1967",
+    "norm_gt": "1967",
+    "description": "Paunar excavation year",
+    "anchor_words": [
+      "paunar",
+      "excavation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "k-and-red pottery, some bearing graffiti, the painted black-and-  The painted pottery of this carliest habitation 8t Paunar showed a lew variations in fabric. However, none of the fabrics showed uny genelic ela- tionship with the painted po"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "apani, thus tx-speaking cultural link between these three Sltes. The painted rx»ttcty of this earliest habitation at Paunar shoged a variations in fabnc. However, none of the labtics shoutd any genetic rela- lionship with the painted pottet"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 28,
+    "page_id": "sankalia_p065-065",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1968",
+    "norm_gt": "1968",
+    "description": "Takalghat and Khapa exploration year",
+    "anchor_words": [
+      "takalghat",
+      "khapa",
+      "exploration"
+    ],
+    "tess_anchor": false,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": " feature in reiaiion to the megalithic habitation and the Stone Circles was finally confirmed by the excavations at Takalghat and Khapa. •ome twenty nules due 'test 01 Nagpur. On the ot the ktu»wiedge 01 the Conlext the painted pottery. the"
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 29,
+    "page_id": "sankalia_p065-065",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "8 metres",
+    "norm_gt": "8 metres",
+    "description": "Height of Takalghat mound",
+    "anchor_words": [
+      "height",
+      "takalghat",
+      "mound"
+    ],
+    "tess_anchor": false,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "8",
+      "norm": "8",
+      "windowText": "e sites ate situated on either bank or the river Krishna, and whereas Takalghat had a habitationai rmund rising to a height of atxjut 8 tnetRS, there were a numtrr of Stone Circles at Khapa, surface collec- 26"
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 30,
+    "page_id": "sankalia_p070-070",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "555",
+    "norm_gt": "555",
+    "description": "C-14 date for bottom of Phase IB at Takalghat",
+    "anchor_words": [
+      "takalghat",
+      "phase"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "535",
+      "norm": "535",
+      "windowText": " which helps (o date the culturally akin Stone Circles a1 Khapa itsell, The C-14 date for the bottom ol Phase 1B at Takalghat has come to 535 R¢. The one metre thick deposit of the earlier Phase 1A would push back the beginning of the habit"
+    },
+    "win_cand": {
+      "raw": "555",
+      "norm": "555",
+      "windowText": "d a I date which helps (o date the culturally akin Stone Circles Khapa itseiC The date Ior the ls»ttotn Phase 1B at Takalghat has cune to 555 R.C. nn• one metre thick dejxe.it ot the earlter Phase IA would pu€h back the ix•ginning of the ha"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 31,
+    "page_id": "sankalia_p070-070",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "955",
+    "norm_gt": "955",
+    "description": "Hallur Neolithic-Megalithic C-14 date",
+    "anchor_words": [
+      "hallur",
+      "neolithic",
+      "megalithic"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "14",
+      "norm": "14",
+      "windowText": "ed to ¢. 7th century B.C. or thereabout  This dating is in consonance with C-14 showings elsewhere. For instance, it Hallur the C-14 dates for possibly the Neolithic-Megalithic overlap comes 1o 955 B.Cc. Could it be, therefore, thai the meg"
+    },
+    "win_cand": {
+      "raw": "955",
+      "norm": "955",
+      "windowText": "his dating is in consonance with C-14 showings elsewhere. Fot Instance. at tlallut the C-l•t dates Ior possibly the Neolithic-Niegaijth:c oscriap cvtnes to 955 B.C. Could it be, therefore, that thc megalithic traditions t€ok about a Ojuple "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 32,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1943",
+    "norm_gt": "1943",
+    "description": "Bibliography publication year item 59",
+    "anchor_words": [
+      "glory",
+      "gujarat"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1,",
+      "norm": "1",
+      "windowText": "5  1846  1947  17 1949  1950  1956  1957  H D SANKALIA FELICITATION  VOLUME  “Pre- and Prolo-history of Gujarat,” The Glory That Way Gujaradesa, Pr. 1, pp, 12-40.  “The Second Gujarat Prehistoric Expedition : A Preliminray Account of the Se"
+    },
+    "win_cand": {
+      "raw": "12-40. 60",
+      "norm": "12-40. 60",
+      "windowText": "SANXtU.jA VOLUME 59. 1913 \"Pre- Ptoto-histocy of Gujarat.\" The Glory That Il'a.' Guiatadeia. Pt. I, pp. 12-40. 60. \"The Second Gujarat Prehistoric Expedition A Preliminray Account of th"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 33,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1944",
+    "norm_gt": "1944",
+    "description": "Bibliography publication year item 60",
+    "anchor_words": [
+      "prehistoric",
+      "expedition",
+      "microlithic"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "12-40",
+      "norm": "12-40",
+      "windowText": "VOLUME  “Pre- and Prolo-history of Gujarat,” The Glory That Way Gujaradesa, Pr. 1, pp, 12-40.  “The Second Gujarat Prehistoric Expedition : A Preliminray Account of the Search of Microlithic Man in Cujarat”. New Indian Antiquary, Vol. VII, "
+    },
+    "win_cand": {
+      "raw": "12-40. 60",
+      "norm": "12-40. 60",
+      "windowText": " 1913 \"Pre- Ptoto-histocy of Gujarat.\" The Glory That Il'a.' Guiatadeia. Pt. I, pp. 12-40. 60. \"The Second Gujarat Prehistoric Expedition A Preliminray Account of the Search of Microlithic Man in Gujarat\". Indun Antiquary, Vol, VII, No. t ("
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 34,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1945",
+    "norm_gt": "1945",
+    "description": "Bibliography publication year item 61",
+    "anchor_words": [
+      "studies",
+      "prehistory",
+      "deccan",
+      "godavari"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1-5",
+      "norm": "1-5",
+      "windowText": "y Account of the Search of Microlithic Man in Cujarat”. New Indian Antiquary, Vol. VII, No. 1 (April 1944), pp. 1-5 “Studies in Prehistory of the Deccan (Mahwrashtra): A Suv vey of the Godavari and the Kadva near Niphad®, Bulletin of the De"
+    },
+    "win_cand": {
+      "raw": "3",
+      "norm": "3",
+      "windowText": "repared by prof. G, M. Moraes. 63. 1945 'Studies in Prehistory of the I*ccan (Maharashtra) : a furthe survey of the Godavari (March Bulletin of Deccan College Reseatck l\".stitute. Vol, Vt and No. 3 (Match 1.31-1.37. 61. 19-16 \"A PaEE•oIithi"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 35,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "March 1945",
+    "norm_gt": "March 1945",
+    "description": "Item 63 Deccan College Bulletin issue date",
+    "anchor_words": [
+      "deccan",
+      "college",
+      "research",
+      "bulletin"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1950-51",
+      "norm": "1950-51",
+      "windowText": "Culture and People of Gujarat”, pp. 2834, (with 1, Karve).  “Studies in the Prehistory of Karnatak”, Bulletin of the Deccan  College Research Institute, Vol. X1 (1950-51). pp. 5682 (with Subba Rao & R. V. Joshi).  “Ancient and Prehistoric M"
+    },
+    "win_cand": {
+      "raw": "3",
+      "norm": "3",
+      "windowText": "es. 63. 1945 'Studies in Prehistory of the I*ccan (Maharashtra) : a furthe survey of the Godavari (March Bulletin of Deccan College Reseatck l\".stitute. Vol, Vt and No. 3 (Match 1.31-1.37. 61. 19-16 \"A PaEE•oIithic Handaxe from the Sabarmat"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 36,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1946",
+    "norm_gt": "1946",
+    "description": "Bibliography publication year item 64",
+    "anchor_words": [
+      "palaeolithic",
+      "handaxe",
+      "sabarmati"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "131-137",
+      "norm": "131-137",
+      "windowText": " \", Budletin of the Deccan College Ressarch Institute, Vol. VI and No. 3 (March 1965], pp. 131-137.  “A Palasolithic Handaxe from the Sabarmati Valley,” Journal al the University of Bombay, Vol. TV, Pr IV, (Jan. 1946}, ipp: 810,  “They used"
+    },
+    "win_cand": {
+      "raw": "1.31-1.37. 61. 19-16",
+      "norm": "1.31-1.37. 61. 19-16",
+      "windowText": "(March Bulletin of Deccan College Reseatck l\".stitute. Vol, Vt and No. 3 (Match 1.31-1.37. 61. 19-16 \"A PaEE•oIithic Handaxe from the Sabarmati Valley,\" Journal oi the Unrrersity oi Bombay, Vol. TV. Pt. TV, (Jan, 1946). jpp. 8-10. 66. 1947 "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 37,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1947",
+    "norm_gt": "1947",
+    "description": "Bibliography publication year item 66",
+    "anchor_words": [
+      "brain",
+      "surgery",
+      "continental"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "10,000",
+      "norm": "10,000",
+      "windowText": "e from the Sabarmati Valley,” Journal al the University of Bombay, Vol. TV, Pr IV, (Jan. 1946}, ipp: 810,  “They used brain surgery 10,000 years ago\"”, Continental Daily Mail, Paris, 14.6.1947.  “Life in the Stone Age in India\". The Hindu, "
+    },
+    "win_cand": {
+      "raw": "10.000",
+      "norm": "10,000",
+      "windowText": " the Sabarmati Valley,\" Journal oi the Unrrersity oi Bombay, Vol. TV. Pt. TV, (Jan, 1946). jpp. 8-10. 66. 1947 ••ney• brain surgery 10.000 years ago\". Continental Daily Mail, 14.6.!917. 67. \"Life in the Age in trxiia••. The sept. 1947. 68. "
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 38,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "10,000",
+    "norm_gt": "10,000",
+    "description": "Brain surgery antiquity years",
+    "anchor_words": [
+      "brain",
+      "surgery",
+      "years"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "10,000",
+      "norm": "10,000",
+      "windowText": "e from the Sabarmati Valley,” Journal al the University of Bombay, Vol. TV, Pr IV, (Jan. 1946}, ipp: 810,  “They used brain surgery 10,000 years ago\"”, Continental Daily Mail, Paris, 14.6.1947.  “Life in the Stone Age in India\". The Hindu, "
+    },
+    "win_cand": {
+      "raw": "10.000",
+      "norm": "10,000",
+      "windowText": " the Sabarmati Valley,\" Journal oi the Unrrersity oi Bombay, Vol. TV. Pt. TV, (Jan, 1946). jpp. 8-10. 66. 1947 ••ney• brain surgery 10.000 years ago\". Continental Daily Mail, 14.6.!917. 67. \"Life in the Age in trxiia••. The sept. 1947. 68. "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 39,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1949",
+    "norm_gt": "1949",
+    "description": "Bibliography publication year item 68",
+    "anchor_words": [
+      "primitive",
+      "microlithic",
+      "culture",
+      "karve"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "14, 1947",
+      "norm": "14, 1947",
+      "windowText": "o\"”, Continental Daily Mail, Paris, 14.6.1947.  “Life in the Stone Age in India\". The Hindu, Sept, 14, 1947. “Early Primitive Microlithic Culture and People of Gujarat”, pp. 2834, (with 1, Karve).  “Studies in the Prehistory of Karnatak”, B"
+    },
+    "win_cand": {
+      "raw": "1947. 68. 1949",
+      "norm": "1947. 68. 1949",
+      "windowText": "00 years ago\". Continental Daily Mail, 14.6.!917. 67. \"Life in the Age in trxiia••. The sept. 1947. 68. 1949 \"Early Primitive Microlithic Culture and People or Gujarat\". pp. 28-34, (with l, Karve). 193) \"Studies in the Prehistory of Karnata"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 40,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1950",
+    "norm_gt": "1950",
+    "description": "Bibliography publication year item 69",
+    "anchor_words": [
+      "prehistory",
+      "karnatak",
+      "subba"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1,",
+      "norm": "1",
+      "windowText": "14, 1947. “Early Primitive Microlithic Culture and People of Gujarat”, pp. 2834, (with 1, Karve).  “Studies in the Prehistory of Karnatak”, Bulletin of the Deccan  College Research Institute, Vol. X1 (1950-51). pp. 5682 (with Subba Rao & R."
+    },
+    "win_cand": {
+      "raw": "193",
+      "norm": "193",
+      "windowText": "1949 \"Early Primitive Microlithic Culture and People or Gujarat\". pp. 28-34, (with l, Karve). 193) \"Studies in the Prehistory of Karnatak\". Bulletin of tke Deccan Colley Resta•rch Institute, Vol. XI (1950-51). pp. 56-82. (with Subba Rao & R"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 41,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1953",
+    "norm_gt": "1953",
+    "description": "Bibliography publication year item 70",
+    "anchor_words": [
+      "ancient",
+      "prehistoric",
+      "maharashtra"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "5682",
+      "norm": "5682",
+      "windowText": "”, Bulletin of the Deccan  College Research Institute, Vol. X1 (1950-51). pp. 5682 (with Subba Rao & R. V. Joshi).  “Ancient and Prehistoric Maharashtra”, fournal of the Bombay Branch of Royal Asiatic Saciety, Vol. XXVIL, P1, 1, pp, 90-106."
+    },
+    "win_cand": {
+      "raw": "70. 1953",
+      "norm": "70. 1953",
+      "windowText": "in of tke Deccan Colley Resta•rch Institute, Vol. XI (1950-51). pp. 56-82. (with Subba Rao & R. V. Joshi). 70. 1953 \"Ancient and Prehistoric Maharaåtra••, Journal Bombay Branch of Roya! Asiatic Society, Vol. XX Vt!. Pt. pp 99-t(h. 71. 1955 "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 42,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1955",
+    "norm_gt": "1955",
+    "description": "Bibliography publication year item 71",
+    "anchor_words": [
+      "excavations",
+      "langhnaj"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1955",
+      "norm": "1955",
+      "windowText": "tic Saciety, Vol. XXVIL, P1, 1, pp, 90-106. mmmitlmwxﬁuml Man, Vol. IV, (Feb, 1955),  \"l‘hc Microlithic Industry of Langhnaj, Gujarat”, Journal of the am: Research Society, Vol. XVI1I, No, 4 (Oct. 56), pp. 275~ “Nathdwara., A Palaeolithic S"
+    },
+    "win_cand": {
+      "raw": "71. 1955",
+      "norm": "71. 1955",
+      "windowText": " Prehistoric Maharaåtra••, Journal Bombay Branch of Roya! Asiatic Society, Vol. XX Vt!. Pt. pp 99-t(h. 71. 1955 ' 'Excavations at Langhnaj, Gujarat\". Man, Vol. I V, (Feb. 1955), p, 33. 72. 'The Microlithic Industry of Langhnai, Gujarat\", Jo"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 43,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1956",
+    "norm_gt": "1956",
+    "description": "Bibliography publication year item 72",
+    "anchor_words": [
+      "microlithic",
+      "industry",
+      "langhnaj"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1955",
+      "norm": "1955",
+      "windowText": "ay Branch of Royal Asiatic Saciety, Vol. XXVIL, P1, 1, pp, 90-106. mmmitlmwxﬁuml Man, Vol. IV, (Feb, 1955),  \"l‘hc Microlithic Industry of Langhnaj, Gujarat”, Journal of the am: Research Society, Vol. XVI1I, No, 4 (Oct. 56), pp. 275~ “Nathd"
+    },
+    "win_cand": {
+      "raw": "33. 72",
+      "norm": "33. 72",
+      "windowText": " XX Vt!. Pt. pp 99-t(h. 71. 1955 ' 'Excavations at Langhnaj, Gujarat\". Man, Vol. I V, (Feb. 1955), p, 33. 72. 'The Microlithic Industry of Langhnai, Gujarat\", Journal o! the Gujarat Research Society. Vol. X VIII, No, 4 (Oct. 56), pp. 275- 7"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 44,
+    "page_id": "sankalia_p025-025",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1957",
+    "norm_gt": "1957",
+    "description": "Bibliography publication year item 74",
+    "anchor_words": [
+      "palaeolithic",
+      "site",
+      "rajputana"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "275",
+      "norm": "275",
+      "windowText": " of Langhnaj, Gujarat”, Journal of the am: Research Society, Vol. XVI1I, No, 4 (Oct. 56), pp. 275~ “Nathdwara., A Palaeolithic Site in Rajputana”, Journal of the  Palacontological Society of India, lnmunu{uo.\\fol.l (19561, pp. 95100,  “Ston"
+    },
+    "win_cand": {
+      "raw": "275- 73.",
+      "norm": "275- 73",
+      "windowText": "stry of Langhnai, Gujarat\", Journal o! the Gujarat Research Society. Vol. X VIII, No, 4 (Oct. 56), pp. 275- 73. A Palaeolithic Slte Rajputana\", Journal of the Palaeontologrcal Society of Indto, inaugural No. Vol. I, (1956). PP. t!E7 • •Ston"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 45,
+    "page_id": "sankalia_p104-104",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1925",
+    "norm_gt": "1925",
+    "description": "Burkitt and Cammiade publication year",
+    "anchor_words": [
+      "burkitt",
+      "cammiade",
+      "light",
+      "stone"
+    ],
+    "tess_anchor": true,
+    "win_anchor": false,
+    "tess_cand": {
+      "raw": "185,",
+      "norm": "185",
+      "windowText": "i versity of Warsaw, Warsaw for the discustion on the Bens region.  REFERENCES  Burkit M. C; and Catmmiade L. A Froht light an the Stone Age in southemt India’ Anirgwily, 185, IV, pp 758  Chatleswenthy J. K. The Quarternory Epi Edward Amobd"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 46,
+    "page_id": "sankalia_p104-104",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1967",
+    "norm_gt": "1967",
+    "description": "Charlesworth Quaternary Era publication year",
+    "anchor_words": [
+      "charlesworth",
+      "quaternary",
+      "era"
+    ],
+    "tess_anchor": false,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "erefore. tins cannot bc ignored. Author js grateful to Dr. S. ROZYCKI and CiiMILEW.SKi tefßtnely• 01 Department ot Quaternary Geology and Depatttnetil ot Archaeology. t•ni• versity oi Warsaw. Warsaw Ior the on the Bens region. REFERENCES M."
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 47,
+    "page_id": "sankalia_p104-104",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1939",
+    "norm_gt": "1939",
+    "description": "De Terra and Paterson publication year",
+    "anchor_words": [
+      "terra",
+      "paterson",
+      "ice",
+      "age"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "10,",
+      "norm": "10",
+      "windowText": "ia’ Anirgwily, 185, IV, pp 758  Chatleswenthy J. K. The Quarternory Epi Edward Amobd. Loadon, Vel 1L 1967, p. 10,  de Terra H and Paterson T. T, Stwdies in the loe Age wnd aswcmicd Human Carnegre bt of Washington, Pab, No. 40, 1559, g 205, "
+    },
+    "win_cand": {
+      "raw": "1939, .",
+      "norm": "1939,",
+      "windowText": " t•ni• versity oi Warsaw. Warsaw Ior the on the Bens region. REFERENCES M. C. and Cattttncsde L A— 'ich! em the Slijne Age in indca' i',es 'V, pp J, K— Eheu.rtå VA IL Tcrt• and Patcj•oti T. T io its •ttrd Cartu-rte intw puti So 1939, .Ei. V"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 48,
+    "page_id": "sankalia_p104-104",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1943",
+    "norm_gt": "1943",
+    "description": "De Terra and Movius publication year",
+    "anchor_words": [
+      "terra",
+      "movius",
+      "early",
+      "burma"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "11",
+      "norm": "11",
+      "windowText": "Paterson T. T, Stwdies in the loe Age wnd aswcmicd Human Carnegre bt of Washington, Pab, No. 40, 1559, g 205, 220  de Terra 11 ot Maviees F1. 1L, Ressond wn Early Maw in Burma, Tran, Aw. Phil. Sociiy. Vol XXX P 11, 1943, pp. 335-330,  Fuith"
+    },
+    "win_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": "l xxxn. PL. II. 1943. Fuithrttfee R. W.. R- V. in Vol, StratigraJ±y itt Mon•oottai Suero—no Cøqt. en Sew t.hlh.i. pp 'Early ia 't:eu«•', Fatvm, IS. No. New pti W99 W, G. 2nd 5 i.aj b vallevs, Ibuttpub'. Mathur L r. and M. it. tk•fhi. JL U. "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 49,
+    "page_id": "sankalia_p104-104",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1964",
+    "norm_gt": "1964",
+    "description": "Fairbridge African Ice-Age publication year",
+    "anchor_words": [
+      "fairbridge",
+      "ice",
+      "age",
+      "problems"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "THE CHARACTERISTICS OF THE PLEISTICENE CLIMATIC EVENTS  valley, 4v also the Chambs vatley beyond the Kangra valley have developed different glacial and pe"
+    },
+    "win_cand": {
+      "raw": "1939, .",
+      "norm": "1939,",
+      "windowText": " t•ni• versity oi Warsaw. Warsaw Ior the on the Bens region. REFERENCES M. C. and Cattttncsde L A— 'ich! em the Slijne Age in indca' i',es 'V, pp J, K— Eheu.rtå VA IL Tcrt• and Patcj•oti T. T io its •ttrd Cartu-rte intw puti So 1939, .Ei. V"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 50,
+    "page_id": "sankalia_p104-104",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1874",
+    "norm_gt": "1874",
+    "description": "Theobald Kangra glaciers publication year",
+    "anchor_words": [
+      "theobald",
+      "kangra",
+      "glaciers"
+    ],
+    "tess_anchor": true,
+    "win_anchor": false,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "THE CHARACTERISTICS OF THE PLEISTICENE CLIMATIC EVENTS  valley, 4v also the Chambs vatley beyond the Kangra valley have developed different glacial and periglacial churacteristics. While attempting the relation- ship of the "
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 51,
+    "page_id": "sankalia_p150-150",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "6 m",
+    "norm_gt": "6 m",
+    "description": "Depth of yellow kankary silt below modern bed",
+    "anchor_words": [
+      "yellow",
+      "kankary",
+      "silt"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "6",
+      "norm": "6",
+      "windowText": "yhum(hdim‘wmiﬁumbullndmmﬁll  are common.  Further, the bore-hole data collected at Belan Bri site Indicates that the yellow kankary silt of the Pleistocene i resting over the rock at & depth of about 6 m  i  i iiht iy  i B : i i 17  g i : :"
+    },
+    "win_cand": {
+      "raw": "6",
+      "norm": "6",
+      "windowText": "nd fill siructurrg are common, Further, the bore-hole data collected at nearby Belan Bridge Site- indicates that the yellow kankaty silt ot the Pleistocene age directly resting over thc rock at g depth of ab)ut 6 m below the IOVI 01 the Bel"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 52,
+    "page_id": "sankalia_p150-150",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "6 to 8 m.",
+    "norm_gt": "6 to 8 m",
+    "description": "Thickness of sub-recent alluvium",
+    "anchor_words": [
+      "sub",
+      "recent",
+      "alluvium",
+      "thickness"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "INVESTIGATIONS OF THE PLEISTOCENE  It oceurs mostly as a sheet deposit, The domintnce of sub-angular to sub- rounded pebbles over well rounded ones, the incorporation of locally. derived sand stone slabs throug"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "sting over thc rock at g depth of ab)ut 6 m below the IOVI 01 the Belam The oider alluvium has Exen mostly teplactd by sub-reent alluvium characteriæd by btack brown silt and sand which are atÜui to 8 m. tinck ut the brtdge site. 9, The pre"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 53,
+    "page_id": "sankalia_p150-150",
+    "class": "Class B",
+    "type": "measurement",
+    "true_value": "5 m",
+    "norm_gt": "5 m",
+    "description": "Level of pot holes in gravel II",
+    "anchor_words": [
+      "pot",
+      "holes",
+      "gravel"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "6.",
+      "norm": "6",
+      "windowText": "gest considerable discharge and higher capacity ol the stream.  6. The particle size analysis of the matrix of these gravels only shows how cotree CG1 is in comparison with CGiIl and CGITL. Morphomelric studies cleatly demonstrate that the "
+    },
+    "win_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": " to 8 m. tinck ut the brtdge site. 9, The present Belan appears to a rnr.fit and a rejuvenat«t stream The ptesettcc of pot holes al a level ot 5 m in the gravel tt indicate very recent rejuvenation ot the Belnn. Recent changes jn the course"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 54,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "400 A.D.",
+    "norm_gt": "400 AD",
+    "description": "Marriage date of Rudrasena II",
+    "anchor_words": [
+      "marriage",
+      "rudrasena"
+    ],
+    "tess_anchor": true,
+    "win_anchor": false,
+    "tess_cand": {
+      "raw": "11",
+      "norm": "11",
+      "windowText": " Mirashi himsell, Majumdar periods of twenty years to both Rudrissena 11 and Pravarasena [1 of the branch. Possibly Rudrasena 11 was married about 400 AD. He appea have occupied the throne alter a few year ol this celebration, sty about 405"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 55,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "415 A.D.",
+    "norm_gt": "415 AD",
+    "description": "Death year of Rudrasena II",
+    "anchor_words": [
+      "death",
+      "rudrasena"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": "NEALOGY AND CHRONOLOGY  Rudrasens 11 is assigned a period of 5 yeans by Mirashi with the view that #t the time of his death his elder son Divikarasena was # minor. Similar was the case with Pravarasena 11 and his son of the Basim branch, bu"
+    },
+    "win_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": "lso have ruled a period, Rudra:æna II is assigned a peruxl oi 5 Fars by Mitashi with the view that at the time of his death his elder son I)iväkatasetüi was a minor. Similar wa» the with Prasarasena and his; son ot the Basim branch. but tor"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 56,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "428 A.D.",
+    "norm_gt": "428 AD",
+    "description": "Death year of Divakarasena",
+    "anchor_words": [
+      "death",
+      "divakarasena"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": "NEALOGY AND CHRONOLOGY  Rudrasens 11 is assigned a period of 5 yeans by Mirashi with the view that #t the time of his death his elder son Divikarasena was # minor. Similar was the case with Pravarasena 11 and his son of the Basim branch, bu"
+    },
+    "win_cand": {
+      "raw": "5",
+      "norm": "5",
+      "windowText": "lso have ruled a period, Rudra:æna II is assigned a peruxl oi 5 Fars by Mitashi with the view that at the time of his death his elder son I)iväkatasetüi was a minor. Similar wa» the with Prasarasena and his; son ot the Basim branch. but tor"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 57,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "431 A.D.",
+    "norm_gt": "431 AD",
+    "description": "Pravarasena ascension year",
+    "anchor_words": [
+      "pravarasena",
+      "ascension"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "11",
+      "norm": "11",
+      "windowText": "ashi with the view that #t the time of his death his elder son Divikarasena was # minor. Similar was the case with Pravarasena 11 and his son of the Basim branch, but the former is allotted the duration of 10 years by Mirashi himsell, Majum"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "seems to have been hiy pre-coronation name. The recording 01 such a nan* along wilh coronation name may imply that Pravarasena acted as yuvanija for srrndime With the name tjanudnrasena un&r the regency of his mother Pra• bhåvatiguptfi. If "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 58,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "count",
+    "true_value": "30 years",
+    "norm_gt": "30 years",
+    "description": "Duration of Pravarasena reign",
+    "anchor_words": [
+      "pravarasena",
+      "reign",
+      "duration"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "11",
+      "norm": "11",
+      "windowText": "ashi with the view that #t the time of his death his elder son Divikarasena was # minor. Similar was the case with Pravarasena 11 and his son of the Basim branch, but the former is allotted the duration of 10 years by Mirashi himsell, Majum"
+    },
+    "win_cand": {
+      "raw": "01",
+      "norm": "01",
+      "windowText": "seems to have been hiy pre-coronation name. The recording 01 such a nan* along wilh coronation name may imply that Pravarasena acted as yuvanija for srrndime With the name tjanudnrasena un&r the regency of his mother Pra• bhåvatiguptfi. If "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 59,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "460 A.D.",
+    "norm_gt": "460 AD",
+    "description": "Death year of father in 460 A.D.",
+    "anchor_words": [
+      "death",
+      "father"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "til his year hecause his minority, accepting that it ended in his 16th year, must ha terminated a few years after the death of his father.  But it is to be remembered that a king's first jssue need not be & male.  Divakarasena had not reach"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "s 13th year because his tmnonty. accepting that it ended in his 16th year. must have terminated a tew years atter the death of his father. But it is to tx• remembered that a kmg•s first issue not be a male had not reached his maiority in hi"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 60,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "455 A.D.",
+    "norm_gt": "455 AD",
+    "description": "Birth year of Prithivishena II",
+    "anchor_words": [
+      "birth",
+      "prithivishena"
+    ],
+    "tess_anchor": false,
+    "win_anchor": false,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 61,
+    "page_id": "sankalia_p210-210",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "490 A.D.",
+    "norm_gt": "490 AD",
+    "description": "Death year of father in 490 A.D.",
+    "anchor_words": [
+      "death",
+      "father"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "til his year hecause his minority, accepting that it ended in his 16th year, must ha terminated a few years after the death of his father.  But it is to be remembered that a king's first jssue need not be & male.  Divakarasena had not reach"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "s 13th year because his tmnonty. accepting that it ended in his 16th year. must have terminated a tew years atter the death of his father. But it is to tx• remembered that a kmg•s first issue not be a male had not reached his maiority in hi"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 62,
+    "page_id": "sankalia_p280-280",
+    "class": "Class B",
+    "type": "date",
+    "true_value": "1884",
+    "norm_gt": "1884",
+    "description": "Gazetteer of Bombay Presidency publication year",
+    "anchor_words": [
+      "gazetteer",
+      "bombay",
+      "presidency"
+    ],
+    "tess_anchor": false,
+    "win_anchor": false,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 63,
+    "page_id": "chakrabarti_p015-015",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1534",
+    "norm_gt": "1534",
+    "description": "Year of arrival from Portugal",
+    "anchor_words": [
+      "arrival",
+      "portugal"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1534 ,",
+      "norm": "1534",
+      "windowText": "t, at the present day, the pagoda is much defiled by cattle getting inside, but in the year 1534 , when I came from Portugal, it was a very fine sight.*  Elephanta and (presumably) Kanheri received fuller treatment at the hands of another P"
+    },
+    "win_cand": {
+      "raw": "1534 ,",
+      "norm": "1534",
+      "windowText": "at, at the present day, the pagoda is much defiled by cattle getting inside, but in the yar 1534 , when I came from Portugal, it was a very fine sight.20 Elephanta and (presumably) Kanheri received fuller treatment at the hands of another P"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 64,
+    "page_id": "chakrabarti_p015-015",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1538",
+    "norm_gt": "1538",
+    "description": "Year Dom Joao de Castro came to India",
+    "anchor_words": [
+      "castro",
+      "india"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1538",
+      "norm": "1538",
+      "windowText": "ight.*  Elephanta and (presumably) Kanheri received fuller treatment at the hands of another Portuguese, Dom Joao de Castro who came to India in 1538 and was the viceroy of Goa during 1545-48. His attitude was one of unabashed admiration. R"
+    },
+    "win_cand": {
+      "raw": "1538",
+      "norm": "1538",
+      "windowText": "ight.20 Elephanta and (presumably) Kanheri received fuller treatment at the hands of another Portuguese, Dom Joao de Castro who to India in 1538 and was the viceroy ofGoa during 1545-48. His attitude was one ofunabashed admiration. Elephant"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 65,
+    "page_id": "chakrabarti_p015-015",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1545-48",
+    "norm_gt": "1545-48",
+    "description": "Viceroy of Goa term",
+    "anchor_words": [
+      "viceroy",
+      "goa",
+      "term"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1538",
+      "norm": "1538",
+      "windowText": "ceived fuller treatment at the hands of another Portuguese, Dom Joao de Castro who came to India in 1538 and was the viceroy of Goa during 1545-48. His attitude was one of unabashed admiration. Regarding Elephanta he writes:  All the works,"
+    },
+    "win_cand": {
+      "raw": "1538",
+      "norm": "1538",
+      "windowText": "ri received fuller treatment at the hands of another Portuguese, Dom Joao de Castro who to India in 1538 and was the viceroy ofGoa during 1545-48. His attitude was one ofunabashed admiration. Elephanta he writes: All the works, images, colu"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 66,
+    "page_id": "chakrabarti_p015-015",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1575",
+    "norm_gt": "1575",
+    "description": "Universal cosmography publication year in Paris",
+    "anchor_words": [
+      "universal",
+      "cosmography",
+      "paris"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1575",
+      "norm": "1575",
+      "windowText": "nformation about Elephanta had reached the west through the Jesuitsources. Ina volume published in 1575 in Paris on universal cosmography the author, A. Thevet, not only referred to the “incredible grandeur” of Elephanta but also “sought to"
+    },
+    "win_cand": {
+      "raw": "1575",
+      "norm": "1575",
+      "windowText": "formation about Elephanta had reached the west through theJesuit sources. In a volume published in 1575 in Paris on universal cosmography the author, A. Thevet, not only referred to the 'fincredible grandeur\" of Elephanta but also \"sought t"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 67,
+    "page_id": "chakrabarti_p015-015",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1590",
+    "norm_gt": "1590",
+    "description": "Italian publication of Elephanta year",
+    "anchor_words": [
+      "italian",
+      "publication",
+      "elephanta"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1590",
+      "norm": "1590",
+      "windowText": "race the imprint of Classical Antiquity in the art of Elephanta.”? It has also been pointed out by Mitter that in an Italian publication of 1590 Elephanta was considered an antique Roman temple, supposedly built by Alexander to mark the end"
+    },
+    "win_cand": {
+      "raw": "1590",
+      "norm": "1590",
+      "windowText": "ace the imprint ofClassical Antiquity in the art of Elephanta. \"24 It has also been pointed out by Mitter that in an Italian publication of 1590 Elephanta was considered an antique Roman temple, supposedly built by Alecander to mark the end"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 68,
+    "page_id": "chakrabarti_p016-016",
+    "class": "Class A",
+    "type": "count",
+    "true_value": "400",
+    "norm_gt": "400",
+    "description": "Bignes of a village in houses count",
+    "anchor_words": [
+      "bignes",
+      "village",
+      "houses"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "400",
+      "norm": "400",
+      "windowText": "l India, whereof one of their holes is cut out from under a hill of hard stone, and is of compasse within, about the bignes of a village of 400 houses: when you come to the foote of the hill: there is a Pagodes house, with Images therein cu"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "l India, whereof one of their holes is cut out from under a hill of hard stone, and is of compasse within, about the bignes ofa village of400 houses: when you come to the foote of the hill: there is a Pagodes house, with Images therein cut "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 69,
+    "page_id": "chakrabarti_p016-016",
+    "class": "Class A",
+    "type": "count",
+    "true_value": "300",
+    "norm_gt": "300",
+    "description": "Count of four galleries",
+    "anchor_words": [
+      "galleries",
+      "four"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "300,",
+      "norm": "300",
+      "windowText": "ie with Chambers (and Pagodes), (so that) to be briefe, all the chambers and houses within (this compasse or) foure Galleries, are 300, and are al full of carved Pagodes, of so fearfull, horrible and develish formes (and shapes), that it is"
+    },
+    "win_cand": {
+      "raw": "300,",
+      "norm": "300",
+      "windowText": "ie with Chambers (and Pagodes), (so that) to bc briefe, all the chambers and houses within (this compasse or) foure Galleries, are 300, and are al full of carved Pagodes, Of so fearfull, horrible and develish formes (and shapes), that it is"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 70,
+    "page_id": "chakrabarti_p016-016",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1616",
+    "norm_gt": "1616",
+    "description": "Couto seventh Decade publication year",
+    "anchor_words": [
+      "couto",
+      "seventh",
+      "decade"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1616.",
+      "norm": "1616",
+      "windowText": "inschoten copied Orta’s account of Elephanta and caves in the island of Salsettte.  The Portuguese historian Diego do Couto published the seventh “Decade” ol his.Asia in 1616. The chapters 10 and 11 of Book 111 of Decade VII contain  Google"
+    },
+    "win_cand": {
+      "raw": "1616.",
+      "norm": "1616",
+      "windowText": "hat Linschoten copied Orta's account of Elephanta caves in the island of Salsettte. The Portuguese historian Diego do Couto published the seventh \"Decade\" of'his.Asia in 1616. The chapters IO and I I oiBook III of Decade VII contain Digitiz"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 71,
+    "page_id": "chakrabarti_p018-018",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1672",
+    "norm_gt": "1672",
+    "description": "Year J. Fryer visited Kanheri and Elephanta",
+    "anchor_words": [
+      "fryer",
+      "kanheri",
+      "elephanta"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1672",
+      "norm": "1672",
+      "windowText": "rought with considerable perfection. The figures have on their heads three very beautiful crowns.*  The Englishman J. Fryer visited Kanheri and Elephanta in 1672:  We steered by the south side of the bay to touch at Elephanta, so called fro"
+    },
+    "win_cand": {
+      "raw": "31",
+      "norm": "31",
+      "windowText": "rought with considerable perfection. The figures have on their heads three very beautiful crowns.31 The Englishman J. Fryer visited Kanheri and Elephanta in 1672: We steered by the south side of the bay to touch at Elephanta, so called from"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 72,
+    "page_id": "chakrabarti_p018-018",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1689",
+    "norm_gt": "1689",
+    "description": "Year Revd. J. Ovington saw them",
+    "anchor_words": [
+      "ovington",
+      "saw"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1689.",
+      "norm": "1689",
+      "windowText": "g their vanquished knight stoop for mercy . .. this seems to be of later date than that of Canorein.*  The Revd. J. Ovington saw them in 1689. In Elephanta there are “the representations of the first race of mortals, which, according to the"
+    },
+    "win_cand": {
+      "raw": "1689.",
+      "norm": "1689",
+      "windowText": "ght hands making their vanquished knight stoop för mercy 32 to be of later date than that of Canorein. The Revd. J. Ovington saw them in 1689. In Elephanta there are \"the representations of the first race of mortals, which, according to the"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 73,
+    "page_id": "chakrabarti_p018-018",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1712",
+    "norm_gt": "1712",
+    "description": "Captain Pyke journal date in Bombay harbour",
+    "anchor_words": [
+      "captain",
+      "pyke",
+      "journal",
+      "bombay"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "323-32",
+      "norm": "323-32",
+      "windowText": "in Arckaeologia, 7 (1785): 323-32 under the following heading:  Account of a curious pagoda near Bombay, drawn up by Captain Pyke, who was afterwards governor of St. Helena. It is dated from on board the stringer East-Indiaman in Bombay har"
+    },
+    "win_cand": {
+      "raw": "323-32",
+      "norm": "323-32",
+      "windowText": "m in Archaeologia, 7 (1785): 323-32 under the following heading: Account Ofa curious pagoda near Bombay, drawn up by Captain Pyke, who was afterwards governor of St. Helena. It is dated from on board the stringer East-Indiaman in Bombay har"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 74,
+    "page_id": "chakrabarti_p018-018",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1785",
+    "norm_gt": "1785",
+    "description": "Archaeologia publication year",
+    "anchor_words": [
+      "archaeologia",
+      "publication"
+    ],
+    "tess_anchor": false,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "win_cand": {
+      "raw": "7",
+      "norm": "7",
+      "windowText": "anheri deserve mention in this context. The first one was drawn up by Alexander Dalrymple and published by him in Archaeologia, 7 (1785): 323-32 under the following heading: Account Ofa curious pagoda near Bombay, drawn up by Captain Pyke, "
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 75,
+    "page_id": "chakrabarti_p019-019",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1750",
+    "norm_gt": "1750",
+    "description": "John Henry Grose visit to Elephanta",
+    "anchor_words": [
+      "grose",
+      "elephanta"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1750.",
+      "norm": "1750",
+      "windowText": "s sitting with their legs under them, as the present Malabars do.”®  A mid-eighteenth century report is by John Henry Grose who visited Elephanta in 1750. According to him this was “‘a far more bold attempt than that of the Pyramids of Egyp"
+    },
+    "win_cand": {
+      "raw": "1750.",
+      "norm": "1750",
+      "windowText": " sitting with their legs under them, as the present Malabars do. \"38 A mid-eighteenth century report is by John Henry Grose who visited Elephanta in 1750. According to him this was \"a far more bold attonpt than that of the Pyramids of Egypt"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 76,
+    "page_id": "chakrabarti_p019-019",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1695",
+    "norm_gt": "1695",
+    "description": "Gemelli Careri visit to Elephanta",
+    "anchor_words": [
+      "gemelli",
+      "careri",
+      "elephanta"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1695",
+      "norm": "1695",
+      "windowText": "oregoing references to Elephanta are by no means exhaustive—for instance, in 1695 the Italian traveller John Francis Gemelli Careri visited Elephanta—but these references bring out the general curiosity about this easily accessible monument"
+    },
+    "win_cand": {
+      "raw": "1695",
+      "norm": "1695",
+      "windowText": " references to Elephanta are by no means exhaustive—for instance, in 1695 the Italian traveller John Francis Ganelli Careri visited Elephanta—but these references bring out the general curiosity about this easily accessible monument and als"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 77,
+    "page_id": "chakrabarti_p019-019",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1666",
+    "norm_gt": "1666",
+    "description": "M. de Thevenot visit to Ellora",
+    "anchor_words": [
+      "thevenot",
+      "ellora"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1666",
+      "norm": "1666",
+      "windowText": "d generally accurate.  The most important description of Ellora of this period may be found in the records of M. de Thevenot, a French traveller who visited the site in 1666: “At  Google "
+    },
+    "win_cand": {
+      "raw": "1666",
+      "norm": "1666",
+      "windowText": "nd generally accurate. The most important description of Ellora of this period may be found in the records of M. de Thevenot, a French traveller who visited the site in 1666: ' 'At Digitized by oogle Original from UNIVERSITY OF MICHIGAN"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 78,
+    "page_id": "chakrabarti_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1676",
+    "norm_gt": "1676",
+    "description": "Diaries of Streynsham Master entry date",
+    "anchor_words": [
+      "streynsham",
+      "master",
+      "diaries"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1676",
+      "norm": "1676",
+      "windowText": "y to the European sailors of the seventeenth century. For instance, for 23 December 1676 The Diaries of Strey- nsham Master contains the following entry: “Wee sailed in sight of the black Pagoda and the white Pagoda”.*® It is also worth cit"
+    },
+    "win_cand": {
+      "raw": "1676",
+      "norm": "1676",
+      "windowText": "y to the European sailors of the seventeenth century. For instance, for 23 December 1676 The Diaries of Strey- nshan Master contains the following entry: \"Wee sailed in sight of the black 45 Pagoda and the white Pagoda . It is also worth ci"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 79,
+    "page_id": "chakrabarti_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1758",
+    "norm_gt": "1758",
+    "description": "Second edition publication year",
+    "anchor_words": [
+      "second",
+      "edition",
+      "publication"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1758",
+      "norm": "1758",
+      "windowText": "entry: “Wee sailed in sight of the black Pagoda and the white Pagoda”.*® It is also worth citing from a volume whose second edition was published in 1758:  “|In Orissa) they worship an idol called Gopalsami, whose figure nearly resembles th"
+    },
+    "win_cand": {
+      "raw": "1758",
+      "norm": "1758",
+      "windowText": "ntry: \"Wee sailed in sight of the black 45 Pagoda and the white Pagoda . It is also worth citing from a volume whose second edition was published in 1758: \"lln Orissa) they worship an idol called Gopalsami, whose figure nearly resembles tha"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 80,
+    "page_id": "chakrabarti_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1754",
+    "norm_gt": "1754",
+    "description": "Anquetil du Perron arrival in India",
+    "anchor_words": [
+      "anquetil",
+      "perron",
+      "arrival"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "ns of monuments began to appear, and secondly, research began primarily on the historical geography of the country. Anquetil du Perron who is introduced on the title page of his book Zend-Avesta, Ouvrage de Zoroastre® as the royal interpre-"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "ns of monuments began to appear, and secondly, research began primarily on the historical geography of the country. Anquetil du Perron who is introduced on the title page ofhis book Zaid-Avesta, Ouvrage de Zoroastre49 as the royal interpre-"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 81,
+    "page_id": "chakrabarti_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1758",
+    "norm_gt": "1758",
+    "description": "Examination of Ellora caves year",
+    "anchor_words": [
+      "examination",
+      "ellora",
+      "caves"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1758",
+      "norm": "1758",
+      "windowText": "yale des Inscrip- tions and Belles-Lettres came to India in 1754. In 1758 he minutely examined the rock-cut caves of Ellora and measured their dimensions. He was interested in the plans of the complex as well as in the associated mythology."
+    },
+    "win_cand": {
+      "raw": "1758",
+      "norm": "1758",
+      "windowText": "yale des Inscrip- tions and Belles-Lettres came to India in 1754. In 1758 he minutely examined the rock-cut caves of Ellora and measured their dimensions. He was interested in the plans of the complex as well as in the associated mythology."
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 82,
+    "page_id": "chakrabarti_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1760",
+    "norm_gt": "1760",
+    "description": "Du Perron Elephanta investigation year",
+    "anchor_words": [
+      "perron",
+      "elephanta",
+      "investigation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1760",
+      "norm": "1760",
+      "windowText": " dimensions. He was interested in the plans of the complex as well as in the associated mythology.® In about 1760 du Perron investigated Elephanta:  My first attention to the pagodas of Elephanta was to look for ancient inscriptions as at K"
+    },
+    "win_cand": {
+      "raw": "1760",
+      "norm": "1760",
+      "windowText": " dimensions. He was interested in the plans of the complex as well as in the associated mythology.w In about 1760 du Perron investigated Elephanta: My first attention to the pagodas of Elephanta was to look för ancient inscriptions as at Ke"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 83,
+    "page_id": "chakrabarti_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1763",
+    "norm_gt": "1763",
+    "description": "Carsten Niebuhr Bombay arrival year",
+    "anchor_words": [
+      "carsten",
+      "niebuhr",
+      "bombay"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "13",
+      "norm": "13",
+      "windowText": " is not always equal to one’s spirit, and at a time when the fury of war had ravaged the finest provinces.”  Carsten Niebuhr, a captain of engineers in the service of the king of Denmark, came to Bombay from Mokha in Arabia on 13 September "
+    },
+    "win_cand": {
+      "raw": "53",
+      "norm": "53",
+      "windowText": "is not always equal to one's spirit, and at a time when the fury 53 of war had ravaged thc finest provinces. Carsten Niebuhr, a captain of engineers in the service of the king of Denmark, came to Bombay from Mokha in Arabia on 13 September "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 84,
+    "page_id": "chakrabarti_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1780",
+    "norm_gt": "1780",
+    "description": "Voyage en Arabie publication in Amsterdam",
+    "anchor_words": [
+      "voyage",
+      "arabie",
+      "amsterdam"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1763.",
+      "norm": "1763",
+      "windowText": "e service of the king of Denmark, came to Bombay from Mokha in Arabia on 13 September 1763. The second volume of his Voyage en Arabie and en d’autres Pays Circonvoisins published in Amsterdam in 1780 contains nine illustrations of Elephanta"
+    },
+    "win_cand": {
+      "raw": "1763.",
+      "norm": "1763",
+      "windowText": "e service of the king of Denmark, came to Bombay from Mokha in Arabia on 13 September 1763. The second volume of his Voyage en Arabie and en d'autres Pays Circonvoisins published in Amsterdaxn in 1780 contains nine illustrations of Elephant"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 85,
+    "page_id": "chakrabarti_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1792",
+    "norm_gt": "1792",
+    "description": "English translation publication in Edinburgh",
+    "anchor_words": [
+      "english",
+      "translation",
+      "edinburgh"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1792.",
+      "norm": "1792",
+      "windowText": "n d’autres Pays Circonvoisins published in Amsterdam in 1780 contains nine illustrations of Elephanta.®* An abridged English translation of his work was published in Edinburgh in 1792. Niebuhr was possibly the first to concentrate almost ex"
+    },
+    "win_cand": {
+      "raw": "54",
+      "norm": "54",
+      "windowText": " d'autres Pays Circonvoisins published in Amsterdaxn in 1780 contains nine illustrations of Elephanta.54 An abridged English translation of his work was published in Edinburgh in 1792. Niebuhr was possibly the first to concentrate almost ex"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 86,
+    "page_id": "chakrabarti_p065-065",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1940s",
+    "norm_gt": "1940s",
+    "description": "Stuart Piggott writing decade",
+    "anchor_words": [
+      "stuart",
+      "piggott",
+      "writing"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "e too numerous and too striking to be accidental.  The megalithic origin of the Buddhist stupas was written about by Stuart Piggott in the 1940s, and in Cunningham’s apparent belief in the eastern origin of the Druids on finds a throwback t"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "re too numerous and too striking to be accidental. The megalithic origin of the Buddhist stupas was written about by Stuart Piggott in the 1940s, and in Cunningham's apparent belief in the eastern origin of the Druids on finds a throwback t"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 87,
+    "page_id": "chakrabarti_p130-130",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1902-44",
+    "norm_gt": "1902-44",
+    "description": "John Marshall Period date range",
+    "anchor_words": [
+      "marshall",
+      "period"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1902-44",
+      "norm": "1902-44",
+      "windowText": "Chapter Three  The John Marshall Period (1902-44)  THE ROLE OF LORD CURZON  The period between the retirement of James Burgess (1889) and the coming"
+    },
+    "win_cand": {
+      "raw": "1902-44",
+      "norm": "1902-44",
+      "windowText": "Chapter Three \"Ihe John Marshall Period ( 1902-44) THE ROLE OF LORD CURZON The period between the retirement of James Burgess ( 1889) arxi the conun"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 88,
+    "page_id": "chakrabarti_p130-130",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1889",
+    "norm_gt": "1889",
+    "description": "James Burgess retirement year",
+    "anchor_words": [
+      "james",
+      "burgess",
+      "retirement"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1889",
+      "norm": "1889",
+      "windowText": "Chapter Three  The John Marshall Period (1902-44)  THE ROLE OF LORD CURZON  The period between the retirement of James Burgess (1889) and the coming of Lord Curzon as the viceroy (1899) has been described by Roy as “a bleak interlude”."
+    },
+    "win_cand": {
+      "raw": "1889",
+      "norm": "1889",
+      "windowText": "Chapter Three \"Ihe John Marshall Period ( 1902-44) THE ROLE OF LORD CURZON The period between the retirement of James Burgess ( 1889) arxi the conung of Inrd Curzon as the viceroy (1899) has been described by Roy as \"a bleak interlude"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 89,
+    "page_id": "chakrabarti_p130-130",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1899",
+    "norm_gt": "1899",
+    "description": "Lord Curzon viceroy year",
+    "anchor_words": [
+      "curzon",
+      "viceroy"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1899",
+      "norm": "1899",
+      "windowText": "(1902-44)  THE ROLE OF LORD CURZON  The period between the retirement of James Burgess (1889) and the coming of Lord Curzon as the viceroy (1899) has been described by Roy as “a bleak interlude”.! This is perhaps not a correct assessment of"
+    },
+    "win_cand": {
+      "raw": "1899",
+      "norm": "1899",
+      "windowText": " 1902-44) THE ROLE OF LORD CURZON The period between the retirement of James Burgess ( 1889) arxi the conung of Inrd Curzon as the viceroy (1899) has been described by Roy as \"a bleak interlude\".llhis is perhaps not a correct assessment of "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 90,
+    "page_id": "chakrabarti_p130-130",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1900",
+    "norm_gt": "1900",
+    "description": "Asiatic Society speech year",
+    "anchor_words": [
+      "asiatic",
+      "society",
+      "speech"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1900",
+      "norm": "1900",
+      "windowText": " government within a few weeks of his arrival in India. In a speech delivered on 6 February 1900 at a meeting of the Asiatic Society, the institution which began with Warren Hastings, one of the founders of the British rule in India, as its"
+    },
+    "win_cand": {
+      "raw": "1900",
+      "norm": "1900",
+      "windowText": " government within a few weeks of his arrival in India. In a speech delivered on 6 February 1900 at a meeting of the Asiatic Society, the institution which began with Warren Hastings, one of the founders of the British rule in India, as its"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 91,
+    "page_id": "chakrabarti_p215-215",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1875",
+    "norm_gt": "1875",
+    "description": "Blanford discovery in Sindh year",
+    "anchor_words": [
+      "blanford",
+      "discovery",
+      "sindh"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1875.",
+      "norm": "1875",
+      "windowText": "d.®  A major observation in the context of the ““flint cores and flakes from Sakhar and Rohri” in Sindh was made by Blanford in 1875. He noted that the cores were found both in the Indus channel and on the hills around Rohri. He noted that "
+    },
+    "win_cand": {
+      "raw": "1875.",
+      "norm": "1875",
+      "windowText": "ld.58 A major observation in the context of the \"flint cores and flakes from Sakhar and Rohri\" in Sindh was made by Blanford in 1875. He noted that the cores were found both in the Indus channel and on the hills around Rohri. He noted that "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 92,
+    "page_id": "chakrabarti_p215-215",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1877",
+    "norm_gt": "1877",
+    "description": "Blanford Sutkagendor recording year",
+    "anchor_words": [
+      "blanford",
+      "sutkagendor"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1877",
+      "norm": "1877",
+      "windowText": "rial collected by Major Mockler. The Harappan identity of Sutkagendor was established by Stein but as early as 1877 Blanford was recording at Sutkagendor what must be considered Harappan material now.  Amongst the specimens on the table fro"
+    },
+    "win_cand": {
+      "raw": "1877",
+      "norm": "1877",
+      "windowText": "erial collected by Major Mockler. The Harappan identity ofSutkagendor was established by Stein but as early as 1877 Blanford was recording at Sutkagendorwhat must be considered Harappan material now. Amongst the specimens on the table from "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 93,
+    "page_id": "chakrabarti_p215-215",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "40 miles",
+    "norm_gt": "40 miles",
+    "description": "Distance north-west of Gwadar in miles",
+    "anchor_words": [
+      "distance",
+      "north",
+      "west",
+      "gwadar"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "40",
+      "norm": "40",
+      "windowText": "agendor what must be considered Harappan material now.  Amongst the specimens on the table from Sutkagendor, 40 miles north- west of Gwadar, are some very well shaped flint knives, precisely such as we might expect to have been split off fr"
+    },
+    "win_cand": {
+      "raw": "40",
+      "norm": "40",
+      "windowText": "tkagendorwhat must be considered Harappan material now. Amongst the specimens on the table from Sutkagendor, 40 miles north- west ofGwadar, are some very well shaped flint knives, precisely such as we might expect to have been split off fro"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 94,
+    "page_id": "chakrabarti_p215-215",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1923",
+    "norm_gt": "1923",
+    "description": "Panchanan Mitra Prehistoric India first edition",
+    "anchor_words": [
+      "panchanan",
+      "mitra",
+      "prehistoric",
+      "india"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1923",
+      "norm": "1923",
+      "windowText": "laneous lithic discoveries continued to be made till the 1920s but the most important publication of the period was Panchanan Mitra’s Prehistoric India which was first published in 1923 but underwent a second edition in 1927. This was very "
+    },
+    "win_cand": {
+      "raw": "1923",
+      "norm": "1923",
+      "windowText": "laneous lithic discoveries continued to be made till the 1920s but the most important publication of the period was Panchanan Mitra's Prehistoric India which was first published in 1923 but underwent a second edition in 1927. This was very "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 95,
+    "page_id": "chakrabarti_p215-215",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1927",
+    "norm_gt": "1927",
+    "description": "Panchanan Mitra second edition year",
+    "anchor_words": [
+      "panchanan",
+      "mitra",
+      "second",
+      "edition"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1923",
+      "norm": "1923",
+      "windowText": "lithic discoveries continued to be made till the 1920s but the most important publication of the period was Panchanan Mitra’s Prehistoric India which was first published in 1923 but underwent a second edition in 1927. This was very much a g"
+    },
+    "win_cand": {
+      "raw": "1923",
+      "norm": "1923",
+      "windowText": "lithic discoveries continued to be made till the 1920s but the most important publication of the period was Panchanan Mitra's Prehistoric India which was first published in 1923 but underwent a second edition in 1927. This was very much a g"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 96,
+    "page_id": "rajan_p019-019",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "3700 BC",
+    "norm_gt": "3700 BC",
+    "description": "Biblical rabbinical creation date",
+    "anchor_words": [
+      "creation",
+      "rabbinical",
+      "world"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "3700 BC",
+      "norm": "3700 BC",
+      "windowText": "dieval Christians believed that the antiquity of the world was very recent. Rabbinical authorities estimated that the world had been created about 3700 BC, while Pope Clement VIII dated the creation to 5199 BC and ‘finally the 17\" cen Archb"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "God Brahma created thc world and the world would end with kali yuga. l.ikewise, there are also several views on the creation of humanity. According to Christianity, liumanity was created by God in the Garden of Eden and spread from there to"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 97,
+    "page_id": "rajan_p019-019",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "5199 BC",
+    "norm_gt": "5199 BC",
+    "description": "Pope Clement VIII creation date",
+    "anchor_words": [
+      "clement",
+      "creation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "3700 BC",
+      "norm": "3700 BC",
+      "windowText": "he world was very recent. Rabbinical authorities estimated that the world had been created about 3700 BC, while Pope Clement VIII dated the creation to 5199 BC and ‘finally the 17\" cen Archbishop James Ussher was to set it at 4004 BC. They "
+    },
+    "win_cand": {
+      "raw": "3700 BC",
+      "norm": "3700 BC",
+      "windowText": "e world was very recent. Rabbinical authorities estimated that the vvorld had been created about 3700 BC, while Pope Clement VIII dated the creation to 5199 BC and finally the 1 7th century Archbishop James Ussher was to set it at 4004 BC. "
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 98,
+    "page_id": "rajan_p019-019",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "4004 BC",
+    "norm_gt": "4004 BC",
+    "description": "Archbishop James Ussher creation date",
+    "anchor_words": [
+      "james",
+      "ussher",
+      "creation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "17",
+      "norm": "17",
+      "windowText": "been created about 3700 BC, while Pope Clement VIII dated the creation to 5199 BC and ‘finally the 17\" cen Archbishop James Ussher was to set it at 4004 BC. They believed that the present world would end with the return of Christ. In Hindu "
+    },
+    "win_cand": {
+      "raw": "1",
+      "norm": "1",
+      "windowText": "created about 3700 BC, while Pope Clement VIII dated the creation to 5199 BC and finally the 1 7th century Archbishop James Ussher was to set it at 4004 BC. They believed that the present world would end with the return of Christ. In Hindu "
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 99,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1514",
+    "norm_gt": "1514",
+    "description": "Cyriacus of Ancona fire year",
+    "anchor_words": [
+      "cyriacus",
+      "ancona",
+      "fire"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "14",
+      "norm": "14",
+      "windowText": "cient World  Classical Archaeology  The appreciation of classical antiquity took a momentum in late 14\" century AD. Cyriacus of Ancona (Ciriaco de’ Pizzicolli), who travelled in Greece and Mediterranean for 25 years for documenting the arch"
+    },
+    "win_cand": {
+      "raw": "25",
+      "norm": "25",
+      "windowText": "ient World 9 Classical Archaeology The appreciation of classical antiquity took a momentum in late 14th century AD. Cyriacus of Ancona (Ciriaco de' Pizzicolli), who travelled in Greece and Mediterranean for 25 years for documenting the arch"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 100,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "79 AD",
+    "norm_gt": "79 AD",
+    "description": "Vesuvius eruption date",
+    "anchor_words": [
+      "vesuvius",
+      "eruption",
+      "pompeii"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "79 AD",
+      "norm": "79 AD",
+      "windowText": "t sort only.  History of Archaeology 21  The landowner under which Pompeii was buried due to the eruption of nearby Vesuvius in August 79 AD, rented the right to entrepreneurs to dig there-by cubic yard. It evoked great interest in classica"
+    },
+    "win_cand": {
+      "raw": "79 AD",
+      "norm": "79 AD",
+      "windowText": "hat sort only. History of Archaeology 21 The landowner under which Pompeii was buried due to the eruption of nearby Vesuvius In August 79 AD, rented the right to entrepreneurs to dig there by cubic yard. It evoked great interest in classica"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 101,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1764",
+    "norm_gt": "1764",
+    "description": "Winckelmann History of Ancient Art year",
+    "anchor_words": [
+      "winckelmann",
+      "ancient",
+      "art"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1764",
+      "norm": "1764",
+      "windowText": "placed for investigation. This led to the establishment of art history as a separate branch. German scholar Johann Winckelmann’s work Geschichte der kunst des Altertums (History of Ancient Art 1764) provided the first periodization of class"
+    },
+    "win_cand": {
+      "raw": "1 764",
+      "norm": "1764",
+      "windowText": "placed for investigation. This led to the establishment of art history as a separate branch. German scholar Johann Winckelmann's work Geschichte der kunst des Allertums (History of Ancient Art 1 764) provided the first periodization of clas"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 102,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1798-9",
+    "norm_gt": "1798-9",
+    "description": "Napoleon invasion of Egypt years",
+    "anchor_words": [
+      "napoleon",
+      "invasion",
+      "egypt"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1798-9.",
+      "norm": "1798-9",
+      "windowText": ". The systematic investigation of ancient Egypt began with observations made by the French scholars who accompanied Napoleon Bonaparte’s invasion of Egypt in 1798-9. They produced the multi-volume Description de I'Egypte in 1809. It was dur"
+    },
+    "win_cand": {
+      "raw": "1798-9.",
+      "norm": "1798-9",
+      "windowText": ". The systematic investigation of ancient Egypt began with observations made by the French scholars who accompanied Napoleon Bonaparte•s invasion of Egypt in 1798-9. They produced the multi-volume Description de l'Egvple in 1809. It was dur"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 103,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1809",
+    "norm_gt": "1809",
+    "description": "Description de l'Egypte publication year",
+    "anchor_words": [
+      "description",
+      "egypte"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1809.",
+      "norm": "1809",
+      "windowText": "e French scholars who accompanied Napoleon Bonaparte’s invasion of Egypt in 1798-9. They produced the multi-volume Description de I'Egypte in 1809. It was during this French occupation, the bilingual inscription engraved with Greek, Demotic"
+    },
+    "win_cand": {
+      "raw": "1809.",
+      "norm": "1809",
+      "windowText": "e French scholars who accompanied Napoleon Bonaparte•s invasion of Egypt in 1798-9. They produced the multi-volume Description de l'Egvple in 1809. It was during this French occupation, the bilingual inscription engraved with Greek, Demotic"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 104,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1799",
+    "norm_gt": "1799",
+    "description": "Rosette stone discovery year",
+    "anchor_words": [
+      "rosette",
+      "stone",
+      "discovery"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1799",
+      "norm": "1799",
+      "windowText": "vered by one of the officers of Napoleon in 1799 placed as part of fort at Rashid near Alexandria. This world famous Rosette stone presently housed in the British Museum helped to crack the ancient Egyptian scripts by Jean-Francois Champoll"
+    },
+    "win_cand": {
+      "raw": "1 799",
+      "norm": "1799",
+      "windowText": "ered by one of the officers of Napoleon in 1 799 placed as part of fört at Rashid near Alexandria. This world famous Rosette stone presently housed in the British Museum helped to crack the ancient Egyptian scripts by Jean-Francois Champoll"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 105,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1822",
+    "norm_gt": "1822",
+    "description": "Champollion script cracking year",
+    "anchor_words": [
+      "champollion",
+      "script"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1822.",
+      "norm": "1822",
+      "windowText": "Rosette stone presently housed in the British Museum helped to crack the ancient Egyptian scripts by Jean-Francois Champollion in 1822. At the same time circus performer Giovanni Belzoni and the agents of the French Consul-General Bernardin"
+    },
+    "win_cand": {
+      "raw": "1822.",
+      "norm": "1822",
+      "windowText": "Rosette stone presently housed in the British Museum helped to crack the ancient Egyptian scripts by Jean-Francois Champollion in 1822. At the same time circus performer Giovanni Belzoni and the agents of the French Consul-General Bernardin"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 106,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1858",
+    "norm_gt": "1858",
+    "description": "Mariette Egyptian monuments appointment year",
+    "anchor_words": [
+      "mariette",
+      "egyptian",
+      "monuments"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1858",
+      "norm": "1858",
+      "windowText": "ombs and temples to display in France and Britain. This plundering however was halted by French Egyptologist Aguste Mariette in 1858 after getting appointment as a Conservator of Egyptian Monuments.  The beginning of Mesopotamian archaeolog"
+    },
+    "win_cand": {
+      "raw": "1858",
+      "norm": "1858",
+      "windowText": "ombs and temples to display in France and Britain. This plundering however was halted by French Egyptologist Aguste Mariette in 1858 after getting appointment as a Conservator of Egyptian Monuments. The beginning of Mesopotamian archaeology"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 107,
+    "page_id": "rajan_p020-020",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1602",
+    "norm_gt": "1602",
+    "description": "Cuneiform inscriptions in Europe earliest year",
+    "anchor_words": [
+      "cuneiform",
+      "inscriptions",
+      "europe"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1602,",
+      "norm": "1602",
+      "windowText": "eginning of Mesopotamian archaeology also goes well with the beginning of Egyptian archacology. Although reports of cuneiform inscriptions reached Europe as early as 1602, the first successful attempt to translate was made by Georg Grotefen"
+    },
+    "win_cand": {
+      "raw": "1602.",
+      "norm": "1602",
+      "windowText": "ginning of Mesopotamian archaeology also goes well with the beginning of F.gyptian archaeology. Although reports of cuneiform inscriptions reached Europe as early as 1602. the first successful attempt to translate was made by Georg Grotefen"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 108,
+    "page_id": "rajan_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1849",
+    "norm_gt": "1849",
+    "description": "Henry Rawlinson decipherment year",
+    "anchor_words": [
+      "rawlinson",
+      "decipherment"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "al text that the Achaemenid king Darius I had carved on cliff at Bisitun (also Behiston or Bisotun) in Iran. This decipherment provided the means to unravel the history of ancient Babylonia and Assyria and an outline chronology of Mesopotam"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "al text that the Achaemenid king Darius I had carved on cliff at Bisitun (also Behiston or Bisotun) in Iran. This decipherment provided the means to unravel the history of ancient Babylonia and Assyria and an outline chronology of Mesopotam"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 109,
+    "page_id": "rajan_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1523",
+    "norm_gt": "1523",
+    "description": "Sweden and Denmark separation year",
+    "anchor_words": [
+      "sweden",
+      "denmark",
+      "separation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1523.",
+      "norm": "1523",
+      "windowText": " in Scandinavia rather than in other parts of Europe, as part of political rivalry that g: ollowed the separation of Sweden and Denmark in 1523. Johan Bure, Swedish civil servant and Ole Worm, a Danish medical doctor, respectively encourage"
+    },
+    "win_cand": {
+      "raw": "1523.",
+      "norm": "1523",
+      "windowText": "ed in Scandinavia rather than in other parts of Europe, as part of political rivalry that followed the separation of Sweden and Denmark in 1523. Johan Bure, Swedish civil servant and Ole Worm, a Danish medical doctor, respectively encourage"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 110,
+    "page_id": "rajan_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1611-1632",
+    "norm_gt": "1611-1632",
+    "description": "Gustavus II Adolphus dates",
+    "anchor_words": [
+      "gustavus",
+      "adolphus"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1611-1632",
+      "norm": "1611-1632",
+      "windowText": "523. Johan Bure, Swedish civil servant and Ole Worm, a Danish medical doctor, respectively encouraged by Gustayus I Adolphus of Sweden (1611-1632) and by King Christian IV of Denmark (1588-1658) started documenting large monuments with late"
+    },
+    "win_cand": {
+      "raw": "161 1-1632",
+      "norm": "161 1-1632",
+      "windowText": "enmark in 1523. Johan Bure, Swedish civil servant and Ole Worm, a Danish medical doctor, respectively encouraged by Gustavus II Adolphus of Sweden (161 1-1632) and by King Christian IV of Denmark (1588-1658) started documenting large monume"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 111,
+    "page_id": "rajan_p021-021",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1588-1658",
+    "norm_gt": "1588-1658",
+    "description": "King Christian IV dates",
+    "anchor_words": [
+      "christian",
+      "king"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1611-1632",
+      "norm": "1611-1632",
+      "windowText": "Ole Worm, a Danish medical doctor, respectively encouraged by Gustayus I Adolphus of Sweden (1611-1632) and by King Christian IV of Denmark (1588-1658) started documenting large monuments with late Iron Age %Mpﬂgns This guided the archacolo"
+    },
+    "win_cand": {
+      "raw": "161 1-1632",
+      "norm": "161 1-1632",
+      "windowText": "e Worm, a Danish medical doctor, respectively encouraged by Gustavus II Adolphus of Sweden (161 1-1632) and by King Christian IV of Denmark (1588-1658) started documenting large monuments with late Iron Age inscriptions. This guided the arc"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 112,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "800 BC",
+    "norm_gt": "800 BC",
+    "description": "Hesiod epic poem date",
+    "anchor_words": [
+      "hesiod",
+      "epic",
+      "poem"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "800 BC",
+      "norm": "800 BC",
+      "windowText": "that prehistoric society developed progressively through ages of stone, bronze and iron technology. The Greek writer Hesiod (about 800 BC) in his epic poem Works and Days envisaged five stages namely Age of Gold, Age of Silver, Age of Bronz"
+    },
+    "win_cand": {
+      "raw": "800 BC",
+      "norm": "800 BC",
+      "windowText": "that prehistoric society developed progressively through ages of stone, bronze and iron technology. The Greek writer Hesiod (about 800 BC) in his epic poem Works and Days envisaged five stages namely Age of Gold, Age of Silver, Age of Bronz"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 113,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "95-55 BC",
+    "norm_gt": "95-55 BC",
+    "description": "Titus Lucretius Carus dates",
+    "anchor_words": [
+      "lucretius",
+      "carus"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "95-55 BC",
+      "norm": "95-55 BC",
+      "windowText": "Age of Gold, Age of Silver, Age of Bronze, Age of Epic Heroes and Age of Iron. However, The Roman Philosopher Titus Lucretius Carus (95-55 BC) was the one who advocated this three age concept in his poem De Rerum Natura (On the Nature of Th"
+    },
+    "win_cand": {
+      "raw": "95-55 BC",
+      "norm": "95-55 BC",
+      "windowText": "e of Gold, Age of Silver, Age of Bronze, Age of Epic Ileroes and Age of Iron. However, The R01nan Philosopher Titus Lucretius Carus (95-55 BC) was the one who ocated this three age concept in his poem De Rerum Natura (On the Nature of 'l'hi"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 114,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1541-93",
+    "norm_gt": "1541-93",
+    "description": "Michel Mercati dates",
+    "anchor_words": [
+      "michel",
+      "mercati"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1541-93",
+      "norm": "1541-93",
+      "windowText": "stone first and followed later by bronze and iron. However, it remained as a speculative scheme at that time. Again, Michel Mercati (1541-93), a physician to Pope Clement VII, suggested in his work Metallotheca that before the use of iron, "
+    },
+    "win_cand": {
+      "raw": "1541-93",
+      "norm": "1541-93",
+      "windowText": "stone first and followed later by bronze and iron. However. it remained as a speculative scheme at that time. Again. Michel Mercati (1541-93), a physician to Pope Clement VII, suggested in his work Metallolheca that before the use of iron, "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 115,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1734",
+    "norm_gt": "1734",
+    "description": "Nicolas Mahudel three-age year",
+    "anchor_words": [
+      "nicolas",
+      "mahudel",
+      "three"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1734",
+      "norm": "1734",
+      "windowText": "ted in his work Metallotheca that before the use of iron, stone tools might have been used. In line of this thinking Nicolas Mahudel in 1734 set out the idea of successive ages of stone, bronze and iron as a human development. This three-ag"
+    },
+    "win_cand": {
+      "raw": "1734",
+      "norm": "1734",
+      "windowText": "ted in his work Metallolheca that before the use of iron, stone tools might have been used. In line of this thinking Nicolas Mahudel in 1734 set out the idea of successive ages of stone, bronze and iron as a human development. This three-ag"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 116,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1788-1865",
+    "norm_gt": "1788-1865",
+    "description": "C.J. Thomsen lifespan dates",
+    "anchor_words": [
+      "thomsen",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1788-1865",
+      "norm": "1788-1865",
+      "windowText": "inally, this three-age theory, which was only on thought till this time, was well established by Danish scholar C.J. Thomsen (1788-1865) as a system of successive human development through archaeological remains. The growing influence of cu"
+    },
+    "win_cand": {
+      "raw": "1788-1865",
+      "norm": "1788-1865",
+      "windowText": "Finally, this three-age theory, which was only on thought till this time, was well established by Danish scholar C.J.Thomsen (1788-1865) as a system of successive human development through archaeological remains. The growing influence of cu"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 117,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1816",
+    "norm_gt": "1816",
+    "description": "Thomsen Royal Commission invitation year",
+    "anchor_words": [
+      "thomsen",
+      "royal",
+      "commission"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1788-1865",
+      "norm": "1788-1865",
+      "windowText": "igin of the human led to the hitherto unknown depths of human history.  The Three Age System  The Danish scholar C.J.Thomsen (1788-1865) was invited in 1816 by the Danish Royal Commission for the Preservation and  . Collection of Antiquitie"
+    },
+    "win_cand": {
+      "raw": "1788-1865",
+      "norm": "1788-1865",
+      "windowText": "origin of the human led to the hitherto unknown depths of human history. The Three Age System The Danish scholar C.J.Thomsen (1788-1865) was invited in 1816 by the Danish Royal Commission for the Preservation and Collection of Antiquities t"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 118,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1819",
+    "norm_gt": "1819",
+    "description": "Museum arrangements opened to public year",
+    "anchor_words": [
+      "museum",
+      "arrangements",
+      "public"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1819,",
+      "norm": "1819",
+      "windowText": "coration, shape and context. This helped him to differentiate the material within the specific period. Though his arrangements were opened to the public as early as 1819, his guide book Ledetraad til Nordisk Oldkyndighed (Guide Book to Sean"
+    },
+    "win_cand": {
+      "raw": "1819,",
+      "norm": "1819",
+      "windowText": "coration, shape and context. This helped him to differentiate the material within the specific period. Though his arrangements were opened to the public as early as 1819, his guide book Ledetraad til Nordisk Oldkyndighed (Guide Book to Scan"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 119,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1839",
+    "norm_gt": "1839",
+    "description": "Ledetraad publication year",
+    "anchor_words": [
+      "ledetraad",
+      "publication"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1819,",
+      "norm": "1819",
+      "windowText": "rial within the specific period. Though his arrangements were opened to the public as early as 1819, his guide book Ledetraad til Nordisk Oldkyndighed (Guide Book to Seandinavian Antiquity) appeared only in 1839 which later appeared in Engl"
+    },
+    "win_cand": {
+      "raw": "1819,",
+      "norm": "1819",
+      "windowText": "rial within the specific period. Though his arrangements were opened to the public as early as 1819, his guide book Ledetraad til Nordisk Oldkyndighed (Guide Book to Scandinavian Antiquity) appeared only in 1839 which later appeared in Engl"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 120,
+    "page_id": "rajan_p022-022",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1848",
+    "norm_gt": "1848",
+    "description": "English Guide to Northern Antiquities year",
+    "anchor_words": [
+      "guide",
+      "northern",
+      "antiquities"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1848",
+      "norm": "1848",
+      "windowText": "(Guide Book to Seandinavian Antiquity) appeared only in 1839 which later appeared in English in 1848 with the title A Guide to Northern Antiquities. Based on material, he classified them into a Stone Age, a Bronze Age, and an Iron Age. Scho"
+    },
+    "win_cand": {
+      "raw": "1848",
+      "norm": "1848",
+      "windowText": "(Guide Book to Scandinavian Antiquity) appeared only in 1839 which later appeared in English in 1848 with the title A Guide to Northern Antiquities. Based on material, he classified them into a Stone Age, a Bronze Age, and an Iron Age. Scho"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 121,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1841",
+    "norm_gt": "1841",
+    "description": "Boucher de Perthes Somme publication year",
+    "anchor_words": [
+      "boucher",
+      "perthes",
+      "somme"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1841",
+      "norm": "1841",
+      "windowText": " the bones of extinct animals in stratified deposits in many parts of the Europe. It was the French custom inspector Boucher de Perthes working in the gravel quarries of Somme river in 1841 who published a convincing evidence for the associ"
+    },
+    "win_cand": {
+      "raw": "1841",
+      "norm": "1841",
+      "windowText": "the bones of e.xtinct animals in stratified deposits in many parts of the Europe. It was [he French custom inspector Boucher de Perthes working in the gravel quarries of Somme river in 1841 who published a convincing evidence for the associ"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 122,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1797-1875",
+    "norm_gt": "1797-1875",
+    "description": "Charles Lyell lifespan dates",
+    "anchor_words": [
+      "charles",
+      "lyell",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1797-1875",
+      "norm": "1797-1875",
+      "windowText": "belief that human origins extended far back into the remote past.  The outstanding publications of English Geologist Charles Lyell’s (1797-1875) Principles of Geology, Charles Darwins’s On the Origin of Species published in 1859 and Herbert"
+    },
+    "win_cand": {
+      "raw": "1797-1875",
+      "norm": "1797-1875",
+      "windowText": " belief that human origins extended far back into the remote past. The outstanding publications of English Geologist Charles Lyell's (1797-1875) Principles of Geology, Charles Darwins's On lhe Origin of Species published in 1859 and Herbert"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 123,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1859",
+    "norm_gt": "1859",
+    "description": "Origin of Species publication year",
+    "anchor_words": [
+      "origin",
+      "species",
+      "darwin"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1859",
+      "norm": "1859",
+      "windowText": "anding publications of English Geologist Charles Lyell’s (1797-1875) Principles of Geology, Charles Darwins’s On the Origin of Species published in 1859 and Herbert Spencer’s (1820-1903) evolutionary approach to scientific and philosophical"
+    },
+    "win_cand": {
+      "raw": "1859",
+      "norm": "1859",
+      "windowText": "anding publications of English Geologist Charles Lyell's (1797-1875) Principles of Geology, Charles Darwins's On lhe Origin of Species published in 1859 and Herbert Spencer's ( 1820-1903) evolutionary approach to scientific and philosophica"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 124,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1820-1903",
+    "norm_gt": "1820-1903",
+    "description": "Herbert Spencer lifespan dates",
+    "anchor_words": [
+      "herbert",
+      "spencer",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1859",
+      "norm": "1859",
+      "windowText": " Charles Lyell’s (1797-1875) Principles of Geology, Charles Darwins’s On the Origin of Species published in 1859 and Herbert Spencer’s (1820-1903) evolutionary approach to scientific and philosophical problems revolutionised the thinking of"
+    },
+    "win_cand": {
+      "raw": "1859",
+      "norm": "1859",
+      "windowText": " Charles Lyell's (1797-1875) Principles of Geology, Charles Darwins's On lhe Origin of Species published in 1859 and Herbert Spencer's ( 1820-1903) evolutionary approach to scientific and philosophical problems revolutionised the thinking o"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 125,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1871",
+    "norm_gt": "1871",
+    "description": "Descent of Man publication year",
+    "anchor_words": [
+      "descent",
+      "man"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1871.",
+      "norm": "1871",
+      "windowText": "gy 27  human origins by the techniques of archaeology even before the publication of Parwin’s another great work 7he Descent of Man in 1871. Darwin’s concept of natural selection was accepted by many scientists and members of the public as "
+    },
+    "win_cand": {
+      "raw": "1 87 1 .",
+      "norm": "1 87 1",
+      "windowText": "ogy 27 human origins by the techniques of archaeology even before the publication of Darwin's another great work The Descent of Man in 1 87 1 . Darwin's concept of natural selection was accepted by many scientists and members of the public "
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 126,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1865",
+    "norm_gt": "1865",
+    "description": "Lubbock Prehistoric Times publication year",
+    "anchor_words": [
+      "lubbock",
+      "prehistoric",
+      "times"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1865.",
+      "norm": "1865",
+      "windowText": "y of human mankind.  Prehistoric Archaeology  The term prehistory itself came into use after the publication of John Lubbock’s book Prehistoric Times in 1865. He divided the Stone Age into Old Stone Age (palaeolithic) and New Stone (Neolith"
+    },
+    "win_cand": {
+      "raw": "1865.",
+      "norm": "1865",
+      "windowText": "udy of human mankind. Prehistoric Archaeology The term prehistory itself came into use after the publication of John Lubbock's book Prehistoric Times in 1865. He divided the Stone Age into Old Stone Age (palaeolithic) and New Stone (Neolith"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 127,
+    "page_id": "rajan_p023-023",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1801-71",
+    "norm_gt": "1801-71",
+    "description": "Edouard Lartet lifespan dates",
+    "anchor_words": [
+      "edouard",
+      "lartet",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1801-71",
+      "norm": "1801-71",
+      "windowText": "sh archaeologists devoted much of their time in identifying the antiquity of mankind. This approach could be seen in Edouard Lartet (1801-71) and Gabriel de Mortillet works. Palacolithic archaeology, however, aroused great public interest b"
+    },
+    "win_cand": {
+      "raw": "1801-71",
+      "norm": "1801-71",
+      "windowText": "sh archaeologists devoted much of their time in identifying the antiquity of mankind. This approach could be seen in Edouard Lartet (1801-71) and Gabriel de Mortillet works. Palaeolithic archaeology, however, aroused great public interest b"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 128,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1655",
+    "norm_gt": "1655",
+    "description": "Isaac de La Peyrere Adam argument year",
+    "anchor_words": [
+      "isaac",
+      "peyrere",
+      "adam"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1655.",
+      "norm": "1655",
+      "windowText": "er than rationalism. The theory of racism had its seed since the 12\" century. French Calvinist Librarian Isaac de La Peyrere raised it as a major issue in 1655. He argued that the biblical Adam was the ancestor of the Jews alone, while ance"
+    },
+    "win_cand": {
+      "raw": "1655.",
+      "norm": "1655",
+      "windowText": "ather than rationalism. 'Vhe theory of racism had its seed since the century. French Calvinist Librarian Isaac de La Peyrere raised it as a major issue in 1655. He argued that the biblical Adam was the ancestor of the Jews alone, while ance"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 129,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1774",
+    "norm_gt": "1774",
+    "description": "Edward Long argument year",
+    "anchor_words": [
+      "edward",
+      "long"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1774,",
+      "norm": "1774",
+      "windowText": "Adam was the ancestor of the Jews alone, while ancestors of other human groups had been created separately. In 1774, Edward Long argued that Europeans and Negroes were separate species. Morton believed that God had differentiated the races "
+    },
+    "win_cand": {
+      "raw": "1 774,",
+      "norm": "1774",
+      "windowText": "dam was the ancestor of the Jews alone, while ancestors of other human groups had been created separately. In 1 774, Edward Long argued that Europeans and Negroes were separate species. Morton believed that God had differentiated the races "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 130,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1807-73",
+    "norm_gt": "1807-73",
+    "description": "Louis Agassiz lifespan dates",
+    "anchor_words": [
+      "louis",
+      "agassiz",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1807-73",
+      "norm": "1807-73",
+      "windowText": "ieved that God had differentiated the races after he had created a common community and this position was endorsed by Louis Agassiz (1807-73), Josiah C.Nott (1804-1873) and George R.Gliddon (1809-1857) in the their book 73 'Vpes of Mankind "
+    },
+    "win_cand": {
+      "raw": "1807-73",
+      "norm": "1807-73",
+      "windowText": "ieved that God had differentiated the races after he had created a common community and this position was endorsed by Louis Agassiz (1807-73), Josiah C.N0tt (1804-1873) and George R.Gliddon (1809-1857) in the their book Types of Mankind ( 1"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 131,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1804-1873",
+    "norm_gt": "1804-1873",
+    "description": "Josiah C. Nott lifespan dates",
+    "anchor_words": [
+      "nott",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": false,
+    "tess_cand": {
+      "raw": "1804-1873",
+      "norm": "1804-1873",
+      "windowText": "the races after he had created a common community and this position was endorsed by Louis Agassiz (1807-73), Josiah C.Nott (1804-1873) and George R.Gliddon (1809-1857) in the their book 73 'Vpes of Mankind (1854). However, belief in the ine"
+    },
+    "win_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": ""
+    },
+    "category": "ANCHOR_MISSING"
+  },
+  {
+    "id": 132,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1809-1857",
+    "norm_gt": "1809-1857",
+    "description": "George R. Gliddon lifespan dates",
+    "anchor_words": [
+      "gliddon",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1809-1857",
+      "norm": "1809-1857",
+      "windowText": "a common community and this position was endorsed by Louis Agassiz (1807-73), Josiah C.Nott (1804-1873) and George R.Gliddon (1809-1857) in the their book 73 'Vpes of Mankind (1854). However, belief in the inequality of races gained scienti"
+    },
+    "win_cand": {
+      "raw": "1809-1857",
+      "norm": "1809-1857",
+      "windowText": "a common community and this position was endorsed by Louis Agassiz (1807-73), Josiah C.N0tt (1804-1873) and George R.Gliddon (1809-1857) in the their book Types of Mankind ( 1854). Ilowever, belief in the inequality of races gained scientif"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 133,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1854",
+    "norm_gt": "1854",
+    "description": "Types of Mankind publication year",
+    "anchor_words": [
+      "types",
+      "mankind",
+      "publication"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "",
+      "norm": "",
+      "windowText": "nd ethnic problems led the archaeologists to pay increasing attention to the geographical distribution of distinctive types of artefacts and artefact assemblages. This led to the formulation of theories like culture-historical archaeology, "
+    },
+    "win_cand": {
+      "raw": "1854",
+      "norm": "1854",
+      "windowText": "was endorsed by Louis Agassiz (1807-73), Josiah C.N0tt (1804-1873) and George R.Gliddon (1809-1857) in the their book Types of Mankind ( 1854). Ilowever, belief in the inequality of races gained scientific credibility as a result of Darwini"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 134,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1834-1913",
+    "norm_gt": "1834-1913",
+    "description": "John Lubbock lifespan dates",
+    "anchor_words": [
+      "john",
+      "lubbock",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1834-1913",
+      "norm": "1834-1913",
+      "windowText": "misread and misinterpreted to suit their end.  Among the scholars who placed the racism with archaeological input was John Lubbock (1834-1913), the Lord of Avebury in England. His two books Pre-historic Times, as Hlustrated by Ancient Remai"
+    },
+    "win_cand": {
+      "raw": "834-1913",
+      "norm": "834-1913",
+      "windowText": " misread and misinterpreted to suit their end. Among the scholars who placed the racism with archaeological input was John Lubbock (i 834-1913), the Lord of Avebury in England. His two books Pre-historic Times. as Illustrated by Ancient Rem"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 135,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1870",
+    "norm_gt": "1870",
+    "description": "Origin of Civilisation publication year",
+    "anchor_words": [
+      "origin",
+      "civilisation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1865",
+      "norm": "1865",
+      "windowText": "imes, as Hlustrated by Ancient Remains, and the Manners and Customs of Modern Savages (1865) and the second book The Origin of Cuvilisation and the Primitive Condition of Man (1870) went through several editions. He advocated that as a resu"
+    },
+    "win_cand": {
+      "raw": "1865",
+      "norm": "1865",
+      "windowText": "mes. as Illustrated by Ancient Remains, and the Manners and Customs of Modern Savages (1865) and the second book The Origin of Civilisation and the Primitive Condition of Man (1870) went through several editions. He advocated that as a resu"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 136,
+    "page_id": "rajan_p024-024",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1871",
+    "norm_gt": "1871",
+    "description": "Unification of Germany year",
+    "anchor_words": [
+      "unification",
+      "germany"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1871",
+      "norm": "1871",
+      "windowText": "ical data in many parts of the world. By promoting a sense of ethnic identity, it played a significant role in the unification of Germany in 1871 and afterwards by expressing the pride of the Germans. This approach was challenged in the lat"
+    },
+    "win_cand": {
+      "raw": "1871",
+      "norm": "1871",
+      "windowText": "ical data in many parts of the world. By promoting a sense of ethnic identity, it played a significant role in the unification of Germany in 1871 and afterwards by expressing the pride of the Germans. This approach was challenged in the lat"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 137,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1351-1388",
+    "norm_gt": "1351-1388",
+    "description": "Firuz Shah Tughlak reign dates",
+    "anchor_words": [
+      "firuz",
+      "shah",
+      "tughlak"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1351-1388",
+      "norm": "1351-1388",
+      "windowText": "e Salarjung Museum, Hyderabad, Ramnagar Palace Museum, Varanasi and Swai Man Singh Museum at Jaipur are similar ones. Firuz Shah Tughlak (1351-1388) removed two inscribed Asokan pillars one from Meerut and another from Ambala to his capital"
+    },
+    "win_cand": {
+      "raw": "1351-1388",
+      "norm": "1351-1388",
+      "windowText": "e Salarjung Museum, Hyderabad, Ramnagar Palace Museum, Varanasi and Swai Man Singh Museum at Jaipur are similar ones. Firuz Shah Tughlak (1351-1388) removed two inscribed Asokan pillars one from Meerut and another from Ambala to his capital"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 138,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1506-1552",
+    "norm_gt": "1506-1552",
+    "description": "St Francis Xavier lifespan dates",
+    "anchor_words": [
+      "francis",
+      "xavier",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1506-1552",
+      "norm": "1506-1552",
+      "windowText": "er countries. Europe learnt about the existence of Sanskrit from the correspondence of the first Jesuit in India, St Francis Xavier (1506-1552), who arrived in Goa in 1542, In a letter written in 1544, he quoted the Sanskrit invocation Om S"
+    },
+    "win_cand": {
+      "raw": "1506-1552",
+      "norm": "1506-1552",
+      "windowText": "er countries. Europe learnt about the existence of Sanskrit from the correspondence of the first Jesuit in India, St Francis Xavier (1506-1552), who arrived in Goa in 1542. In a letter written in 1544, he quoted the Sanskrit invocation Om S"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 139,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1542",
+    "norm_gt": "1542",
+    "description": "Arrival in Goa year",
+    "anchor_words": [
+      "arrived",
+      "goa"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1506-1552",
+      "norm": "1506-1552",
+      "windowText": "t the existence of Sanskrit from the correspondence of the first Jesuit in India, St Francis Xavier (1506-1552), who arrived in Goa in 1542, In a letter written in 1544, he quoted the Sanskrit invocation Om Srii naraina nama and translated "
+    },
+    "win_cand": {
+      "raw": "1506-1552",
+      "norm": "1506-1552",
+      "windowText": "t the existence of Sanskrit from the correspondence of the first Jesuit in India, St Francis Xavier (1506-1552), who arrived in Goa in 1542. In a letter written in 1544, he quoted the Sanskrit invocation Om Srii naraina nama and translated "
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 140,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1544",
+    "norm_gt": "1544",
+    "description": "Letter mentioning Sanskrit invocation year",
+    "anchor_words": [
+      "sanskrit",
+      "invocation",
+      "letter"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1544,",
+      "norm": "1544",
+      "windowText": "uit in India, St Francis Xavier (1506-1552), who arrived in Goa in 1542, In a letter written in 1544, he quoted the Sanskrit invocation Om Srii naraina nama and translated into Latin. This was the first Sanskrit text known to Europe. It did"
+    },
+    "win_cand": {
+      "raw": "1544,",
+      "norm": "1544",
+      "windowText": "uit in India, St Francis Xavier (1506-1552), who arrived in Goa in 1542. In a letter written in 1544, he quoted the Sanskrit invocation Om Srii naraina nama and translated into Latin. This was the first Sanskrit text known to Europe. It did"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 141,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1606",
+    "norm_gt": "1606",
+    "description": "Arrival in Madurai year",
+    "anchor_words": [
+      "arrival",
+      "madurai"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1606,",
+      "norm": "1606",
+      "windowText": "en Latin and Sanskrit in their writings. Fr Roberto de Nobili (1577-1655), Brahmanised Jesuit from Italy who came to Madurai in 1606, is acknowledged as the first European Sanskrit scholar. Abraham Roger, a chaplain at the Dutch settlement "
+    },
+    "win_cand": {
+      "raw": "1606,",
+      "norm": "1606",
+      "windowText": "en Latin and Sanskrit in their writings. Fr Roberto de Nobili (1577-1655), Brahmanised Jesuit from Italy who came to Madurai in 1606, is acknowledged as the first European Sanskrit scholar. Abraham Roger, a chaplain at the Dutch settlement "
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 142,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1577-1655",
+    "norm_gt": "1577-1655",
+    "description": "Roberto de Nobili lifespan dates",
+    "anchor_words": [
+      "roberto",
+      "nobili",
+      "lifespan"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1577-1655",
+      "norm": "1577-1655",
+      "windowText": "llipo Sasseti (an Italian merchant ‘in Goa) described the relations between Latin and Sanskrit in their writings. Fr Roberto de Nobili (1577-1655), Brahmanised Jesuit from Italy who came to Madurai in 1606, is acknowledged as the first Euro"
+    },
+    "win_cand": {
+      "raw": "1577-1655",
+      "norm": "1577-1655",
+      "windowText": "illipo Sasseti (an Italian merchant in Goa) described the relations between Latin and Sanskrit in their writings. Fr Roberto de Nobili (1577-1655), Brahmanised Jesuit from Italy who came to Madurai in 1606, is acknowledged as the first Euro"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 143,
+    "page_id": "rajan_p025-025",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1631 to 1641",
+    "norm_gt": "1631 to 1641",
+    "description": "Pulicat chaplain settlement date range",
+    "anchor_words": [
+      "pulicat",
+      "chaplain"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1631",
+      "norm": "1631",
+      "windowText": "n 1606, is acknowledged as the first European Sanskrit scholar. Abraham Roger, a chaplain at the Dutch settlement of Pulicat in south India from 1631 to 1641 translated some of the proverbs of poet Bhartrhari into Dutch and thereby introduc"
+    },
+    "win_cand": {
+      "raw": "1631",
+      "norm": "1631",
+      "windowText": "n 1606, is acknowledged as the first European Sanskrit scholar. Abraham Roger, a chaplain at the Dutch settlement of Pulicat in south India from 1631 to 1641 translated some of the proverbs of poet Bhartrhari into Dutch and thereby introduc"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 144,
+    "page_id": "rajan_p050-050",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1956:81",
+    "norm_gt": "1956:81",
+    "description": "Mortimer Wheeler citation year and page",
+    "anchor_words": [
+      "mortimer",
+      "wheeler",
+      "citation"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1956",
+      "norm": "1956",
+      "windowText": "logical excavation remains with the archaeologist who has a flexibility and open-mindedness in his approach. As Sir Mortimer Wheeler (1956:81) said “The experienced excavator, who thinks before digs, succeeds in reaching his objective in a "
+    },
+    "win_cand": {
+      "raw": "1956",
+      "norm": "1956",
+      "windowText": "logical excavation remains with the archaeologist who has a flexibility and open-mindedness in his approach. As Sir Mortimer Wheeler (1956:81) said \"The experienced excavator, who thinks before digs, succeeds in reaching his objective in a "
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 145,
+    "page_id": "rajan_p050-050",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1881 and 1896",
+    "norm_gt": "1881 and 1896",
+    "description": "Field techniques development date range",
+    "anchor_words": [
+      "field",
+      "techniques",
+      "development"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "19",
+      "norm": "19",
+      "windowText": "ienced excavator, who thinks before digs, succeeds in reaching his objective in a majority of cases”.  Development of Field Techniques  It was only in the late 19\" century, particularly between 1881 and 1896, that a sound methodology of sci"
+    },
+    "win_cand": {
+      "raw": "1881",
+      "norm": "1881",
+      "windowText": "rienced excavator, who thinks before digs, succeeds in reaching his objective in a majority of cases\". Development of Field Techniques It was only in the late 19th century, particularly between 1881 and 1 896, that a sound methodology of sc"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 146,
+    "page_id": "rajan_p075-075",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1975",
+    "norm_gt": "1975",
+    "description": "Glyn Daniel 150 Years of Archaeology year",
+    "anchor_words": [
+      "glyn",
+      "daniel",
+      "years"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1975",
+      "norm": "1975",
+      "windowText": "archaeological stratigraphy to the present state through their intensive observation of various archaeological sites. Glyn Daniel in his book A Hundred and Fifty Years of Archaeology (1975) admirably discussed the origins and development of"
+    },
+    "win_cand": {
+      "raw": "1975",
+      "norm": "1975",
+      "windowText": "archaeological stratigraphy to the present state through their intensive observation of various archaeological sites. Glyn Daniei in his book A Hundred and Fifty Years of Archaeology (1975) admirably discussed the origins and development of"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 147,
+    "page_id": "rajan_p075-075",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1954",
+    "norm_gt": "1954",
+    "description": "Archaeology from the Earth publication year",
+    "anchor_words": [
+      "archaeology",
+      "earth",
+      "publication"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1954",
+      "norm": "1954",
+      "windowText": "raphy, namely: the value of interface and the numbering of layers. These concepts have been expressed in Wheeler’s Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology (1952). This becomes the backbone of stratigraphy and"
+    },
+    "win_cand": {
+      "raw": "1954",
+      "norm": "1954",
+      "windowText": "raphy, namely: the value of interface and the numbering of layers. These concepts have been expressed in Wheeler's Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology (1952). This becomes the backbone of stratigraphy and"
+    },
+    "category": "BOTH_CORRECT"
+  },
+  {
+    "id": 148,
+    "page_id": "rajan_p075-075",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1952",
+    "norm_gt": "1952",
+    "description": "Beginning in Archaeology publication year",
+    "anchor_words": [
+      "beginning",
+      "archaeology"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1954",
+      "norm": "1954",
+      "windowText": "numbering of layers. These concepts have been expressed in Wheeler’s Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology (1952). This becomes the backbone of stratigraphy and it is popularly known as Wheeler-Kenyon syste"
+    },
+    "win_cand": {
+      "raw": "1954",
+      "norm": "1954",
+      "windowText": "numbering of layers. These concepts have been expressed in Wheeler's Archaeology from the Earth (1954) and Kenyon's Beginning in Archaeology (1952). This becomes the backbone of stratigraphy and it is popularly known as Wheeler-Kenyon syste"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 149,
+    "page_id": "rajan_p075-075",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1973",
+    "norm_gt": "1973",
+    "description": "Harris Matrix invention year",
+    "anchor_words": [
+      "harris",
+      "matrix",
+      "invention"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "7",
+      "norm": "7",
+      "windowText": "site. Edward Hams is the one who questioned the application of geological law into the archaeological stratigraphy.  Harris Matrix  Edward Harris in his book Principles o 7 Srra!ligraphy (1979) devised a new nf;thod fin A;Z:::zgg;cc:{ smuﬁc"
+    },
+    "win_cand": {
+      "raw": "1979",
+      "norm": "1979",
+      "windowText": "ite. Edward Harris is the one who questioned the application of geological law into the archaeological stratigraphy. Harris Matrix Edward Harris in his book Principles of Archaeological Stratigraphy (1979) devised a new method in archaeolog"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 150,
+    "page_id": "rajan_p075-075",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1979",
+    "norm_gt": "1979",
+    "description": "Principles of Archaeological Stratigraphy year",
+    "anchor_words": [
+      "principles",
+      "archaeological",
+      "stratigraphy"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "7",
+      "norm": "7",
+      "windowText": " the application of geological law into the archaeological stratigraphy.  Harris Matrix  Edward Harris in his book Principles o 7 Srra!ligraphy (1979) devised a new nf;thod fin A;Z:::zgg;cc:{ smuﬁcaﬁon yvhich is popularly known as Harris ma"
+    },
+    "win_cand": {
+      "raw": "1979",
+      "norm": "1979",
+      "windowText": "ed the application of geological law into the archaeological stratigraphy. Harris Matrix Edward Harris in his book Principles of Archaeological Stratigraphy (1979) devised a new method in archaeological stratification which is popularly kno"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 151,
+    "page_id": "rajan_p100-100",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "30%",
+    "norm_gt": "30%",
+    "description": "Formic acid solution percentage for bronze",
+    "anchor_words": [
+      "formic",
+      "acid",
+      "bronze"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "30",
+      "norm": "30",
+      "windowText": "e site.  Bronze s - If the bronze artifact is impoundgd wi?h incrustahor). lmmcLseurlmei object in a 30% solution of formic agtd and allow it tg soa g solution become coloured. The object also \\{vrapped up g aluminium foil and immersed. Wat"
+    },
+    "win_cand": {
+      "raw": "30",
+      "norm": "30",
+      "windowText": "e to the site. Bronze If the bronze artifact is impounded with incrustation, immerse the object in a 30% solution of formic acid and allow it to soak until solution become coloured. The object also wrapped up in an aluminium foil and immers"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 152,
+    "page_id": "rajan_p100-100",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "2 hours",
+    "norm_gt": "2 hours",
+    "description": "Immersion duration for copper chlorides",
+    "anchor_words": [
+      "immersion",
+      "copper",
+      "chlorides"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "181",
+      "norm": "181",
+      "windowText": "n of a bronze helmet (First — before conservation, ! second — after conservation)  Field Conservation 181  If active copper chlorides found, the object may be immersed for 2 hours in a mix containing 10% benzotriazole in distilled water (or"
+    },
+    "win_cand": {
+      "raw": "181",
+      "norm": "181",
+      "windowText": "vation ofa bronze helmet (First — before conservation, second — after conservation) Field Conservation 181 If active copper chlorides found. the object may be immersed for 2 hours in a mix containing 10% benzotriazole in distilled water (or"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 153,
+    "page_id": "rajan_p100-100",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "10%",
+    "norm_gt": "10%",
+    "description": "Benzotriazole concentration in distilled water",
+    "anchor_words": [
+      "benzotriazole",
+      "distilled",
+      "water"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "10",
+      "norm": "10",
+      "windowText": "onservation 181  If active copper chlorides found, the object may be immersed for 2 hours in a mix containing 10% benzotriazole in distilled water (or 3% in alcohol). Then remove the oObject, bathe and rinse in distilled water and allow it "
+    },
+    "win_cand": {
+      "raw": "10",
+      "norm": "10",
+      "windowText": "Conservation 181 If active copper chlorides found. the object may be immersed for 2 hours in a mix containing 10% benzotriazole in distilled water (or 3% in alcohol). Then remove the object, bathe and rinse in distilled water and allow it t"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 154,
+    "page_id": "rajan_p100-100",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "3%",
+    "norm_gt": "3%",
+    "description": "Benzotriazole concentration in alcohol",
+    "anchor_words": [
+      "benzotriazole",
+      "alcohol"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "10",
+      "norm": "10",
+      "windowText": "onservation 181  If active copper chlorides found, the object may be immersed for 2 hours in a mix containing 10% benzotriazole in distilled water (or 3% in alcohol). Then remove the oObject, bathe and rinse in distilled water and allow it "
+    },
+    "win_cand": {
+      "raw": "10",
+      "norm": "10",
+      "windowText": "Conservation 181 If active copper chlorides found. the object may be immersed for 2 hours in a mix containing 10% benzotriazole in distilled water (or 3% in alcohol). Then remove the object, bathe and rinse in distilled water and allow it t"
+    },
+    "category": "BOTH_WRONG_IDENT"
+  },
+  {
+    "id": 155,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1949",
+    "norm_gt": "1949",
+    "description": "Radio carbon dating invention year",
+    "anchor_words": [
+      "radio",
+      "carbon",
+      "dating",
+      "invention"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1.",
+      "norm": "1",
+      "windowText": "gy : Principles and Methods Dating Methods in Archae ology 201  Absolute dating techniques Table on dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e "
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7.",
+      "norm": "2. 3. 4. 5. 6. 7",
+      "windowText": " Principles and Methods Absolute dating techniques Dating Methods in Archaeology 201 Table on datin 2. 3. 4. 5. 6. 7. Radio-carbon dating Potassium-argon method Uranium series method Thermoluminescence Electron spin resonance (ESR) Fission-"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 156,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "50,000 BP",
+    "norm_gt": "50,000 BP",
+    "description": "Standard C-14 time range limit in BP",
+    "anchor_words": [
+      "standard",
+      "range",
+      "limit"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2.",
+      "norm": "2",
+      "windowText": "solute dating techniques Table on dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, Presen"
+    },
+    "win_cand": {
+      "raw": "50,000 BP",
+      "norm": "50,000 BP",
+      "windowText": "ke sediment from melting ice-sheets Pollen-trees, eat bo s Tree-rings Stone. Backed clay, iron de osits Obsidian Time range Present to 50,000 BP with isotope it can go back to 70.000 10.000 - 20,000.000 300-10.000 Present- billions Present-"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 157,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "70,000",
+    "norm_gt": "70,000",
+    "description": "Isotope enrichment C-14 limit in BP",
+    "anchor_words": [
+      "isotope",
+      "enrichment"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "5.",
+      "norm": "5",
+      "windowText": "lard F. | 1949 | Plant, Present to ; Carbon Libby charcoal, 50,000 BP 4. Thermoluminescence Dating ot o 0 bones with isotope 5. Electron spin resonance (ESR) okl yoa . back to 6. Fission-track dating o 7. Tree-ring dating (dendrochronology)"
+    },
+    "win_cand": {
+      "raw": "50,000 BP",
+      "norm": "50,000 BP",
+      "windowText": "ts Pollen-trees, eat bo s Tree-rings Stone. Backed clay, iron de osits Obsidian Time range Present to 50,000 BP with isotope it can go back to 70.000 10.000 - 20,000.000 300-10.000 Present- billions Present- I O,OOO No accurate date 7,400 5"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 158,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1950",
+    "norm_gt": "1950",
+    "description": "Potassium-argon dating invention year",
+    "anchor_words": [
+      "potassium",
+      "argon",
+      "dating"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2.",
+      "norm": "2",
+      "windowText": " dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, Present to ; Carbon Libby charcoal, 50,"
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7.",
+      "norm": "2. 3. 4. 5. 6. 7",
+      "windowText": "s Absolute dating techniques Dating Methods in Archaeology 201 Table on datin 2. 3. 4. 5. 6. 7. Radio-carbon dating Potassium-argon method Uranium series method Thermoluminescence Electron spin resonance (ESR) Fission-track dating Tree-ring"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 159,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "10,000-20,000,000",
+    "norm_gt": "10,000-20,000,000",
+    "description": "Potassium-argon time range",
+    "anchor_words": [
+      "potassium",
+      "argon",
+      "time",
+      "range"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2.",
+      "norm": "2",
+      "windowText": " dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, Present to ; Carbon Libby charcoal, 50,"
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7.",
+      "norm": "2. 3. 4. 5. 6. 7",
+      "windowText": "s Absolute dating techniques Dating Methods in Archaeology 201 Table on datin 2. 3. 4. 5. 6. 7. Radio-carbon dating Potassium-argon method Uranium series method Thermoluminescence Electron spin resonance (ESR) Fission-track dating Tree-ring"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 160,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1964",
+    "norm_gt": "1964",
+    "description": "Thermoluminescence invention year",
+    "anchor_words": [
+      "thermoluminescence",
+      "invention"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "4.",
+      "norm": "4",
+      "windowText": "e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, Present to ; Carbon Libby charcoal, 50,000 BP 4. Thermoluminescence Dating ot o 0 bones with isotope 5. Electron spin resonance (ESR) okl yoa . back to 6. Fission-track dating o "
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7.",
+      "norm": "2. 3. 4. 5. 6. 7",
+      "windowText": "haeology 201 Table on datin 2. 3. 4. 5. 6. 7. Radio-carbon dating Potassium-argon method Uranium series method Thermoluminescence Electron spin resonance (ESR) Fission-track dating Tree-ring dating (dendrochronology) Derivative dating techn"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 161,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "300-10,000",
+    "norm_gt": "300-10,000",
+    "description": "Thermoluminescence time range",
+    "anchor_words": [
+      "thermoluminescence",
+      "time",
+      "range"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2.",
+      "norm": "2",
+      "windowText": "1  Absolute dating techniques Table on dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, P"
+    },
+    "win_cand": {
+      "raw": "50,000 BP",
+      "norm": "50,000 BP",
+      "windowText": "es Lake sediment from melting ice-sheets Pollen-trees, eat bo s Tree-rings Stone. Backed clay, iron de osits Obsidian Time range Present to 50,000 BP with isotope it can go back to 70.000 10.000 - 20,000.000 300-10.000 Present- billions Pre"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 162,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1965",
+    "norm_gt": "1965",
+    "description": "Fission track dating invention year",
+    "anchor_words": [
+      "fission",
+      "track",
+      "dating"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "6.",
+      "norm": "6",
+      "windowText": ",000 BP 4. Thermoluminescence Dating ot o 0 bones with isotope 5. Electron spin resonance (ESR) okl yoa . back to 6. Fission-track dating o 7. Tree-ring dating (dendrochronology) 2. | Pottassium- | Koroff | 1950 | Rocks, 10,000 Argon meteor"
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7.",
+      "norm": "2. 3. 4. 5. 6. 7",
+      "windowText": "7. Radio-carbon dating Potassium-argon method Uranium series method Thermoluminescence Electron spin resonance (ESR) Fission-track dating Tree-ring dating (dendrochronology) Derivative dating techniques 2. 3. 4. 5. 6. 7. Fluorine test Urani"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 163,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1870",
+    "norm_gt": "1870",
+    "description": "Varves dating invention year",
+    "anchor_words": [
+      "varves",
+      "dating",
+      "invention"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "1870",
+      "norm": "1870",
+      "windowText": "rack materials, billions 3. Nitrogen Test glasses, h micas, fossil 4. Amino acid P 5. Obsidian hydration dating s. | Varves DeGeer _ | 1870 | Lake — P and sediment 10,000 6. Archaecomagnetic dating i St 7. Cation-ratio dating (CR) ice-sheet"
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7. 8. 9.",
+      "norm": "2. 3. 4. 5. 6. 7. 8. 9",
+      "windowText": "tigations. S. 2. 3. 4. 5. 6. 7. 8. 9. Method Radio Carbon Dating Pottassium- Argon Thermolumi nescence Fission Track Varves Pollen Analysis Dendrochron olo Archaeo- magnetism Obsidian Hydration Inventor Willard F. Libby Koroff Johnson Fleis"
+    },
+    "category": "ONE_CORRECT"
+  },
+  {
+    "id": 164,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "date",
+    "true_value": "1913",
+    "norm_gt": "1913",
+    "description": "Dendrochronology invention year",
+    "anchor_words": [
+      "dendrochronology",
+      "invention"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2",
+      "norm": "2",
+      "windowText": " with isotope 5. Electron spin resonance (ESR) okl yoa . back to 6. Fission-track dating o 7. Tree-ring dating (dendrochronology) 2. | Pottassium- | Koroff | 1950 | Rocks, 10,000 Argon meteorites, 20,000,000 feldspars, . s Hizanin® Derivati"
+    },
+    "win_cand": {
+      "raw": "2. 3. 4. 5. 6. 7.",
+      "norm": "2. 3. 4. 5. 6. 7",
+      "windowText": "d Uranium series method Thermoluminescence Electron spin resonance (ESR) Fission-track dating Tree-ring dating (dendrochronology) Derivative dating techniques 2. 3. 4. 5. 6. 7. Fluorine test Uranium test Nitrogen Test Amino acid Obsidian hy"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 165,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "7,400",
+    "norm_gt": "7,400",
+    "description": "Dendrochronology time range in years",
+    "anchor_words": [
+      "dendrochronology",
+      "time",
+      "range"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2.",
+      "norm": "2",
+      "windowText": "1  Absolute dating techniques Table on dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, P"
+    },
+    "win_cand": {
+      "raw": "50,000 BP",
+      "norm": "50,000 BP",
+      "windowText": "es Lake sediment from melting ice-sheets Pollen-trees, eat bo s Tree-rings Stone. Backed clay, iron de osits Obsidian Time range Present to 50,000 BP with isotope it can go back to 70.000 10.000 - 20,000.000 300-10.000 Present- billions Pre"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  },
+  {
+    "id": 166,
+    "page_id": "rajan_p110-110",
+    "class": "Class A",
+    "type": "measurement",
+    "true_value": "5,000-40,000",
+    "norm_gt": "5,000-40,000",
+    "description": "Archaeomagnetism time range",
+    "anchor_words": [
+      "archaeomagnetism",
+      "time",
+      "range"
+    ],
+    "tess_anchor": true,
+    "win_anchor": true,
+    "tess_cand": {
+      "raw": "2.",
+      "norm": "2",
+      "windowText": "1  Absolute dating techniques Table on dating methods 1. Radio-carbon dating S. | Method_ Inventor | Year | Materials Time range i Na used for (in BP) 2. Potassium-argon method e 3, Uranium series method 1 Radio Willard F. | 1949 | Plant, P"
+    },
+    "win_cand": {
+      "raw": "50,000 BP",
+      "norm": "50,000 BP",
+      "windowText": "es Lake sediment from melting ice-sheets Pollen-trees, eat bo s Tree-rings Stone. Backed clay, iron de osits Obsidian Time range Present to 50,000 BP with isotope it can go back to 70.000 10.000 - 20,000.000 300-10.000 Present- billions Pre"
+    },
+    "category": "BOTH_WRONG_DIFF"
+  }
+]

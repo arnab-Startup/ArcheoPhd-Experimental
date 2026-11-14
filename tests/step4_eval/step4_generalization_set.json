@@ -1,0 +1,364 @@
+{
+  "$schema": "./step4_eval_schema.json",
+  "title": "ArchaeoPhD Phase 2 Step 4 — Generalization Pre-Test Benchmark Set",
+  "version": "1.0.0",
+  "description": "Independently constructed 16-case generalization benchmark drawn from outside the 16 development pages and 34 sealed benchmark pages.",
+  "cases": [
+    {
+      "case_id": "GEN-01-FOUNDED-BCE",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch04",
+      "source_chunk": "The Neolithic village at Mehrgarh was founded in 7000 BCE by early agro-pastoral communities.",
+      "target_entity": "mehrgarh_founding_date",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Mehrgarh village founding date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "7000 BCE",
+          "value_type": "SINGLE",
+          "numeric_start": 7000,
+          "numeric_end": null,
+          "normalized_unit": "BCE",
+          "astronomical_year_start": -6999
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "General event verb 'founded in 7000 BCE' with BCE astronomical conversion.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-02-FLOOR-THICKNESS",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch04",
+      "source_chunk": "Excavations at Trench IV revealed a compact ash floor with a maximum thickness of 35 cm.",
+      "target_entity": "ash_floor_thickness",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "ash floor thickness",
+        "property": "STRATUM_THICKNESS",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "35",
+          "value_type": "SINGLE",
+          "numeric_start": 35.0,
+          "numeric_end": null,
+          "normalized_unit": "cm"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Stratum thickness with physical unit 'cm'.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-03-C14-BP-DATE",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch05",
+      "source_chunk": "Charcoal samples collected from Locus 12 dated securely to 4250 BP.",
+      "target_entity": "locus_12_radiocarbon_date",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "Locus 12 radiocarbon date",
+        "property": "RADIOMETRIC_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "4250",
+          "value_type": "SINGLE",
+          "numeric_start": 4250.0,
+          "numeric_end": null,
+          "normalized_unit": "BP"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Radiocarbon date with unit 'BP' and metadata advisory.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-04-ARTIFACT-TALLY",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch06",
+      "source_chunk": "The lower gravel horizon yielded 142 cleavers and bifacial handaxes.",
+      "target_entity": "cleaver_assemblage_count",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "cleaver assemblage count",
+        "property": "ARTIFACT_COUNT",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "142",
+          "value_type": "SINGLE",
+          "numeric_start": 142.0,
+          "numeric_end": null,
+          "normalized_unit": "",
+          "head_noun": "cleavers"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Artifact tally with bound head noun 'cleavers'.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-05-SETTLED-CE",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch06",
+      "source_chunk": "The port settlement was first settled in 1450 CE according to ceramic sequence evidence.",
+      "target_entity": "port_settlement_founding_date",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "port settlement founding date",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1450",
+          "value_type": "SINGLE",
+          "numeric_start": 1450.0,
+          "numeric_end": null,
+          "normalized_unit": "CE",
+          "astronomical_year_start": 1450
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Event verb 'settled in 1450 CE'.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-06-RANGE-BCE",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch07",
+      "source_chunk": "The ceramic assemblage spans securely from 1200 to 1150 BCE across all phases.",
+      "target_entity": "ceramic_phase_span",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "ceramic phase span",
+        "property": "HISTORICAL_DATE",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "1200",
+          "value_type": "SINGLE",
+          "numeric_start": 1200.0,
+          "numeric_end": null,
+          "normalized_unit": "BCE",
+          "astronomical_year_start": -1199
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "BCE date recognition.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-07-GRAVEL-DEPTH",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch07",
+      "source_chunk": "The basal alluvial gravels were encountered at a depth of 4.8 m.",
+      "target_entity": "basal_gravel_depth",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "basal gravel depth",
+        "property": "STRATUM_DEPTH",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "4.8",
+          "value_type": "SINGLE",
+          "numeric_start": 4.8,
+          "numeric_end": null,
+          "normalized_unit": "m"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Stratum depth with unit 'm'.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-08-CONSERVATION-PCT",
+      "category": "FINDING_POSITIVE",
+      "outcome_class": "CORRECT",
+      "source_doc": "external_corpus_ch08",
+      "source_chunk": "A 5% benzotriazole solution was applied to stabilise the bronze spearhead.",
+      "target_entity": "benzotriazole_concentration",
+      "expected_action": "EXTRACT_ATTRIBUTED",
+      "entity_slot": {
+        "subject": "benzotriazole concentration",
+        "property": "PERCENTAGE_FREQUENCY",
+        "resolution": "DIRECT_CLAUSAL"
+      },
+      "ground_truth": {
+        "structured_value": {
+          "raw": "5",
+          "value_type": "SINGLE",
+          "numeric_start": 5.0,
+          "numeric_end": null,
+          "normalized_unit": "%"
+        },
+        "status": "CANDIDATE_ATTRIBUTED_FINDING"
+      },
+      "disambiguation_challenge": "Chemical concentration with unit '%'.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-09-RULE1-FOLIO",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch08",
+      "source_chunk": "Principles of Field Stratigraphy 245\nDuring section drawing the datum line was leveled.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_1_PAGE_FOLIO"
+      },
+      "disambiguation_challenge": "Running page header folio 245 must be suppressed under Rule 1.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-10-RULE1-XREF",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch09",
+      "source_chunk": "The complete stratigraphic sequence is detailed on page 88 of the preliminary report.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_1_PAGE_XREF"
+      },
+      "disambiguation_challenge": "Page cross-reference 'on page 88' must be suppressed under Rule 1.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-11-RULE2-AUTHOR-DATE",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch09",
+      "source_chunk": "This typology conforms to the regional seriation established by Renfrew (1973: 15).",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_2_BIBLIO_CITATION"
+      },
+      "disambiguation_challenge": "Author-date literature citation 'Renfrew (1973: 15)' must be suppressed under Rule 2.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-12-RULE2-JOURNAL-VOL",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch10",
+      "source_chunk": "The radiometric dates were published in Antiquity 48 (1974): 112-118.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_2_JOURNAL_CITATION"
+      },
+      "disambiguation_challenge": "Journal volume-year citation '48 (1974): 112-118' must be suppressed under Rule 2.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-13-RULE2-LIFESPAN",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch10",
+      "source_chunk": "V. Gordon Childe (1892-1957) formulated the concept of the Neolithic Revolution.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_2_SCHOLAR_LIFESPAN"
+      },
+      "disambiguation_challenge": "Biographical scholar lifespan 'Childe (1892-1957)' must be suppressed under Rule 2.1.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-14-RULE3-CONTOUR",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch11",
+      "source_chunk": "Topographic survey across the mound was conducted with a contour interval of 10 m.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_3_CONTOUR"
+      },
+      "disambiguation_challenge": "Contour interval '10 m' must be suppressed under Rule 3.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-15-RULE3-GRID",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch11",
+      "source_chunk": "The excavation proceeded by establishing 5 x 5 m balk squares across the grid.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_3_GRID"
+      },
+      "disambiguation_challenge": "Balk grid dimensions '5 x 5 m' must be suppressed under Rule 3.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    },
+    {
+      "case_id": "GEN-16-RULE4-CATALOG",
+      "category": "NON_FINDING_NEGATIVE",
+      "outcome_class": "NON_FINDING_REJECTION",
+      "source_doc": "external_corpus_ch12",
+      "source_chunk": "Artifact Catalogue No. 408 exhibited distinctive micro-wear polish.",
+      "target_entity": "rejected_non_finding",
+      "expected_action": "REJECT_NON_FINDING",
+      "entity_slot": null,
+      "ground_truth": {
+        "structured_value": null,
+        "spans": null,
+        "status": "REJECTED_NON_FINDING",
+        "rejection_rule": "RULE_4_CATALOG"
+      },
+      "disambiguation_challenge": "Museum catalog tag 'No. 408' must be suppressed under Rule 4.",
+      "provenance": "EXTERNAL_HELD_OUT_CHAPTER"
+    }
+  ]
+}

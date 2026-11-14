@@ -1,6 +1,42 @@
-node_modules/
+# Build artifacts and temporary files
+payload.zip
+src/resource.res
+*.o
+*.obj
+*.i
+
+# Test binaries & build folders
+tests/bin/
+tests/test_*/
+build/
+*.exe
+!release/ArchaeoPhD.exe
+release/dist/
+release/WebView2Loader.dll
+test_live_sample.pdf
+
+# Local user data / WebView2 cache
+WebView2Data/
+WebView2Data_Test/
+WebView2Data_Test_*/
+release/WebView2Data_Test_*/
+test_ipc_bridge_data/
+data/
+engine/data/
+.cache/
+**/.cache/
 *.log
-npm-debug.log*
-yarn-debug.log*
-.DS_Store
+
+# OS metadata
 Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Models & Weights
+models/
+*.gguf
+
+# Third-party source dependencies
+third_party/
+
+

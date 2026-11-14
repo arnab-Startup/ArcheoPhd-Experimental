@@ -1,0 +1,998 @@
+[
+  {
+    "page_id": "sankalia_p052-052",
+    "type": "date",
+    "description": "Year Chirki site was discovered",
+    "true_value": "1963"
+  },
+  {
+    "page_id": "sankalia_p052-052",
+    "type": "date",
+    "description": "Year Corvinus decided to excavate",
+    "true_value": "1966"
+  },
+  {
+    "page_id": "sankalia_p053-053",
+    "type": "date",
+    "description": "Excavation season year range",
+    "true_value": "1966 to 1969"
+  },
+  {
+    "page_id": "sankalia_p053-053",
+    "type": "measurement",
+    "description": "Thickness of alluvium over rock",
+    "true_value": "8 m."
+  },
+  {
+    "page_id": "sankalia_p053-053",
+    "type": "measurement",
+    "description": "Exposed horizon area in meters",
+    "true_value": "74 mtrs"
+  },
+  {
+    "page_id": "sankalia_p053-053",
+    "type": "count",
+    "description": "Number of Early Stone Age tools recovered",
+    "true_value": "694"
+  },
+  {
+    "page_id": "sankalia_p053-053",
+    "type": "measurement",
+    "description": "Thickness of rubble horizon overlying trap basalt",
+    "true_value": "20-40 cm"
+  },
+  {
+    "page_id": "sankalia_p054-054",
+    "type": "measurement",
+    "description": "Bedrock depth below present river bed",
+    "true_value": "7 m."
+  },
+  {
+    "page_id": "sankalia_p055-055",
+    "type": "count",
+    "description": "Number of large cores found in Trench B",
+    "true_value": "6 pieces"
+  },
+  {
+    "page_id": "sankalia_p056-056",
+    "type": "count",
+    "description": "Total assemblage count of Acheulian industry",
+    "true_value": "2050"
+  },
+  {
+    "page_id": "sankalia_p056-056",
+    "type": "count",
+    "description": "Count of finished and unfinished tools",
+    "true_value": "1511"
+  },
+  {
+    "page_id": "sankalia_p056-056",
+    "type": "count",
+    "description": "Count of cores in assemblage",
+    "true_value": "95"
+  },
+  {
+    "page_id": "sankalia_p056-056",
+    "type": "count",
+    "description": "Count of waste flakes",
+    "true_value": "444"
+  },
+  {
+    "page_id": "sankalia_p057-057",
+    "type": "count",
+    "description": "Handaxes in pebble group",
+    "true_value": "330"
+  },
+  {
+    "page_id": "sankalia_p057-057",
+    "type": "count",
+    "description": "Choppers and polyhedrons count",
+    "true_value": "546"
+  },
+  {
+    "page_id": "sankalia_p057-057",
+    "type": "count",
+    "description": "Pebble group subtotal count",
+    "true_value": "971"
+  },
+  {
+    "page_id": "sankalia_p058-058",
+    "type": "count",
+    "description": "Handaxes in flake group",
+    "true_value": "186"
+  },
+  {
+    "page_id": "sankalia_p058-058",
+    "type": "count",
+    "description": "Cleavers count in flake group",
+    "true_value": "382"
+  },
+  {
+    "page_id": "sankalia_p058-058",
+    "type": "count",
+    "description": "Scrappers, knives, borers count",
+    "true_value": "66"
+  },
+  {
+    "page_id": "sankalia_p058-058",
+    "type": "count",
+    "description": "Worked flakes count",
+    "true_value": "276"
+  },
+  {
+    "page_id": "sankalia_p058-058",
+    "type": "count",
+    "description": "Waste flakes count in flake group",
+    "true_value": "48"
+  },
+  {
+    "page_id": "sankalia_p058-058",
+    "type": "count",
+    "description": "Cortex and light duty flakes count",
+    "true_value": "152"
+  },
+  {
+    "page_id": "sankalia_p059-059",
+    "type": "measurement",
+    "description": "Platform angle to flake surface",
+    "true_value": "110"
+  },
+  {
+    "page_id": "sankalia_p061-061",
+    "type": "count",
+    "description": "Stone circles at Junapani",
+    "true_value": "300"
+  },
+  {
+    "page_id": "sankalia_p061-061",
+    "type": "count",
+    "description": "Stone circles at Mahurjhari",
+    "true_value": "150"
+  },
+  {
+    "page_id": "sankalia_p064-064",
+    "type": "date",
+    "description": "Proposed stratigraphic date for megalithic period",
+    "true_value": "2000 B.C."
+  },
+  {
+    "page_id": "sankalia_p065-065",
+    "type": "date",
+    "description": "Paunar excavation year",
+    "true_value": "1967"
+  },
+  {
+    "page_id": "sankalia_p065-065",
+    "type": "date",
+    "description": "Takalghat and Khapa exploration year",
+    "true_value": "1968"
+  },
+  {
+    "page_id": "sankalia_p065-065",
+    "type": "measurement",
+    "description": "Height of Takalghat mound",
+    "true_value": "8 metres"
+  },
+  {
+    "page_id": "sankalia_p070-070",
+    "type": "date",
+    "description": "C-14 date for bottom of Phase IB at Takalghat",
+    "true_value": "555"
+  },
+  {
+    "page_id": "sankalia_p070-070",
+    "type": "date",
+    "description": "Hallur Neolithic-Megalithic C-14 date",
+    "true_value": "955"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 59",
+    "true_value": "1943"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 60",
+    "true_value": "1944"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 61",
+    "true_value": "1945"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Item 63 Deccan College Bulletin issue date",
+    "true_value": "March 1945"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 64",
+    "true_value": "1946"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 66",
+    "true_value": "1947"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "count",
+    "description": "Brain surgery antiquity years",
+    "true_value": "10,000"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 68",
+    "true_value": "1949"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 69",
+    "true_value": "1950"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 70",
+    "true_value": "1953"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 71",
+    "true_value": "1955"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 72",
+    "true_value": "1956"
+  },
+  {
+    "page_id": "sankalia_p025-025",
+    "type": "date",
+    "description": "Bibliography publication year item 74",
+    "true_value": "1957"
+  },
+  {
+    "page_id": "sankalia_p104-104",
+    "type": "date",
+    "description": "Burkitt and Cammiade publication year",
+    "true_value": "1925"
+  },
+  {
+    "page_id": "sankalia_p104-104",
+    "type": "date",
+    "description": "Charlesworth Quaternary Era publication year",
+    "true_value": "1967"
+  },
+  {
+    "page_id": "sankalia_p104-104",
+    "type": "date",
+    "description": "De Terra and Paterson publication year",
+    "true_value": "1939"
+  },
+  {
+    "page_id": "sankalia_p104-104",
+    "type": "date",
+    "description": "De Terra and Movius publication year",
+    "true_value": "1943"
+  },
+  {
+    "page_id": "sankalia_p104-104",
+    "type": "date",
+    "description": "Fairbridge African Ice-Age publication year",
+    "true_value": "1964"
+  },
+  {
+    "page_id": "sankalia_p104-104",
+    "type": "date",
+    "description": "Theobald Kangra glaciers publication year",
+    "true_value": "1874"
+  },
+  {
+    "page_id": "sankalia_p150-150",
+    "type": "measurement",
+    "description": "Depth of yellow kankary silt below modern bed",
+    "true_value": "6 m"
+  },
+  {
+    "page_id": "sankalia_p150-150",
+    "type": "measurement",
+    "description": "Thickness of sub-recent alluvium",
+    "true_value": "6 to 8 m."
+  },
+  {
+    "page_id": "sankalia_p150-150",
+    "type": "measurement",
+    "description": "Level of pot holes in gravel II",
+    "true_value": "5 m"
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Marriage date of Rudrasena II",
+    "true_value": "400 A.D."
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Death year of Rudrasena II",
+    "true_value": "415 A.D."
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Death year of Divakarasena",
+    "true_value": "428 A.D."
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Pravarasena ascension year",
+    "true_value": "431 A.D."
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "count",
+    "description": "Duration of Pravarasena reign",
+    "true_value": "30 years"
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Death year of father in 460 A.D.",
+    "true_value": "460 A.D."
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Birth year of Prithivishena II",
+    "true_value": "455 A.D."
+  },
+  {
+    "page_id": "sankalia_p210-210",
+    "type": "date",
+    "description": "Death year of father in 490 A.D.",
+    "true_value": "490 A.D."
+  },
+  {
+    "page_id": "sankalia_p280-280",
+    "type": "date",
+    "description": "Gazetteer of Bombay Presidency publication year",
+    "true_value": "1884"
+  },
+  {
+    "page_id": "chakrabarti_p015-015",
+    "type": "date",
+    "description": "Year of arrival from Portugal",
+    "true_value": "1534"
+  },
+  {
+    "page_id": "chakrabarti_p015-015",
+    "type": "date",
+    "description": "Year Dom Joao de Castro came to India",
+    "true_value": "1538"
+  },
+  {
+    "page_id": "chakrabarti_p015-015",
+    "type": "date",
+    "description": "Viceroy of Goa term",
+    "true_value": "1545-48"
+  },
+  {
+    "page_id": "chakrabarti_p015-015",
+    "type": "date",
+    "description": "Universal cosmography publication year in Paris",
+    "true_value": "1575"
+  },
+  {
+    "page_id": "chakrabarti_p015-015",
+    "type": "date",
+    "description": "Italian publication of Elephanta year",
+    "true_value": "1590"
+  },
+  {
+    "page_id": "chakrabarti_p016-016",
+    "type": "count",
+    "description": "Bignes of a village in houses count",
+    "true_value": "400"
+  },
+  {
+    "page_id": "chakrabarti_p016-016",
+    "type": "count",
+    "description": "Count of four galleries",
+    "true_value": "300"
+  },
+  {
+    "page_id": "chakrabarti_p016-016",
+    "type": "date",
+    "description": "Couto seventh Decade publication year",
+    "true_value": "1616"
+  },
+  {
+    "page_id": "chakrabarti_p018-018",
+    "type": "date",
+    "description": "Year J. Fryer visited Kanheri and Elephanta",
+    "true_value": "1672"
+  },
+  {
+    "page_id": "chakrabarti_p018-018",
+    "type": "date",
+    "description": "Year Revd. J. Ovington saw them",
+    "true_value": "1689"
+  },
+  {
+    "page_id": "chakrabarti_p018-018",
+    "type": "date",
+    "description": "Captain Pyke journal date in Bombay harbour",
+    "true_value": "1712"
+  },
+  {
+    "page_id": "chakrabarti_p018-018",
+    "type": "date",
+    "description": "Archaeologia publication year",
+    "true_value": "1785"
+  },
+  {
+    "page_id": "chakrabarti_p019-019",
+    "type": "date",
+    "description": "John Henry Grose visit to Elephanta",
+    "true_value": "1750"
+  },
+  {
+    "page_id": "chakrabarti_p019-019",
+    "type": "date",
+    "description": "Gemelli Careri visit to Elephanta",
+    "true_value": "1695"
+  },
+  {
+    "page_id": "chakrabarti_p019-019",
+    "type": "date",
+    "description": "M. de Thevenot visit to Ellora",
+    "true_value": "1666"
+  },
+  {
+    "page_id": "chakrabarti_p020-020",
+    "type": "date",
+    "description": "Diaries of Streynsham Master entry date",
+    "true_value": "1676"
+  },
+  {
+    "page_id": "chakrabarti_p020-020",
+    "type": "date",
+    "description": "Second edition publication year",
+    "true_value": "1758"
+  },
+  {
+    "page_id": "chakrabarti_p021-021",
+    "type": "date",
+    "description": "Anquetil du Perron arrival in India",
+    "true_value": "1754"
+  },
+  {
+    "page_id": "chakrabarti_p021-021",
+    "type": "date",
+    "description": "Examination of Ellora caves year",
+    "true_value": "1758"
+  },
+  {
+    "page_id": "chakrabarti_p021-021",
+    "type": "date",
+    "description": "Du Perron Elephanta investigation year",
+    "true_value": "1760"
+  },
+  {
+    "page_id": "chakrabarti_p021-021",
+    "type": "date",
+    "description": "Carsten Niebuhr Bombay arrival year",
+    "true_value": "1763"
+  },
+  {
+    "page_id": "chakrabarti_p021-021",
+    "type": "date",
+    "description": "Voyage en Arabie publication in Amsterdam",
+    "true_value": "1780"
+  },
+  {
+    "page_id": "chakrabarti_p021-021",
+    "type": "date",
+    "description": "English translation publication in Edinburgh",
+    "true_value": "1792"
+  },
+  {
+    "page_id": "chakrabarti_p065-065",
+    "type": "date",
+    "description": "Stuart Piggott writing decade",
+    "true_value": "1940s"
+  },
+  {
+    "page_id": "chakrabarti_p130-130",
+    "type": "date",
+    "description": "John Marshall Period date range",
+    "true_value": "1902-44"
+  },
+  {
+    "page_id": "chakrabarti_p130-130",
+    "type": "date",
+    "description": "James Burgess retirement year",
+    "true_value": "1889"
+  },
+  {
+    "page_id": "chakrabarti_p130-130",
+    "type": "date",
+    "description": "Lord Curzon viceroy year",
+    "true_value": "1899"
+  },
+  {
+    "page_id": "chakrabarti_p130-130",
+    "type": "date",
+    "description": "Asiatic Society speech year",
+    "true_value": "1900"
+  },
+  {
+    "page_id": "chakrabarti_p215-215",
+    "type": "date",
+    "description": "Blanford discovery in Sindh year",
+    "true_value": "1875"
+  },
+  {
+    "page_id": "chakrabarti_p215-215",
+    "type": "date",
+    "description": "Blanford Sutkagendor recording year",
+    "true_value": "1877"
+  },
+  {
+    "page_id": "chakrabarti_p215-215",
+    "type": "measurement",
+    "description": "Distance north-west of Gwadar in miles",
+    "true_value": "40 miles"
+  },
+  {
+    "page_id": "chakrabarti_p215-215",
+    "type": "date",
+    "description": "Panchanan Mitra Prehistoric India first edition",
+    "true_value": "1923"
+  },
+  {
+    "page_id": "chakrabarti_p215-215",
+    "type": "date",
+    "description": "Panchanan Mitra second edition year",
+    "true_value": "1927"
+  },
+  {
+    "page_id": "rajan_p019-019",
+    "type": "date",
+    "description": "Biblical rabbinical creation date",
+    "true_value": "3700 BC"
+  },
+  {
+    "page_id": "rajan_p019-019",
+    "type": "date",
+    "description": "Pope Clement VIII creation date",
+    "true_value": "5199 BC"
+  },
+  {
+    "page_id": "rajan_p019-019",
+    "type": "date",
+    "description": "Archbishop James Ussher creation date",
+    "true_value": "4004 BC"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Cyriacus of Ancona fire year",
+    "true_value": "1514"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Vesuvius eruption date",
+    "true_value": "79 AD"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Winckelmann History of Ancient Art year",
+    "true_value": "1764"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Napoleon invasion of Egypt years",
+    "true_value": "1798-9"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Description de l'Egypte publication year",
+    "true_value": "1809"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Rosette stone discovery year",
+    "true_value": "1799"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Champollion script cracking year",
+    "true_value": "1822"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Mariette Egyptian monuments appointment year",
+    "true_value": "1858"
+  },
+  {
+    "page_id": "rajan_p020-020",
+    "type": "date",
+    "description": "Cuneiform inscriptions in Europe earliest year",
+    "true_value": "1602"
+  },
+  {
+    "page_id": "rajan_p021-021",
+    "type": "date",
+    "description": "Henry Rawlinson decipherment year",
+    "true_value": "1849"
+  },
+  {
+    "page_id": "rajan_p021-021",
+    "type": "date",
+    "description": "Sweden and Denmark separation year",
+    "true_value": "1523"
+  },
+  {
+    "page_id": "rajan_p021-021",
+    "type": "date",
+    "description": "Gustavus II Adolphus dates",
+    "true_value": "1611-1632"
+  },
+  {
+    "page_id": "rajan_p021-021",
+    "type": "date",
+    "description": "King Christian IV dates",
+    "true_value": "1588-1658"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Hesiod epic poem date",
+    "true_value": "800 BC"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Titus Lucretius Carus dates",
+    "true_value": "95-55 BC"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Michel Mercati dates",
+    "true_value": "1541-93"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Nicolas Mahudel three-age year",
+    "true_value": "1734"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "C.J. Thomsen lifespan dates",
+    "true_value": "1788-1865"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Thomsen Royal Commission invitation year",
+    "true_value": "1816"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Museum arrangements opened to public year",
+    "true_value": "1819"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "Ledetraad publication year",
+    "true_value": "1839"
+  },
+  {
+    "page_id": "rajan_p022-022",
+    "type": "date",
+    "description": "English Guide to Northern Antiquities year",
+    "true_value": "1848"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Boucher de Perthes Somme publication year",
+    "true_value": "1841"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Charles Lyell lifespan dates",
+    "true_value": "1797-1875"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Origin of Species publication year",
+    "true_value": "1859"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Herbert Spencer lifespan dates",
+    "true_value": "1820-1903"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Descent of Man publication year",
+    "true_value": "1871"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Lubbock Prehistoric Times publication year",
+    "true_value": "1865"
+  },
+  {
+    "page_id": "rajan_p023-023",
+    "type": "date",
+    "description": "Edouard Lartet lifespan dates",
+    "true_value": "1801-71"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Isaac de La Peyrere Adam argument year",
+    "true_value": "1655"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Edward Long argument year",
+    "true_value": "1774"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Louis Agassiz lifespan dates",
+    "true_value": "1807-73"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Josiah C. Nott lifespan dates",
+    "true_value": "1804-1873"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "George R. Gliddon lifespan dates",
+    "true_value": "1809-1857"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Types of Mankind publication year",
+    "true_value": "1854"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "John Lubbock lifespan dates",
+    "true_value": "1834-1913"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Origin of Civilisation publication year",
+    "true_value": "1870"
+  },
+  {
+    "page_id": "rajan_p024-024",
+    "type": "date",
+    "description": "Unification of Germany year",
+    "true_value": "1871"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "Firuz Shah Tughlak reign dates",
+    "true_value": "1351-1388"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "St Francis Xavier lifespan dates",
+    "true_value": "1506-1552"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "Arrival in Goa year",
+    "true_value": "1542"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "Letter mentioning Sanskrit invocation year",
+    "true_value": "1544"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "Arrival in Madurai year",
+    "true_value": "1606"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "Roberto de Nobili lifespan dates",
+    "true_value": "1577-1655"
+  },
+  {
+    "page_id": "rajan_p025-025",
+    "type": "date",
+    "description": "Pulicat chaplain settlement date range",
+    "true_value": "1631 to 1641"
+  },
+  {
+    "page_id": "rajan_p050-050",
+    "type": "date",
+    "description": "Mortimer Wheeler citation year and page",
+    "true_value": "1956:81"
+  },
+  {
+    "page_id": "rajan_p050-050",
+    "type": "date",
+    "description": "Field techniques development date range",
+    "true_value": "1881 and 1896"
+  },
+  {
+    "page_id": "rajan_p075-075",
+    "type": "date",
+    "description": "Glyn Daniel 150 Years of Archaeology year",
+    "true_value": "1975"
+  },
+  {
+    "page_id": "rajan_p075-075",
+    "type": "date",
+    "description": "Archaeology from the Earth publication year",
+    "true_value": "1954"
+  },
+  {
+    "page_id": "rajan_p075-075",
+    "type": "date",
+    "description": "Beginning in Archaeology publication year",
+    "true_value": "1952"
+  },
+  {
+    "page_id": "rajan_p075-075",
+    "type": "date",
+    "description": "Harris Matrix invention year",
+    "true_value": "1973"
+  },
+  {
+    "page_id": "rajan_p075-075",
+    "type": "date",
+    "description": "Principles of Archaeological Stratigraphy year",
+    "true_value": "1979"
+  },
+  {
+    "page_id": "rajan_p100-100",
+    "type": "measurement",
+    "description": "Formic acid solution percentage for bronze",
+    "true_value": "30%"
+  },
+  {
+    "page_id": "rajan_p100-100",
+    "type": "measurement",
+    "description": "Immersion duration for copper chlorides",
+    "true_value": "2 hours"
+  },
+  {
+    "page_id": "rajan_p100-100",
+    "type": "measurement",
+    "description": "Benzotriazole concentration in distilled water",
+    "true_value": "10%"
+  },
+  {
+    "page_id": "rajan_p100-100",
+    "type": "measurement",
+    "description": "Benzotriazole concentration in alcohol",
+    "true_value": "3%"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "date",
+    "description": "Radio carbon dating invention year",
+    "true_value": "1949"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "measurement",
+    "description": "Standard C-14 time range limit in BP",
+    "true_value": "50,000 BP"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "measurement",
+    "description": "Isotope enrichment C-14 limit in BP",
+    "true_value": "70,000"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "date",
+    "description": "Potassium-argon dating invention year",
+    "true_value": "1950"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "measurement",
+    "description": "Potassium-argon time range",
+    "true_value": "10,000-20,000,000"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "date",
+    "description": "Thermoluminescence invention year",
+    "true_value": "1964"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "measurement",
+    "description": "Thermoluminescence time range",
+    "true_value": "300-10,000"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "date",
+    "description": "Fission track dating invention year",
+    "true_value": "1965"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "date",
+    "description": "Varves dating invention year",
+    "true_value": "1870"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "date",
+    "description": "Dendrochronology invention year",
+    "true_value": "1913"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "measurement",
+    "description": "Dendrochronology time range in years",
+    "true_value": "7,400"
+  },
+  {
+    "page_id": "rajan_p110-110",
+    "type": "measurement",
+    "description": "Archaeomagnetism time range",
+    "true_value": "5,000-40,000"
+  }
+]

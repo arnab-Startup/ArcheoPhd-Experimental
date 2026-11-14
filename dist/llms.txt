@@ -1,0 +1,26 @@
+# ArchaeoPhD
+
+> ArchaeoPhD is an AI-powered research workspace for archaeology Master's students, PhD researchers, postdoctoral researchers, supervisors, cultural heritage professionals, heritage consultants, archaeologists, research labs, museums, and academic institutions worldwide. It connects literature, excavation reports, sites, artifacts, chronology, claims, and evidence into a single traceable, defensible research graph — so every AI answer can be followed back to the exact source, page, site, and artifact it rests on. Private by default; research data is isolated per user and project.
+
+ArchaeoPhD is purpose-built for archaeology, not a generic notes app. Core capabilities: a grounded AI research assistant (answers only from your uploaded sources, with evidence, interpretation, and uncertainty clearly separated), an evidence graph linking claims to supporting and contradicting evidence, a chronology engine with conflict detection, citation management in APA/Chicago/Harvard, site and artifact records with spatial data, and exportable research backups. It is designed for evidence-first rigor where every claim is verifiable by a supervisor or examiner.
+
+## Pages
+
+- [Home](https://archaeophd.com/): Overview of the AI research workspace for archaeology, audiences it serves, and how it works.
+- [Blog](https://archaeophd.com/blog): Long-form, keyword-targeted guides on archaeology research methods, AI, and dissertation workflow.
+- [Security & Privacy](https://archaeophd.com/security): How ArchaeoPhD keeps unpublished research private and how AI processing works.
+
+## Guides (blog)
+
+- [AI for Archaeological Research: How LLMs Help PhD Students Map Evidence](https://archaeophd.com/blog/ai-for-archaeological-research): How large language models help archaeology PhD students search literature, extract entities from excavation reports, and connect evidence while keeping every answer traceable to a source.
+- [Evidence-Based Research Workflow for Archaeology PhDs: From Field Notes to Defensible Claims](https://archaeophd.com/blog/evidence-based-research-workflow-archaeology): A step-by-step evidence-based research workflow for archaeology PhDs — framing research questions, capturing provenance, structuring sites and artifacts, building claims, linking supporting and contradicting evidence, and writing a verifiable thesis.
+- [Managing Excavation Reports Digitally: Structuring Field Notes, Stratigraphy, and Finds](https://archaeophd.com/blog/managing-excavation-reports-digitally): How to manage excavation reports and field notes digitally — structuring stratigraphic units, finds, and contexts so they are searchable, citable, and connected to dissertation evidence.
+- [Citation Management for Archaeologists: APA, Chicago, and Harvard Styles Explained](https://archaeophd.com/blog/citation-management-archaeologists): A practical guide to APA, Chicago, and Harvard citation styles for archaeology research, and how to keep citations consistent across a long dissertation.
+- [Knowledge Graphs in Archaeology: Visualizing Claims, Evidence, and Chronology](https://archaeophd.com/blog/knowledge-graphs-archaeology): How knowledge graphs help archaeologists visualize the relationships between claims, evidence, sources, sites, and chronology — and why visualization makes contradictions and gaps obvious.
+- [Cultural Heritage Documentation in the AI Era: A Guide for Heritage Professionals](https://archaeophd.com/blog/cultural-heritage-documentation-ai): How cultural heritage professionals can use AI to document sites, collections, and archives — with provenance, verification status, and audit trails that stand up to scrutiny.
+- [Choosing Archaeological Site Documentation Software: What Heritage and Field Teams Should Look For](https://archaeophd.com/blog/archaeological-site-documentation-software): A practical evaluation guide to archaeological site documentation software — site records, stratigraphy, finds cataloging, provenance, privacy, and long-term data portability.
+
+## Optional
+
+- [Create a research project](https://archaeophd.com/projects/new)
+- [Sign up](https://archaeophd.com/register)

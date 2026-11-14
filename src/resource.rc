@@ -1,4 +1,7 @@
 #define IDR_APP_PAYLOAD 101
 
+// Application Main Icon (Resource ID 1 is standard for default EXE & taskbar icon)
+1 ICON "src/app.ico"
+
 // Embed the application runtime payload (WebView2Loader.dll + compiled dist/ UI bundle)
 IDR_APP_PAYLOAD RCDATA "payload.zip"
