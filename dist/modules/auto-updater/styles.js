@@ -368,6 +368,53 @@
         opacity: 1;
         pointer-events: auto;
       }
+
+      /* Settings Update Card */
+      .apd-settings-update-card {
+        background: var(--apd-obsidian-card, rgba(22, 18, 16, 0.95));
+        border: 1px solid var(--apd-gold-border, rgba(212, 163, 89, 0.24));
+        border-radius: 12px;
+        padding: 20px 24px;
+        margin-top: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+        color: var(--apd-parchment, #f5f0e8);
+        font-family: var(--font-body, "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+      }
+
+      .apd-settings-btn {
+        padding: 7px 16px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.15s ease;
+        user-select: none;
+      }
+
+      .apd-settings-btn-primary {
+        background: linear-gradient(135deg, #94462a 0%, #b35634 100%);
+        border: 1px solid rgba(200, 155, 60, 0.4);
+        color: #ffffff;
+      }
+
+      .apd-settings-btn-primary:hover {
+        background: linear-gradient(135deg, #aa5131 0%, #c55f3a 100%);
+        transform: translateY(-1px);
+      }
+
+      .apd-settings-btn-secondary {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(212, 163, 89, 0.25);
+        color: var(--apd-parchment, #f5f0e8);
+      }
+
+      .apd-settings-btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+      }
     `;
 
     document.head.appendChild(style);
