@@ -98,26 +98,27 @@
             <div class="apd-w-card-desc">Define research question, period, and site scope</div>
           </div>
 
-          <!-- Card 3: Scholar Dashboard -->
+          <!-- Card 3: Project Portfolio -->
           <div class="apd-w-card apd-w-card-glass" id="apd-card-workspace">
-            <div class="apd-w-card-icon-wrap">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px; color:#d4a359;">
-                <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
-              </svg>
-            </div>
-            <div class="apd-w-card-title">Scholar Dashboard</div>
-            <div class="apd-w-card-desc">Access research portfolio, thesis studio, and monographs</div>
-          </div>
-
-          <!-- Card 4: Project Portfolio -->
-          <div class="apd-w-card apd-w-card-glass" id="apd-card-signin">
             <div class="apd-w-card-icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px; color:#d4a359;">
                 <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
             </div>
             <div class="apd-w-card-title">Project Portfolio</div>
-            <div class="apd-w-card-desc">Manage and switch between your fieldwork workspaces</div>
+            <div class="apd-w-card-desc">Browse, manage, and switch between your fieldwork workspaces</div>
+          </div>
+
+          <!-- Card 4: AI Research Studio -->
+          <div class="apd-w-card apd-w-card-glass" id="apd-card-ai-research">
+            <div class="apd-w-card-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px; color:#d4a359;">
+                <path d="M12 2a4 4 0 0 1 4 4c0 .7-.2 1.4-.5 2H18a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5.3.8.4 1.6.3 2.5a4 4 0 0 1-4 4h-2a2 2 0 0 1-2-2v-4"></path>
+                <path d="M12 2a4 4 0 0 0-4 4c0 .7.2 1.4.5 2H6a4 4 0 0 0-4 4c0 1.5.8 2.8 2 3.5-.3.8-.4 1.6-.3 2.5a4 4 0 0 0 4 4h2a2 2 0 0 0 2-2v-4"></path>
+              </svg>
+            </div>
+            <div class="apd-w-card-title">AI Research Studio</div>
+            <div class="apd-w-card-desc">Interrogate excavation monographs, field logs, and academic journals</div>
           </div>
         </div>
 

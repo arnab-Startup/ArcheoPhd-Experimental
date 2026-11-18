@@ -89,7 +89,31 @@
 
     var cardWorkspace = document.getElementById('apd-card-workspace');
     if (cardWorkspace) {
-      cardWorkspace.onclick = openPersonalDashboard;
+      cardWorkspace.onclick = function () {
+        try { localStorage.setItem('archaeo_active_project', 'default'); } catch (e) {}
+        navigateTo('/projects');
+      };
+    }
+
+    var cardAiResearch = document.getElementById('apd-card-ai-research');
+    if (cardAiResearch) {
+      cardAiResearch.onclick = function () {
+        var projs = [];
+        try {
+          projs = JSON.parse(localStorage.getItem('archaeophd_local_projects') || '[]');
+        } catch (e) {}
+        var realProjs = Array.isArray(projs) ? projs.filter(function (p) { return p && p.id && p.id !== 'default' && p.id !== 'null'; }) : [];
+        if (realProjs.length > 0) {
+          var cur = localStorage.getItem('archaeo_active_project');
+          var curValid = cur && cur !== 'default' && realProjs.some(function (p) { return p.id === cur; });
+          if (!curValid) {
+            localStorage.setItem('archaeo_active_project', realProjs[0].id);
+          }
+          navigateTo('/ai-research');
+        } else {
+          navigateTo('/demo');
+        }
+      };
     }
 
     var cardSignin = document.getElementById('apd-card-signin');
