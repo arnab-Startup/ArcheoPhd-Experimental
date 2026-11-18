@@ -560,8 +560,10 @@ const FE_project = [
     ]
   },
   {
-    group: "Project Documentation", items: [
-      { to: "/library", label: "Field Reports & Sources", icon: gb },
+    group: "Documentation & Literature", items: [
+      { to: "/library", label: "Field Reports & Library", icon: gb },
+      { to: "/literature-graph", label: "Citation Network", icon: b1 },
+      { to: "/export-center", label: "Export Center", icon: Wr },
       { to: "/analytics", label: "Excavation Analytics", icon: Pm }
     ]
   }
