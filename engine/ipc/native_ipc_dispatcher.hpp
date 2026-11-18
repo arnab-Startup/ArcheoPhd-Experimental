@@ -1025,30 +1025,36 @@ public:
                 auto claims = storage_->get_claims(projectId);
                 auto evidence = storage_->get_evidence(projectId);
 
-                EpistemicHypergraph hypergraph;
-                HawkesPerspectiveTracker tracker(0.25);
+                UpgradedEpistemicHypergraph hypergraph(0.65);
+                PowerLawHawkesTracker tracker(0.3, 1.0);
 
-                // Map direct evidence weights to claims
-                std::map<std::string, double> claim_plus;
-                std::map<std::string, double> claim_minus;
-
+                // Group evidence by claim and apply Provenance Overlap Kernel K_ij
+                std::map<std::string, std::vector<EvidenceProvenance>> claim_provenance_map;
                 for (const auto& ev : evidence) {
-                    if (ev.evidence_type == "supporting" || ev.evidence_type.empty()) {
-                        claim_plus[ev.claim_id] += 1.0;
-                    } else if (ev.evidence_type == "contradicting") {
-                        claim_minus[ev.claim_id] += 1.0;
-                    }
+                    EvidenceProvenance ep;
+                    ep.evidence_id = ev.id;
+                    ep.root_empirical_observations = ev.source_ids.empty() ? std::vector<std::string>{ev.id} : ev.source_ids;
+                    ep.weight = (ev.evidence_type == "contradicting") ? -1.0 : 1.0;
+                    ep.satisfaction = 1.0;
+                    claim_provenance_map[ev.claim_id].push_back(ep);
                 }
 
                 json node_states = json::array();
                 for (const auto& c : claims) {
-                    double r_plus = claim_plus[c.id];
-                    double r_minus = claim_minus[c.id];
-                    hypergraph.add_node(c.id, c.claim_text, r_plus, r_minus);
-                    tracker.record_event(c.id, 1.0); // Historical baseline
+                    double r_plus = 0.0, r_minus = 0.0;
+                    std::vector<EvidenceProvenance> pos_ev, neg_ev;
+                    for (const auto& ep : claim_provenance_map[c.id]) {
+                        if (ep.weight >= 0) pos_ev.push_back(ep);
+                        else neg_ev.push_back(ep);
+                    }
+                    r_plus = ProvenanceDecorrelator::compute_effective_evidence(pos_ev);
+                    r_minus = ProvenanceDecorrelator::compute_effective_evidence(neg_ev);
+
+                    hypergraph.add_node(c.id, c.claim_text, r_plus, r_minus, 0.5);
+                    tracker.record_event(c.id, 1.0); // Baseline timestamp
                 }
 
-                hypergraph.propagate_belief_revision();
+                hypergraph.propagate_damped_belief_revision();
 
                 for (const auto& kv : hypergraph.nodes()) {
                     const auto& n = kv.second;
@@ -1059,9 +1065,10 @@ public:
                         {"belief", n.opinion.belief},
                         {"disbelief", n.opinion.disbelief},
                         {"uncertainty", n.opinion.uncertainty},
+                        {"base_rate", n.opinion.base_rate},
+                        {"projected_probability", n.opinion.projected_probability()},
                         {"conflict_mass", n.opinion.conflict_mass()},
-                        {"expected_probability", n.opinion.expected_probability()},
-                        {"hawkes_intensity", lambda},
+                        {"power_law_hawkes_intensity", lambda},
                         {"is_exonerated", n.is_exonerated}
                     });
                 }
@@ -1069,7 +1076,7 @@ public:
                 res["result"] = {
                     {"nodes", node_states},
                     {"total_nodes", node_states.size()},
-                    {"stage", "Stage 2: Subjective Logic & Dirichlet Algebra"}
+                    {"version", "v2 Upgraded Neuro-Symbolic Epistemic Pipeline"}
                 };
 
             } else if (action == "get_optimal_epistemic_intervention") {
@@ -1077,8 +1084,8 @@ public:
                 auto claims = storage_->get_claims(projectId);
                 auto evidence = storage_->get_evidence(projectId);
 
-                EpistemicHypergraph hypergraph;
-                HawkesPerspectiveTracker tracker(0.25);
+                UpgradedEpistemicHypergraph hypergraph(0.65);
+                PowerLawHawkesTracker tracker(0.3, 1.0);
 
                 for (const auto& c : claims) {
                     double r_plus = 0.0, r_minus = 0.0;
@@ -1088,42 +1095,45 @@ public:
                             else if (ev.evidence_type == "contradicting") r_minus += 1.0;
                         }
                     }
-                    hypergraph.add_node(c.id, c.claim_text, r_plus, r_minus);
+                    hypergraph.add_node(c.id, c.claim_text, r_plus, r_minus, 0.5);
                     tracker.record_event(c.id, 1.0);
                 }
 
-                hypergraph.propagate_belief_revision();
+                hypergraph.propagate_damped_belief_revision();
 
-                ConservativeQPolicy policy;
+                DistributionalCvarPolicy policy(0.25);
                 double current_time = payload.value("current_time", 2.0);
-                auto decision = policy.select_action(hypergraph, tracker, current_time);
+                auto decision = policy.select_risk_averse_action(hypergraph, tracker, current_time);
 
                 res["result"] = {
                     {"action_id", static_cast<int>(decision.action)},
-                    {"action_name", decision.action == EpistemicAction::SURFACE_CONTRADICTION ? "SURFACE_CONTRADICTION" :
-                                    (decision.action == EpistemicAction::REACTIVATE_FORGOTTEN_INSIGHT ? "REACTIVATE_FORGOTTEN_INSIGHT" :
-                                    (decision.action == EpistemicAction::PROPOSE_ASSUMPTION_TEST ? "PROPOSE_ASSUMPTION_TEST" : "SILENT_ASSIMILATION"))},
+                    {"action_name", decision.action == EpistemicActionV2::SURFACE_CONTRADICTION ? "SURFACE_CONTRADICTION" :
+                                    (decision.action == EpistemicActionV2::REACTIVATE_FORGOTTEN_INSIGHT ? "REACTIVATE_FORGOTTEN_INSIGHT" :
+                                    (decision.action == EpistemicActionV2::PROPOSE_ASSUMPTION_TEST ? "PROPOSE_ASSUMPTION_TEST" : "SILENT_ASSIMILATION"))},
                     {"target_node_id", decision.target_node_id},
-                    {"expected_reward", decision.expected_reward},
+                    {"cvar_score", decision.cvar_score},
                     {"rationale", decision.rationale},
-                    {"stage", "Stage 5: Conservative Q-Learning (CQL) Policy"}
+                    {"policy", "CVaR_0.25 Risk-Averse Distributional Quantile CQL"}
                 };
 
             } else if (action == "score_calibrated_nli") {
 
-                double z_sup = payload.value("logit_support", 0.0);
-                double z_con = payload.value("logit_contradiction", 0.0);
-                double z_unrel = payload.value("logit_unrelated", 0.0);
-                double t_cal = payload.value("temperature", 1.0);
+                double p_sup = payload.value("p_support", 0.0);
+                double p_con = payload.value("p_contradiction", 0.0);
+                double p_unrel = payload.value("p_unrelated", 0.0);
+                double q_threshold = payload.value("quantile_threshold", 0.65);
 
-                auto scored = NliProbabilities::from_logits(z_sup, z_con, z_unrel, t_cal);
+                ConformalNliGate gate(q_threshold);
+                auto conf_set = gate.evaluate_admission(p_sup, p_con, p_unrel);
 
                 res["result"] = {
-                    {"p_support", scored.p_support},
-                    {"p_contradiction", scored.p_contradiction},
-                    {"p_unrelated", scored.p_unrelated},
-                    {"signed_weight", scored.signed_weight},
-                    {"stage", "Stage 1: Calibrated NLI Cross-Encoder"}
+                    {"p_support", conf_set.calibrated_support},
+                    {"p_contradiction", conf_set.calibrated_contradiction},
+                    {"signed_weight", conf_set.signed_weight},
+                    {"is_singleton", conf_set.is_singleton},
+                    {"is_ambiguous", conf_set.is_ambiguous},
+                    {"accepted_for_hypergraph", conf_set.is_singleton},
+                    {"routing", conf_set.is_singleton ? "ADMITTED_TO_HYPERGRAPH" : "EPISTEMIC_AMBIGUITY_QUEUE"}
                 };
 
             } else if (action == "get_sites") {
