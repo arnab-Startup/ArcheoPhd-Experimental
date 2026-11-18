@@ -10,7 +10,7 @@ tests/bin/
 tests/test_*/
 build/
 *.exe
-!release/ArchaeoPhD.exe
+!release/Experimental.exe
 release/dist/
 release/WebView2Loader.dll
 test_live_sample.pdf

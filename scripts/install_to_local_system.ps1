@@ -1,15 +1,15 @@
-# ArchaeoPhD - Master Local System Installer
+# ArchaeoPhD - Master Local System Installer (Experimental Workstation)
 $ErrorActionPreference = 'Stop'
 
 Write-Host "============================================================"
-Write-Host "  Installing ArchaeoPhD Desktop to Local System"
+Write-Host "  Installing ArchaeoPhD Experimental to Local System"
 Write-Host "============================================================"
 
 # 1. Paths
 $localAppData = [Environment]::GetFolderPath('LocalApplicationData')
-$destDir = Join-Path $localAppData 'ArchaeoPhD'
+$destDir = Join-Path $localAppData 'ArchaeoPhD_Experimental'
 $desktopDir = Resolve-Path (Join-Path $PSScriptRoot '..')
-$srcExe = Join-Path $desktopDir 'release\ArchaeoPhD.exe'
+$srcExe = Join-Path $desktopDir 'release\Experimental.exe'
 $srcLoader = Join-Path $desktopDir 'lib\WebView2Loader.dll'
 $srcDist = Join-Path $desktopDir 'dist'
 
@@ -17,8 +17,8 @@ Write-Host "Source Directory: $desktopDir"
 Write-Host "Target Directory: $destDir"
 
 # 2. Stop running process
-Write-Host "[1/6] Terminating active ArchaeoPhD processes..."
-Get-Process -Name ArchaeoPhD -ErrorAction SilentlyContinue | Stop-Process -Force
+Write-Host "[1/6] Terminating active Experimental processes..."
+Get-Process -Name Experimental -ErrorAction SilentlyContinue | Stop-Process -Force
 Start-Sleep -Milliseconds 800
 
 # 3. Ensure target directory structure
@@ -32,8 +32,8 @@ if (-not (Test-Path $distDest)) {
 }
 
 # 4. Copy binary and loader
-Write-Host "[3/6] Installing ArchaeoPhD.exe and native dependencies..."
-Copy-Item -Path $srcExe -Destination (Join-Path $destDir 'ArchaeoPhD.exe') -Force
+Write-Host "[3/6] Installing Experimental.exe and native dependencies..."
+Copy-Item -Path $srcExe -Destination (Join-Path $destDir 'Experimental.exe') -Force
 Copy-Item -Path $srcLoader -Destination (Join-Path $destDir 'WebView2Loader.dll') -Force
 
 # 5. Mirror dist assets (mirrors so deleted/old chunks are removed)
@@ -94,6 +94,6 @@ if (Test-Path $logPath) {
 Write-Host "============================================================"
 Write-Host "  Verifying Installed Artifacts"
 Write-Host "============================================================"
-Get-Item (Join-Path $destDir 'ArchaeoPhD.exe'), (Join-Path $distDest 'index.html'), (Join-Path $distDest 'assets\Dashboard-W5Q9sdSC.js') | Select-Object FullName, Length, LastWriteTime | Format-Table -AutoSize
+Get-Item (Join-Path $destDir 'Experimental.exe'), (Join-Path $distDest 'index.html'), (Join-Path $distDest 'assets\Dashboard-W5Q9sdSC.js') | Select-Object FullName, Length, LastWriteTime | Format-Table -AutoSize
 
-Write-Host "[INSTALLATION COMPLETE] ArchaeoPhD successfully installed to local system!"
+Write-Host "[INSTALLATION COMPLETE] ArchaeoPhD Experimental successfully installed to local system!"

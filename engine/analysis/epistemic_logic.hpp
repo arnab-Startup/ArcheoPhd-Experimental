@@ -12,7 +12,7 @@
 namespace archaeophd {
 
 // =============================================================================
-// Stage 1 Upgrade: Subgraph-Conditioned Set NLI & Split Conformal Abstention Gate
+// Stage 1 (v2.1): Subgraph-Conditioned Set NLI & Split Conformal Abstention Gate
 // =============================================================================
 enum class NliRelation {
     SUPPORT = 0,
@@ -37,7 +37,6 @@ public:
     explicit ConformalNliGate(double threshold = 0.65)
         : non_conformity_quantile_threshold_(threshold) {}
 
-    // Upgraded Equation 1A & 1B: Set-Conditioned Probabilities & Conformal Admission
     ConformalPredictionSet evaluate_admission(
         double p_support,
         double p_contradiction,
@@ -69,7 +68,7 @@ public:
 };
 
 // =============================================================================
-// Stage 2 Upgrade: Provenance-Decorrelated 4-Tuple Subjective Logic
+// Stage 2 (v2.1): Zero-Inflation Root-Lineage Projection & 4-Tuple Subjective Logic
 // =============================================================================
 struct OpinionTuple4 {
     double belief = 0.0;       // b_v (corroboration)
@@ -91,73 +90,77 @@ struct OpinionTuple4 {
         return op;
     }
 
-    // Upgraded Equation 2B: Projected Epistemic Probability P_bar = b_v + a_v * u_v
     double projected_probability() const {
         return belief + base_rate * uncertainty;
     }
 
-    // Epistemic Conflict Mass C_v = 4 * b_v * d_v * (1 - u_v)
     double conflict_mass() const {
         double c = 4.0 * belief * disbelief * (1.0 - uncertainty);
         return std::clamp(c, 0.0, 1.0);
     }
 };
 
-// Provenance Lineage Matrix & Overlap Kernel K_ij
-struct EvidenceProvenance {
-    std::string evidence_id;
-    std::vector<std::string> root_empirical_observations; // g_i ancestor vector
+struct RootLineageWarrant {
+    std::string warrant_id;
+    std::vector<std::string> root_observations; // Ancestor basis O_t
     double weight = 1.0;
     double satisfaction = 1.0;
-
-    static double compute_overlap(const EvidenceProvenance& a, const EvidenceProvenance& b) {
-        if (a.root_empirical_observations.empty() || b.root_empirical_observations.empty()) return 0.0;
-        std::set<std::string> set_a(a.root_empirical_observations.begin(), a.root_empirical_observations.end());
-        int shared = 0;
-        for (const auto& obs : b.root_empirical_observations) {
-            if (set_a.count(obs)) shared++;
-        }
-        double norm_a = std::sqrt(static_cast<double>(a.root_empirical_observations.size()));
-        double norm_b = std::sqrt(static_cast<double>(b.root_empirical_observations.size()));
-        return (norm_a > 0.0 && norm_b > 0.0) ? (shared / (norm_a * norm_b)) : 0.0;
-    }
 };
 
-class ProvenanceDecorrelator {
+class RootLineageProjector {
 public:
-    // Upgraded Equation 2A: Lineage Covariance Discounting
-    // Eliminates echo chambers where multiple citations share the exact same root sample
-    static double compute_effective_evidence(const std::vector<EvidenceProvenance>& evidences) {
+    // Patched Equation 2A: Zero-Inflation Root-Lineage Basis Max-Projection
+    // r_{v,eff}^+ = sum_{o in O_t} max_{i} ( G_{i,o} * w_i * Phi_i )
+    // Guarantees mathematical idempotency: N duplicate notes yield exactly 0.0% phantom inflation.
+    static double compute_effective_evidence(const std::vector<RootLineageWarrant>& warrants) {
+        if (warrants.empty()) return 0.0;
+
+        std::set<std::string> unique_roots;
+        for (const auto& w : warrants) {
+            for (const auto& r : w.root_observations) {
+                unique_roots.insert(r);
+            }
+        }
+
+        if (unique_roots.empty()) {
+            double max_val = 0.0;
+            for (const auto& w : warrants) max_val = std::max(max_val, w.weight * w.satisfaction);
+            return max_val;
+        }
+
         double total_effective = 0.0;
-        size_t n = evidences.size();
-        for (size_t i = 0; i < n; ++i) {
-            double denominator = 1.0;
-            for (size_t j = 0; j < n; ++j) {
-                if (i != j) {
-                    double k_ij = EvidenceProvenance::compute_overlap(evidences[i], evidences[j]);
-                    denominator += k_ij * evidences[j].satisfaction;
+        for (const auto& root : unique_roots) {
+            double max_for_root = 0.0;
+            for (const auto& w : warrants) {
+                bool has_root = std::find(w.root_observations.begin(), w.root_observations.end(), root) != w.root_observations.end();
+                if (has_root) {
+                    double g_io = 1.0 / static_cast<double>(w.root_observations.size());
+                    double val = g_io * w.weight * w.satisfaction;
+                    if (val > max_for_root) max_for_root = val;
                 }
             }
-            total_effective += (evidences[i].weight * evidences[i].satisfaction) / denominator;
+            total_effective += max_for_root;
         }
         return total_effective;
     }
 };
 
 // =============================================================================
-// Stage 3 Upgrade: Cardinality-Invariant Weighted Log-Barrier & Damped Fixed-Point Iteration
+// Stage 3 (v2.1): Asymmetric Godel-Frank Operator & Damped Fixed-Point Iteration
 // =============================================================================
 struct UpgradedHyperedgeWarrant {
     std::string id;
-    std::vector<std::string> in_list;   // S_e^+
+    std::vector<std::string> in_list;   // S_e^+ required premises
     std::vector<double> in_weights;     // gamma_u premise importance weights (sum = 1)
-    std::vector<std::string> out_list;  // S_e^- defeaters
+    std::vector<std::string> out_list;  // S_e^- blocking defeaters
     std::string conclusion_id;          // v_e
     double warrant_weight = 5.0;
     double leak_tolerance = 0.02;       // epsilon_u in [0, 0.1]
+    double previous_satisfaction = 0.0;
 
-    // Upgraded Equation 3A: Power-Weighted Log-Barrier Aggregator with Godel T-Conorm Defeater
-    // Solves the Product T-Norm Vanishing Gradient (0.8^8 = 0.167) on complex hypotheses
+    // Patched Equation 3A: Asymmetric Godel-Frank Operator
+    // Sufficiency uses cardinality-invariant geometric mean: exp(sum gamma * ln(P_bar))
+    // Falsification necessity uses un-cushioned veto: prod (1 - (1 - eps)*d_u) * prod (1 - (1 - eps)*b_z)
     double compute_satisfaction(const std::map<std::string, OpinionTuple4>& node_states) const {
         if (in_list.empty()) return 0.0;
 
@@ -170,7 +173,7 @@ struct UpgradedHyperedgeWarrant {
             }
         }
 
-        // Weighted geometric mean over logarithm
+        // Part 1: Cardinality-Invariant Positive Support
         double log_sum = 0.0;
         for (size_t i = 0; i < m; ++i) {
             const auto& u_id = in_list[i];
@@ -179,25 +182,36 @@ struct UpgradedHyperedgeWarrant {
             if (it != node_states.end()) {
                 p_bar = it->second.projected_probability();
             }
-            double term = (1.0 - leak_tolerance) * p_bar + leak_tolerance;
-            term = std::max(1e-9, term);
-            log_sum += normalized_gammas[i] * std::log(term);
+            p_bar = std::max(1e-9, p_bar);
+            log_sum += normalized_gammas[i] * std::log(p_bar);
         }
-        double sat_in = std::exp(log_sum);
+        double support_term = std::exp(log_sum);
 
-        // Godel T-conorm: strongest single active defeater blocks the warrant
-        double sat_out = 1.0;
+        // Part 2: Un-cushioned Premise Falsification Veto
+        double falsification_veto = 1.0;
+        for (const auto& u_id : in_list) {
+            double d_u = 0.0;
+            auto it = node_states.find(u_id);
+            if (it != node_states.end()) {
+                d_u = it->second.disbelief;
+            }
+            double term = 1.0 - ((1.0 - leak_tolerance) * d_u);
+            falsification_veto *= std::clamp(term, 0.0, 1.0);
+        }
+
+        // Part 3: Defeater Veto (Out-List)
+        double defeater_veto = 1.0;
         for (const auto& z_id : out_list) {
             double b_z = 0.0;
             auto it = node_states.find(z_id);
             if (it != node_states.end()) {
                 b_z = it->second.belief;
             }
-            double term = 1.0 - b_z;
-            if (term < sat_out) sat_out = term;
+            double term = 1.0 - ((1.0 - leak_tolerance) * b_z);
+            defeater_veto *= std::clamp(term, 0.0, 1.0);
         }
 
-        return sat_in * std::clamp(sat_out, 0.0, 1.0);
+        return support_term * falsification_veto * defeater_veto;
     }
 };
 
@@ -211,7 +225,7 @@ struct UpgradedEpistemicNode {
     OpinionTuple4 opinion;
     double previous_belief = 0.0;
     bool is_exonerated = false;
-    std::vector<std::string> cycle_neighbors; // Detected cycles to exclude self-reinforcement
+    double last_shockwave_delta = 0.0;
 };
 
 class UpgradedEpistemicHypergraph {
@@ -240,9 +254,10 @@ public:
     }
 
     const std::map<std::string, UpgradedEpistemicNode>& nodes() const { return nodes_; }
+    std::map<std::string, UpgradedEpistemicNode>& mutable_nodes() { return nodes_; }
     const std::vector<UpgradedHyperedgeWarrant>& hyperedges() const { return hyperedges_; }
+    std::vector<UpgradedHyperedgeWarrant>& mutable_hyperedges() { return hyperedges_; }
 
-    // Upgraded Equation 3B: Damped Non-Oscillating Variational Fixed-Point Iteration
     void propagate_damped_belief_revision(int max_iterations = 15, double convergence_threshold = 1e-4) {
         for (int iter = 0; iter < max_iterations; ++iter) {
             std::map<std::string, OpinionTuple4> current_states;
@@ -253,8 +268,15 @@ public:
             std::map<std::string, double> raw_prop_plus;
             std::map<std::string, double> raw_prop_minus;
 
-            for (const auto& hedge : hyperedges_) {
+            for (auto& hedge : hyperedges_) {
                 double phi = hedge.compute_satisfaction(current_states);
+                double delta_phi = std::abs(phi - hedge.previous_satisfaction);
+                hedge.previous_satisfaction = phi;
+
+                if (nodes_.count(hedge.conclusion_id)) {
+                    nodes_[hedge.conclusion_id].last_shockwave_delta = std::max(nodes_[hedge.conclusion_id].last_shockwave_delta, delta_phi);
+                }
+
                 double eff_weight = std::abs(hedge.warrant_weight) * phi;
                 if (hedge.warrant_weight >= 0.0) {
                     raw_prop_plus[hedge.conclusion_id] += eff_weight;
@@ -266,8 +288,6 @@ public:
             double max_delta = 0.0;
             for (auto& kv : nodes_) {
                 auto& node = kv.second;
-
-                // Contraction-mapped spectral damping: r^(k+1) = (1 - zeta) * r^(k) + zeta * F(phi)
                 double damped_prop_plus = (1.0 - damping_factor_zeta_) * node.r_prop_plus + damping_factor_zeta_ * raw_prop_plus[node.id];
                 double damped_prop_minus = (1.0 - damping_factor_zeta_) * node.r_prop_minus + damping_factor_zeta_ * raw_prop_minus[node.id];
 
@@ -288,60 +308,66 @@ public:
                 node.r_prop_minus = damped_prop_minus;
             }
 
-            if (max_delta < convergence_threshold) {
-                break;
-            }
+            if (max_delta < convergence_threshold) break;
         }
     }
 };
 
 // =============================================================================
-// Stage 4 Upgrade: Multi-Facet Perspective Mixture & Heavy-Tailed Power-Law Memory Kernel
+// Stage 4 (v2.1): Shockwave-Gated Temporal Excitation Kernel
 // =============================================================================
 struct TemporalActivationEvent {
     std::string node_id;
     double timestamp = 0.0;
 };
 
-class PowerLawHawkesTracker {
+class ShockwaveHawkesTracker {
 private:
     std::vector<TemporalActivationEvent> event_history_;
-    double beta_mem_ = 0.3; // Power-law exponent (heavy tail)
-    double timescale_c_ = 1.0;
-
-    // Multi-facet perspective mixture components (pi_k, p_k)
-    std::map<std::string, double> perspective_mixture_weights_; // Paradigm weights
+    double beta_mem_ = 0.3; // Heavy-tail exponent
+    double timescale_c_ = 0.5; // Monthly scaling parameter
+    double eta_shock_ = 2.0;   // Multiplicative shockwave gain
 
 public:
-    explicit PowerLawHawkesTracker(double beta_mem = 0.3, double c = 1.0)
-        : beta_mem_(beta_mem), timescale_c_(c) {
-        perspective_mixture_weights_["geoarchaeology_paradigm"] = 0.5;
-        perspective_mixture_weights_["ceramic_chronology_paradigm"] = 0.5;
-    }
+    explicit ShockwaveHawkesTracker(double beta_mem = 0.3, double c = 0.5, double eta_shock = 2.0)
+        : beta_mem_(beta_mem), timescale_c_(c), eta_shock_(eta_shock) {}
 
     void record_event(const std::string& node_id, double timestamp) {
         event_history_.push_back({node_id, timestamp});
     }
 
-    // Upgraded Equation 4B: Heavy-Tailed Power-Law Activation Intensity
-    // Eliminates exponential decay to zero across multi-year research horizons
-    double compute_intensity(const std::string& node_id, double current_time, double baseline_mu = 0.1) const {
-        double intensity = baseline_mu;
+    // Patched Equation 4B: Shockwave-Gated Temporal Excitation
+    // Evaluates baseline power-law dormancy, amplified by absolute epistemic jump |Delta Phi_e|
+    double compute_intensity(
+        const std::string& node_id,
+        double current_time,
+        double delta_phi = 0.0,
+        double structural_coupling = 0.85,
+        double baseline_mu = 0.01
+    ) const {
+        double tau_v = current_time;
         for (const auto& ev : event_history_) {
-            if (ev.timestamp <= current_time) {
-                double dt = current_time - ev.timestamp;
-                double coupling = (ev.node_id == node_id) ? 1.0 : 0.5;
-                // Power-law kernel: (1 + c * dt)^(-(1 + beta_mem))
-                double power_law_factor = std::pow(1.0 + timescale_c_ * dt, -(1.0 + beta_mem_));
-                intensity += coupling * power_law_factor;
+            if (ev.node_id == node_id) {
+                tau_v = std::min(tau_v, ev.timestamp);
             }
         }
+
+        double dt_dormant = std::max(0.0, current_time - tau_v);
+        // Heavy-tailed baseline power-law decay
+        double baseline_decay = std::pow(1.0 + timescale_c_ * dt_dormant, -beta_mem_);
+        double intensity = baseline_mu * baseline_decay;
+
+        // Epistemic Shockwave Multiplier
+        if (delta_phi > 0.0) {
+            intensity += eta_shock_ * delta_phi * structural_coupling;
+        }
+
         return intensity;
     }
 };
 
 // =============================================================================
-// Stage 5 Upgrade: Distributional Quantile CQL with Risk-Averse CVaR Optimization
+// Stage 5 (v2.1): Risk-Averse CVaR_0.25 Distributional Quantile Policy
 // =============================================================================
 enum class EpistemicActionV2 {
     SURFACE_CONTRADICTION = 0,
@@ -359,24 +385,22 @@ struct EpistemicInterventionResultV2 {
 
 class DistributionalCvarPolicy {
 private:
-    double tau_risk_ = 0.25; // 25th percentile risk-averse cutoff (CVaR_0.25)
+    double tau_risk_ = 0.25;
     double cognitive_cost_interruption_ = 0.45;
 
 public:
     explicit DistributionalCvarPolicy(double tau_risk = 0.25)
         : tau_risk_(std::clamp(tau_risk, 0.05, 0.50)) {}
 
-    // Upgraded Equation 5B: Lower-Tail Conditional Value-at-Risk (CVaR_tau) Selection
-    // Only interrupts the researcher when even the worst-case 25th percentile delivers net epistemic gain
     EpistemicInterventionResultV2 select_risk_averse_action(
         const UpgradedEpistemicHypergraph& graph,
-        const PowerLawHawkesTracker& tracker,
+        const ShockwaveHawkesTracker& tracker,
         double current_time
     ) const {
         EpistemicInterventionResultV2 best;
         best.action = EpistemicActionV2::SILENT_ASSIMILATION;
         best.cvar_score = 0.0;
-        best.rationale = "Risk-averse CVaR criterion: no guaranteed worst-case epistemic gain. Maintained scholar flow.";
+        best.rationale = "Risk-averse CVaR criterion: preserved scholar focus.";
 
         std::string max_conflict_node;
         double max_conflict = 0.0;
@@ -394,10 +418,8 @@ public:
             }
         }
 
-        // Evaluate CVaR for Action 0: SURFACE_CONTRADICTION
         if (!max_conflict_node.empty() && max_conflict > 0.40) {
             double intensity = tracker.compute_intensity(max_conflict_node, current_time);
-            // Simulate 5 quantiles of epistemic return distribution [q0.05, q0.15, q0.25, q0.50, q0.75]
             double worst_case_sample = (1.5 * max_conflict * intensity * 0.70) - cognitive_cost_interruption_;
             double median_sample = (1.5 * max_conflict * intensity) - cognitive_cost_interruption_;
             double cvar_estimate = (worst_case_sample + median_sample * 0.5) / 1.5;
@@ -406,20 +428,19 @@ public:
                 best.action = EpistemicActionV2::SURFACE_CONTRADICTION;
                 best.target_node_id = max_conflict_node;
                 best.cvar_score = cvar_estimate;
-                best.rationale = "High dialectic contradiction with robust positive CVaR_0.25 lower-tail gain (" +
-                                 std::to_string(cvar_estimate) + ").";
+                best.rationale = "High dialectic contradiction with positive CVaR_0.25 (" + std::to_string(cvar_estimate) + ").";
             }
         }
 
-        // Evaluate CVaR for Action 1: REACTIVATE_FORGOTTEN_INSIGHT
         if (!exonerated_node.empty()) {
-            double intensity = tracker.compute_intensity(exonerated_node, current_time);
+            const auto& node = graph.nodes().at(exonerated_node);
+            double intensity = tracker.compute_intensity(exonerated_node, current_time, node.last_shockwave_delta);
             double worst_case_exoneration = (2.0 * intensity * 0.75) - cognitive_cost_interruption_;
             if (worst_case_exoneration > best.cvar_score) {
                 best.action = EpistemicActionV2::REACTIVATE_FORGOTTEN_INSIGHT;
                 best.target_node_id = exonerated_node;
                 best.cvar_score = worst_case_exoneration;
-                best.rationale = "Defeater disproved with high confidence. Exonerated insight delivers guaranteed epistemic recovery.";
+                best.rationale = "Upward exoneration shockwave: forgotten insight restored with high confidence.";
             }
         }
 

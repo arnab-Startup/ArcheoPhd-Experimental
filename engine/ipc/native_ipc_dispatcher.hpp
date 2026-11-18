@@ -1026,29 +1026,29 @@ public:
                 auto evidence = storage_->get_evidence(projectId);
 
                 UpgradedEpistemicHypergraph hypergraph(0.65);
-                PowerLawHawkesTracker tracker(0.3, 1.0);
+                ShockwaveHawkesTracker tracker(0.3, 0.5, 2.0);
 
-                // Group evidence by claim and apply Provenance Overlap Kernel K_ij
-                std::map<std::string, std::vector<EvidenceProvenance>> claim_provenance_map;
+                // Group evidence by claim and apply Root-Lineage Projection (Patched Eq. 2A)
+                std::map<std::string, std::vector<RootLineageWarrant>> claim_provenance_map;
                 for (const auto& ev : evidence) {
-                    EvidenceProvenance ep;
-                    ep.evidence_id = ev.id;
-                    ep.root_empirical_observations = ev.source_ids.empty() ? std::vector<std::string>{ev.id} : ev.source_ids;
-                    ep.weight = (ev.evidence_type == "contradicting") ? -1.0 : 1.0;
-                    ep.satisfaction = 1.0;
-                    claim_provenance_map[ev.claim_id].push_back(ep);
+                    RootLineageWarrant rw;
+                    rw.warrant_id = ev.id;
+                    rw.root_observations = ev.source_ids.empty() ? std::vector<std::string>{ev.id} : ev.source_ids;
+                    rw.weight = (ev.evidence_type == "contradicting") ? -1.0 : 1.0;
+                    rw.satisfaction = 1.0;
+                    claim_provenance_map[ev.claim_id].push_back(rw);
                 }
 
                 json node_states = json::array();
                 for (const auto& c : claims) {
                     double r_plus = 0.0, r_minus = 0.0;
-                    std::vector<EvidenceProvenance> pos_ev, neg_ev;
-                    for (const auto& ep : claim_provenance_map[c.id]) {
-                        if (ep.weight >= 0) pos_ev.push_back(ep);
-                        else neg_ev.push_back(ep);
+                    std::vector<RootLineageWarrant> pos_ev, neg_ev;
+                    for (const auto& rw : claim_provenance_map[c.id]) {
+                        if (rw.weight >= 0) pos_ev.push_back(rw);
+                        else neg_ev.push_back(rw);
                     }
-                    r_plus = ProvenanceDecorrelator::compute_effective_evidence(pos_ev);
-                    r_minus = ProvenanceDecorrelator::compute_effective_evidence(neg_ev);
+                    r_plus = RootLineageProjector::compute_effective_evidence(pos_ev);
+                    r_minus = RootLineageProjector::compute_effective_evidence(neg_ev);
 
                     hypergraph.add_node(c.id, c.claim_text, r_plus, r_minus, 0.5);
                     tracker.record_event(c.id, 1.0); // Baseline timestamp
@@ -1058,7 +1058,7 @@ public:
 
                 for (const auto& kv : hypergraph.nodes()) {
                     const auto& n = kv.second;
-                    double lambda = tracker.compute_intensity(n.id, 2.0);
+                    double lambda = tracker.compute_intensity(n.id, 2.0, n.last_shockwave_delta);
                     node_states.push_back({
                         {"id", n.id},
                         {"label", n.label},
@@ -1076,7 +1076,7 @@ public:
                 res["result"] = {
                     {"nodes", node_states},
                     {"total_nodes", node_states.size()},
-                    {"version", "v2 Upgraded Neuro-Symbolic Epistemic Pipeline"}
+                    {"version", "v2.1 Upgraded Epistemic Pipeline with Root-Lineage Projection"}
                 };
 
             } else if (action == "get_optimal_epistemic_intervention") {
@@ -1085,7 +1085,7 @@ public:
                 auto evidence = storage_->get_evidence(projectId);
 
                 UpgradedEpistemicHypergraph hypergraph(0.65);
-                PowerLawHawkesTracker tracker(0.3, 1.0);
+                ShockwaveHawkesTracker tracker(0.3, 0.5, 2.0);
 
                 for (const auto& c : claims) {
                     double r_plus = 0.0, r_minus = 0.0;
