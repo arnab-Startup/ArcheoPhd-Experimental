@@ -21,8 +21,8 @@ The bare-metal **Native C++ Windows Desktop Application** for ArchaeoPhD — Off
 ```text
 ArcheoPhd-Desktop/
 ├── release/
-│   ├── ArchaeoPhD.exe          # 100% self-contained standalone desktop executable (~2.19 MB)
-│   └── ArchaeoPhD-Windows.zip  # Portable release package
+│   ├── Experimental.exe        # 100% self-contained standalone desktop executable (~9.88 MB)
+│   └── Experimental.zip        # Portable release package
 ├── src/
 │   ├── main.cpp                # Win32 + WebView2 integration & in-memory IPC dispatcher
 │   ├── app.ico                 # Multi-resolution application icon (16x16 to 256x256)
@@ -49,12 +49,12 @@ ArcheoPhd-Desktop/
 
 Double-click the release executable:
 ```powershell
-.\release\ArchaeoPhD.exe
+.\release\Experimental.exe
 ```
 
 Or extract and run the portable zip:
 ```powershell
-Expand-Archive .\release\ArchaeoPhD-Windows.zip -DestinationPath .\release\
+Expand-Archive .\release\Experimental.zip -DestinationPath .\release\
 ```
 
 ---
