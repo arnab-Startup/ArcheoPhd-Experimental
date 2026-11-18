@@ -127,28 +127,28 @@
 
     safeCall('get_sources')
       .then(function (sources) {
-          for (var i = 0; sources && i < sources.length; i++) {
-            if (sources[i].id === sourceId) {
-              currentSource = sources[i];
-              break;
-            }
+        for (var i = 0; sources && i < sources.length; i++) {
+          if (sources[i].id === sourceId) {
+            currentSource = sources[i];
+            break;
           }
-          if (currentSource) {
-            document.getElementById('apd-wf-class-source-subtitle').textContent = 
-              (currentSource.title || 'Untitled') + ' (' + (currentSource.author || 'Unknown') + ', ' + (currentSource.year || 'n.d.') + ')';
-            
-            if (currentSource.degradation_class === 'CLASS_A') {
-              selectTier('CLASS_A');
-              document.getElementById('apd-wf-reflag-btn').style.display = 'inline-flex';
-              document.getElementById('apd-wf-reflag-purge-warning').style.display = 'flex';
-            } else {
-              selectTier('CLASS_B');
-            }
+        }
+        if (currentSource) {
+          document.getElementById('apd-wf-class-source-subtitle').textContent =
+            (currentSource.title || 'Untitled') + ' (' + (currentSource.author || 'Unknown') + ', ' + (currentSource.year || 'n.d.') + ')';
+
+          if (currentSource.degradation_class === 'CLASS_A') {
+            selectTier('CLASS_A');
+            document.getElementById('apd-wf-reflag-btn').style.display = 'inline-flex';
+            document.getElementById('apd-wf-reflag-purge-warning').style.display = 'flex';
+          } else {
+            selectTier('CLASS_B');
           }
-        })
-        .catch(function () {
-          document.getElementById('apd-wf-class-source-subtitle').textContent = 'Source ID: ' + sourceId;
-        });
+        }
+      })
+      .catch(function () {
+        document.getElementById('apd-wf-class-source-subtitle').textContent = 'Source ID: ' + sourceId;
+      });
 
     function selectTier(tier) {
       selectedTier = tier;
@@ -194,13 +194,13 @@
         source_id: sourceId,
         degradation_class: selectedTier
       })
-      .then(function () {
-        closeModal();
-        if (window.APD_MODAL) window.APD_MODAL.toast('Document degradation tier set to ' + selectedTier, 'success');
-      })
-      .catch(function (err) {
-        if (window.APD_MODAL) window.APD_MODAL.toast('Failed to save tier: ' + (err.message || err), 'error');
-      });
+        .then(function () {
+          closeModal();
+          if (window.APD_MODAL) window.APD_MODAL.toast('Document degradation tier set to ' + selectedTier, 'success');
+        })
+        .catch(function (err) {
+          if (window.APD_MODAL) window.APD_MODAL.toast('Failed to save tier: ' + (err.message || err), 'error');
+        });
     };
 
     // Reflag button
@@ -210,13 +210,13 @@
           source_id: sourceId,
           new_degradation_class: 'CLASS_B'
         })
-        .then(function () {
-          closeModal();
-          if (window.APD_MODAL) window.APD_MODAL.toast('Source downgraded to Class B. Automated claims purged.', 'warning');
-        })
-        .catch(function (err) {
-          if (window.APD_MODAL) window.APD_MODAL.toast('Reflagging error: ' + (err.message || err), 'error');
-        });
+          .then(function () {
+            closeModal();
+            if (window.APD_MODAL) window.APD_MODAL.toast('Source downgraded to Class B. Automated claims purged.', 'warning');
+          })
+          .catch(function (err) {
+            if (window.APD_MODAL) window.APD_MODAL.toast('Reflagging error: ' + (err.message || err), 'error');
+          });
       }
     };
   }
