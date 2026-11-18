@@ -1649,6 +1649,27 @@ public:
 
                 }
 
+                // AI Research Project Boundary: Isolate vector & document search strictly to current project
+                auto projectSources = storage_->get_sources(projectId);
+                std::unordered_set<std::string> projectDocIds;
+                for (const auto& s : projectSources) {
+                    projectDocIds.insert(s.id);
+                    if (!s.file_path.empty()) projectDocIds.insert(s.file_path);
+                    if (!s.archive_path.empty()) projectDocIds.insert(s.archive_path);
+                }
+
+                if (projectDocIds.empty()) {
+                    res["result"] = json::array();
+                    return res.dump();
+                }
+
+                if (!filter.doc_id.empty() && projectDocIds.count(filter.doc_id) == 0) {
+                    res["result"] = json::array();
+                    return res.dump();
+                }
+
+                filter.allowed_doc_ids = projectDocIds;
+
 
 
                 auto queryEmb = VectorIndex::embed_text(query, /*is_query=*/true);

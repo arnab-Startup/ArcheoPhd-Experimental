@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <unordered_map>
+#include <unordered_set>
 #include <algorithm>
 #include <iostream>
 #include "vector_index.hpp"
@@ -36,6 +37,7 @@ struct HybridSearchFilter {
     std::string doc_id;         // Filter to specific document (empty = any)
     int min_page_ref = -1;      // Filter to >= page number (-1 = any)
     int max_page_ref = -1;      // Filter to <= page number (-1 = any)
+    std::unordered_set<std::string> allowed_doc_ids; // Research project isolation boundary
 };
 
 class HybridSearchEngine {
@@ -86,6 +88,7 @@ public:
         for (size_t r = 0; r < dense_candidates.size(); ++r) {
             const auto& dc = dense_candidates[r];
             // Apply document filter if requested
+            if (!filter.allowed_doc_ids.empty() && filter.allowed_doc_ids.count(dc.doc_id) == 0) continue;
             if (!filter.doc_id.empty() && dc.doc_id != filter.doc_id) continue;
             if (filter.min_page_ref >= 0 && dc.page_ref < filter.min_page_ref) continue;
             if (filter.max_page_ref >= 0 && dc.page_ref > filter.max_page_ref) continue;
@@ -103,6 +106,7 @@ public:
         for (size_t r = 0; r < lexical_candidates.size(); ++r) {
             const auto& lc = lexical_candidates[r];
             // Apply document filter if requested
+            if (!filter.allowed_doc_ids.empty() && filter.allowed_doc_ids.count(lc.doc_id) == 0) continue;
             if (!filter.doc_id.empty() && lc.doc_id != filter.doc_id) continue;
             if (filter.min_page_ref >= 0 && lc.page_ref < filter.min_page_ref) continue;
             if (filter.max_page_ref >= 0 && lc.page_ref > filter.max_page_ref) continue;

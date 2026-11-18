@@ -33,21 +33,21 @@
         to { opacity: 1; transform: scale(1) translateY(0); }
       }
       .apd-dr-modal {
-        background: var(--apd-obsidian-card, #171311);
-        border: 1px solid var(--apd-gold-border, rgba(212, 163, 89, 0.28));
+        background: #ffffff;
+        border: 1px solid #d5cbbf;
         border-radius: 16px;
         width: 100%;
         max-width: 580px;
-        box-shadow: 0 25px 65px -10px rgba(0, 0, 0, 0.85), 0 0 0 1px var(--apd-gold-glow, rgba(212, 163, 89, 0.15));
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        color: var(--apd-parchment, #f5f0e8);
+        color: #2d2620;
       }
       .apd-dr-header {
         padding: 24px 28px 18px;
-        border-bottom: 1px solid var(--apd-gold-border-muted, rgba(212, 163, 89, 0.18));
-        background: var(--apd-obsidian-header, #201a17);
+        border-bottom: 1px solid #e8e2d9;
+        background: #faf8f5;
       }
       .apd-dr-badge {
         display: inline-flex;
@@ -57,9 +57,9 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.08em;
-        color: var(--apd-gold, #d4a359);
-        background: var(--apd-gold-bg, rgba(212, 163, 89, 0.12));
-        border: 1px solid var(--apd-gold-border, rgba(212, 163, 89, 0.3));
+        color: #932b1a;
+        background: rgba(147, 43, 26, 0.08);
+        border: 1px solid rgba(147, 43, 26, 0.2);
         padding: 4px 10px;
         border-radius: 999px;
         margin-bottom: 12px;
@@ -68,14 +68,14 @@
         font-family: var(--font-heading, "Fraunces", Georgia, serif);
         font-size: 22px;
         font-weight: 600;
-        color: var(--apd-parchment-white, #ffffff);
+        color: #2d2620;
         margin: 0 0 6px 0;
         line-height: 1.25;
         letter-spacing: -0.015em;
       }
       .apd-dr-subtitle {
         font-size: 13.5px;
-        color: var(--apd-parchment-muted, #a89f91);
+        color: #786e65;
         margin: 0;
         line-height: 1.5;
       }
@@ -86,21 +86,21 @@
         gap: 18px;
         max-height: 70vh;
         overflow-y: auto;
-        background: var(--apd-obsidian-card, #171311);
+        background: #ffffff;
       }
       .apd-dr-label {
         font-size: 12.5px;
         font-weight: 600;
-        color: var(--apd-parchment, #f5f0e8);
+        color: #2d2620;
         margin-bottom: 6px;
         display: flex;
         align-items: center;
         justify-content: space-between;
       }
       .apd-dr-label-sub {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 11px;
-        color: var(--apd-gold, #d4a359);
+        color: #932b1a;
       }
       .apd-dr-input-row {
         display: flex;
@@ -108,18 +108,18 @@
       }
       .apd-dr-input {
         flex: 1;
-        background: var(--apd-obsidian-input, #0d0a08);
-        border: 1.5px solid var(--apd-gold-border, rgba(212, 163, 89, 0.28));
+        background: #faf8f5;
+        border: 1.5px solid #d5cbbf;
         border-radius: 8px;
         padding: 10px 14px;
         font-size: 13px;
-        color: var(--apd-parchment-white, #ffffff);
+        color: #2d2620;
         outline: none;
         font-family: var(--font-mono, monospace);
       }
       .apd-dr-input:focus {
-        border-color: var(--apd-gold, #d4a359);
-        box-shadow: 0 0 0 3px var(--apd-gold-glow, rgba(212, 163, 89, 0.2));
+        border-color: #932b1a;
+        box-shadow: 0 0 0 3px rgba(147, 43, 26, 0.15);
       }
       .apd-dr-btn {
         padding: 9px 18px;
@@ -137,64 +137,63 @@
         user-select: none;
       }
       .apd-dr-btn-primary {
-        background: linear-gradient(135deg, var(--apd-primary, #9e4429) 0%, var(--apd-primary-dark, #71321d) 100%);
-        color: var(--apd-parchment-white, #ffffff);
-        border: 1px solid var(--apd-primary-border, #b85435);
-        box-shadow: 0 3px 12px rgba(113, 50, 29, 0.45);
+        background: #932b1a;
+        color: #ffffff;
+        border: 1px solid #712214;
+        box-shadow: 0 2px 6px rgba(147, 43, 26, 0.25);
       }
       .apd-dr-btn-primary:hover {
-        filter: brightness(1.12);
+        background: #7a2315;
         transform: translateY(-1px);
       }
       .apd-dr-btn-secondary {
-        background: rgba(255, 255, 255, 0.07);
-        color: var(--apd-parchment, #f5f0e8);
-        border: 1px solid var(--apd-gold-border, rgba(212, 163, 89, 0.3));
+        background: #ede8df;
+        color: #4a3f35;
+        border: 1px solid #d5cbbf;
       }
       .apd-dr-btn-secondary:hover {
-        background: var(--apd-gold-bg, rgba(212, 163, 89, 0.18));
-        border-color: var(--apd-gold, #d4a359);
-        color: var(--apd-parchment-white, #ffffff);
+        background: #e2dacd;
+        color: #2d2620;
       }
       .apd-dr-warning-box {
-        background: var(--apd-warning-bg, rgba(245, 158, 11, 0.1));
-        border: 1px solid var(--apd-warning-border, rgba(245, 158, 11, 0.35));
+        background: rgba(245, 158, 11, 0.08);
+        border: 1px solid rgba(245, 158, 11, 0.3);
         border-radius: 8px;
         padding: 14px 16px;
         display: flex;
         gap: 12px;
-        color: var(--apd-parchment, #f5f0e8);
+        color: #92400e;
         font-size: 12.5px;
         line-height: 1.5;
       }
       .apd-dr-warning-icon {
-        color: var(--apd-warning, #fbbf24);
+        color: #b45309;
         font-size: 20px;
         flex-shrink: 0;
       }
       .apd-dr-warning-title {
         font-weight: 700;
-        color: var(--apd-warning, #fbbf24);
+        color: #b45309;
         margin-bottom: 2px;
       }
       .apd-dr-footer {
         padding: 16px 28px;
-        border-top: 1px solid var(--apd-gold-border-muted, rgba(212, 163, 89, 0.18));
-        background: var(--apd-obsidian-footer, #1c1714);
+        border-top: 1px solid #e8e2d9;
+        background: #faf8f5;
         display: flex;
         justify-content: flex-end;
         gap: 10px;
       }
       .apd-dr-privacy-note {
         font-size: 12px;
-        color: var(--apd-parchment-muted, #a89f91);
+        color: #786e65;
         line-height: 1.5;
         display: flex;
         align-items: center;
         gap: 8px;
       }
       .apd-dr-privacy-note svg {
-        color: var(--apd-gold, #d4a359);
+        color: #932b1a;
         flex-shrink: 0;
       }
     `;

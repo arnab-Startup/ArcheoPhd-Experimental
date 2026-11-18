@@ -8,6 +8,19 @@
 (function () {
   'use strict';
 
+  function safeCall(action, payload, projectId) {
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function') {
+      return window.APD_BRIDGE.callNative(action, payload, projectId);
+    }
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function') {
+      return window.APD_BRIDGE.call(action, payload, projectId);
+    }
+    if (window.nativeBridge && typeof window.nativeBridge.call === 'function') {
+      return window.nativeBridge.call(action, payload, projectId);
+    }
+    return Promise.resolve(null);
+  }
+
   function formatBytes(bytes) {
     if (!bytes || bytes === 0) return '0 B';
     var k = 1024;
@@ -106,22 +119,20 @@
 
     // Native File Browser via IPC
     document.getElementById('apd-wf-browse-btn').addEventListener('click', function () {
-      if (window.APD_BRIDGE) {
-        window.APD_BRIDGE.callNative('browse_file', { initial_dir: '' })
-          .then(function (res) {
-            if (res && !res.cancelled && res.path) {
-              document.getElementById('apd-wf-file-path').value = res.path;
-              var titleInput = document.getElementById('apd-wf-title');
-              if (!titleInput.value) {
-                var base = res.path.split(/[\\/]/).pop().replace(/\.pdf$/i, '').replace(/[_-]/g, ' ');
-                titleInput.value = base;
-              }
+      safeCall('browse_file', { initial_dir: '' })
+        .then(function (res) {
+          if (res && !res.cancelled && res.path) {
+            document.getElementById('apd-wf-file-path').value = res.path;
+            var titleInput = document.getElementById('apd-wf-title');
+            if (!titleInput.value) {
+              var base = res.path.split(/[\\/]/).pop().replace(/\.pdf$/i, '').replace(/[_-]/g, ' ');
+              titleInput.value = base;
             }
-          })
-          .catch(function (err) {
-            console.warn('Native browse_file failed:', err);
-          });
-      }
+          }
+        })
+        .catch(function (err) {
+          console.warn('Native browse_file failed:', err);
+        });
     });
 
     // Ingestion Submission
@@ -154,13 +165,12 @@
         </div>
       `;
 
-      if (window.APD_BRIDGE) {
-        window.APD_BRIDGE.callNative('ingest_document', {
-          file_path: filePath,
-          title: title,
-          author: author,
-          year: year
-        })
+      safeCall('ingest_document', {
+        file_path: filePath,
+        title: title,
+        author: author,
+        year: year
+      })
         .then(function (result) {
           btn.style.display = 'none';
           var ratio = result.original_bytes > 0 
@@ -223,7 +233,6 @@
             window.APD_MODAL.toast('Ingestion failed: ' + (err.message || err), 'error');
           }
         });
-      }
     });
   }
 

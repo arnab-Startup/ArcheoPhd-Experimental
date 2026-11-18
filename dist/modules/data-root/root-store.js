@@ -30,31 +30,51 @@
     },
 
     fetchStatus: function () {
-      if (!window.APD_BRIDGE) return Promise.reject(new Error('APD_BRIDGE not available'));
-      return window.APD_BRIDGE.callNative('get_data_root_status')
+      var call = (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function')
+        ? window.APD_BRIDGE.callNative
+        : ((window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function')
+            ? window.APD_BRIDGE.call
+            : (window.nativeBridge ? window.nativeBridge.call : null));
+      if (!call) return Promise.resolve(_status);
+      return call.call(window.APD_BRIDGE || window.nativeBridge, 'get_data_root_status')
         .then(function (res) {
           _status = res || {};
           RootStore._notify();
           return _status;
-        });
+        }).catch(function() { return _status; });
     },
 
     setDataRoot: function (dataRootPath) {
-      if (!window.APD_BRIDGE) return Promise.reject(new Error('APD_BRIDGE not available'));
-      return window.APD_BRIDGE.callNative('set_data_root', { data_root: dataRootPath })
+      var call = (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function')
+        ? window.APD_BRIDGE.callNative
+        : ((window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function')
+            ? window.APD_BRIDGE.call
+            : (window.nativeBridge ? window.nativeBridge.call : null));
+      if (!call) return Promise.resolve(_status);
+      return call.call(window.APD_BRIDGE || window.nativeBridge, 'set_data_root', { data_root: dataRootPath })
         .then(function (res) {
           return RootStore.fetchStatus();
         });
     },
 
     browseFolder: function (initialPath) {
-      if (!window.APD_BRIDGE) return Promise.reject(new Error('APD_BRIDGE not available'));
-      return window.APD_BRIDGE.callNative('browse_folder', { initial_path: initialPath || '' });
+      var call = (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function')
+        ? window.APD_BRIDGE.callNative
+        : ((window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function')
+            ? window.APD_BRIDGE.call
+            : (window.nativeBridge ? window.nativeBridge.call : null));
+      if (!call) return Promise.resolve(null);
+      return call.call(window.APD_BRIDGE || window.nativeBridge, 'browse_folder', { initial_path: initialPath || '' });
     },
 
     checkCloudSync: function (path) {
-      if (!window.APD_BRIDGE) return Promise.reject(new Error('APD_BRIDGE not available'));
-      return window.APD_BRIDGE.callNative('check_cloud_sync', { path: path });
+      var call = (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function')
+        ? window.APD_BRIDGE.callNative
+        : ((window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function')
+            ? window.APD_BRIDGE.call
+            : (window.nativeBridge ? window.nativeBridge.call : null));
+      if (!call) return Promise.resolve(null);
+      return call.call(window.APD_BRIDGE || window.nativeBridge, 'check_cloud_sync', { path: path });
     }
   };
 

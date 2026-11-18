@@ -4,11 +4,111 @@
 
   <head>
     <script>
+      (function() {
+        // Core Defensive Polyfills for APD_PROJECT and APD_BRIDGE
+        window.APD_PROJECT = window.APD_PROJECT || {};
+        window.APD_PROJECT.getActiveId = window.APD_PROJECT.getActiveId || function() {
+          return localStorage.getItem('archaeo_active_project') || 'default';
+        };
+        window.APD_PROJECT.getActiveProjectId = function() {
+          return (this.getActiveId && this.getActiveId()) || localStorage.getItem('archaeo_active_project') || 'default';
+        };
+        window.APD_PROJECT.setActiveId = window.APD_PROJECT.setActiveId || function(id) {
+          if (!id) return;
+          localStorage.setItem('archaeo_active_project', id);
+          window.dispatchEvent(new CustomEvent('archaeo_project_changed', { detail: { projectId: id } }));
+        };
+        window.APD_PROJECT.setActiveProjectId = function(id) {
+          return this.setActiveId(id);
+        };
+        window.APD_PROJECT.getActiveTitle = window.APD_PROJECT.getActiveTitle || function() {
+          try {
+            var projs = JSON.parse(localStorage.getItem('archaeophd_local_projects') || '[]');
+            var curId = (window.APD_PROJECT.getActiveProjectId && window.APD_PROJECT.getActiveProjectId()) || 'default';
+            var found = projs.find(function(p) { return p.id === curId; });
+            if (found && (found.title || found.name)) return found.title || found.name;
+          } catch(e) {}
+          return 'Archaeological Project';
+        };
+        window.APD_PROJECT.getActiveProjectTitle = function() {
+          return this.getActiveTitle();
+        };
+        window.APD_PROJECT.getAllProjects = window.APD_PROJECT.getAllProjects || function() {
+          try {
+            var projs = JSON.parse(localStorage.getItem('archaeophd_local_projects') || '[]');
+            if (Array.isArray(projs)) return projs;
+          } catch(e) {}
+          return [];
+        };
+        window.APD_PROJECT.listen = window.APD_PROJECT.listen || function(cb) {
+          if (typeof cb === 'function') window.addEventListener('archaeo_project_changed', function(e) { cb(e.detail ? e.detail.projectId : null); });
+        };
+
+        window.APD_BRIDGE = window.APD_BRIDGE || {};
+        window.APD_BRIDGE.call = window.APD_BRIDGE.call || function(action, payload, projectId) {
+          if (window.nativeBridge && typeof window.nativeBridge.call === 'function') {
+            return window.nativeBridge.call(action, payload, projectId);
+          }
+          return Promise.resolve(null);
+        };
+        window.APD_BRIDGE.callNative = function(action, payload, projectId) {
+          return (this.call && this.call(action, payload, projectId)) || (window.nativeBridge && window.nativeBridge.call(action, payload, projectId)) || Promise.resolve(null);
+        };
+      })();
+    </script>
+    <script src="/shared/colors.js"></script>
+    <script src="/shared/icons.js"></script>
+    <script src="/shared/project-context.js"></script>
+    <script src="/shared/bridge-client.js"></script>
+    <script>
+
+      window.onerror = function(msg, url, line, col, error) {
+        var errStr = '[FATAL JS ERROR] ' + msg + ' at ' + url + ':' + line + ':' + col;
+        console.error(errStr, error);
+        try {
+          if (window.chrome && window.chrome.webview) {
+            window.chrome.webview.postMessage({
+              action: 'js_error',
+              payload: { message: String(msg), url: String(url), line: line, col: col, stack: (error && error.stack) || '' }
+            });
+          }
+        } catch(e){}
+
+        // Prevent white-screen void: render defensive recovery card if root is emptied
+        setTimeout(function() {
+          var root = document.getElementById('root');
+          if (root && (!root.firstElementChild || root.innerHTML.trim() === '')) {
+            root.innerHTML = '<div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:24px;font-family:system-ui,-apple-system,sans-serif;background:#FAF8F5;color:#2D2620;text-align:center;">' +
+              '<div style="width:56px;height:56px;border-radius:16px;background:rgba(184,56,32,0.1);color:#B83820;display:grid;place-items:center;margin-bottom:16px;">' +
+                '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>' +
+              '</div>' +
+              '<h2 style="font-size:20px;font-weight:600;margin:0 0 8px 0;">Workstation View Recovery</h2>' +
+              '<p style="font-size:13px;color:#786E65;max-width:440px;line-height:1.5;margin:0 0 20px 0;">An unexpected view condition occurred (' + String(msg).replace(/</g, '&lt;') + '). Your database, notes, and records are safely preserved in your local vault.</p>' +
+              '<div style="display:flex;gap:12px;">' +
+                '<button onclick="try{localStorage.setItem(\'archaeo_active_project\',\'default\');}catch(e){}window.location.href=\'/dashboard\';" style="padding:10px 18px;border-radius:8px;background:#932B1A;color:#fff;border:none;font-size:13px;font-weight:600;cursor:pointer;">Return to Scholar Dashboard</button>' +
+                '<button onclick="window.location.reload();" style="padding:10px 18px;border-radius:8px;background:#EDE8DF;color:#4A3F35;border:1px solid #D5CBBF;font-size:13px;font-weight:600;cursor:pointer;">Reload Workspace</button>' +
+              '</div>' +
+            '</div>';
+          }
+        }, 120);
+      };
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        var errStr = '[UNHANDLED PROMISE REJECTION] ' + (reason ? (reason.stack || reason.message || reason) : 'Unknown');
+        console.error(errStr);
+        try {
+          if (window.chrome && window.chrome.webview) {
+            window.chrome.webview.postMessage({
+              action: 'js_error',
+              payload: { message: errStr, stack: (reason && reason.stack) || '' }
+            });
+          }
+        } catch(e){}
+      });
+    </script>
+    <script>
       (function(){
         try {
-          if (window.location.pathname.endsWith('/index.html') || window.location.pathname === '/index.html') {
-            try { window.history.replaceState(null, '', '/'); } catch(e){}
-          }
           var rawMsgs = localStorage.getItem('archaeophd_local_messages');
           if (rawMsgs) {
             try {
@@ -24,32 +124,26 @@
               }
             } catch(e){}
           }
+          var DEMO_PROJ = {
+            id: 'demo-southern-levant',
+            title: 'Excavations at Tell es-Sultan (Jericho) & Southern Levant Horizons',
+            name: 'Excavations at Tell es-Sultan (Jericho) & Southern Levant Horizons',
+            research_period: 'Early to Middle Bronze Age (ca. 2500 - 1550 BCE)',
+            research_region: 'Southern Levant (Jordan Rift Valley)',
+            research_question: 'Stratigraphic synchronization of Bronze Age destruction layers and ceramic typologies.',
+            keywords: ['Stratigraphy', 'Radiocarbon Dating', 'Kenyon Trench', 'Pottery Typology'],
+            is_demo: true,
+            is_system_demo: true,
+            created_date: '2026-01-01T00:00:00.000Z'
+          };
           var projStr = localStorage.getItem('archaeophd_local_projects');
-          if (projStr) {
-            try {
-              var projs = JSON.parse(projStr);
-              if (Array.isArray(projs)) {
-                var filtered = projs.filter(function(p) {
-                  var t = (p.title || '') + ' ' + (p.name || '');
-                  return !p.is_demo && !p.is_system_demo &&
-                         t.indexOf('Southern Levant') === -1 &&
-                         t.indexOf('Bengal') === -1 &&
-                         t.indexOf('Demo') === -1;
-                });
-                if (filtered.length !== projs.length) {
-                  localStorage.setItem('archaeophd_local_projects', JSON.stringify(filtered));
-                  var active = localStorage.getItem('archaeo_active_project');
-                  var exists = filtered.some(function(p) { return p.id === active; });
-                  if (!exists) {
-                    if (filtered.length > 0) {
-                      localStorage.setItem('archaeo_active_project', filtered[0].id);
-                    } else {
-                      localStorage.removeItem('archaeo_active_project');
-                    }
-                  }
-                }
-              }
-            } catch(e){}
+          var projs = [];
+          try { projs = projStr ? JSON.parse(projStr) : []; } catch(e) { projs = []; }
+          if (!Array.isArray(projs)) projs = [];
+          var hasDemo = projs.some(function(p) { return p && (p.is_demo || p.id === 'demo-southern-levant'); });
+          if (!hasDemo) {
+            projs.unshift(DEMO_PROJ);
+            localStorage.setItem('archaeophd_local_projects', JSON.stringify(projs));
           }
           var claimsStr = localStorage.getItem('archaeophd_local_claims');
           if (claimsStr) {
@@ -123,6 +217,7 @@
         get: function(target, entityName) {
           var keyMap = {
             Project: 'projects',
+            ResearchProject: 'projects',
             Claim: 'claims',
             Evidence: 'evidence',
             Source: 'sources',
@@ -148,14 +243,18 @@
           return {
             list: async function(opts, limit) {
               var items = getAll();
+              opts = opts || {};
+              if (opts.project_id && entityKey !== 'projects') {
+                items = items.filter(function(x) { return (x.project_id || 'default') === opts.project_id; });
+              }
               return limit ? items.slice(0, limit) : items;
             },
             filter: async function(query, sort, limit) {
               var items = getAll();
               query = query || {};
-              if (query.project_id) {
+              if (query.project_id && entityKey !== 'projects') {
                 items = items.filter(function(x) {
-                  return x.project_id === query.project_id || x.project_id === 'default';
+                  return (x.project_id || 'default') === query.project_id;
                 });
               }
               if (entityKey === 'messages' || sort === 'created_date') {
@@ -174,13 +273,34 @@
             },
             create: async function(data) {
               var items = getAll();
+              var activeProj = (window.APD_PROJECT && window.APD_PROJECT.getActiveId()) || 'default';
               var record = Object.assign({
                 id: data.id || ('local-' + Date.now() + '-' + Math.random().toString(36).substr(2, 6)),
+                project_id: data.project_id || (entityKey === 'projects' ? undefined : activeProj),
                 created_date: new Date().toISOString()
               }, data);
               items.push(record);
               saveAll(items);
               return record;
+            },
+            bulkCreate: async function(batch) {
+              if (!batch) return [];
+              var batchArr = Array.isArray(batch) ? batch : [batch];
+              var items = getAll();
+              var created = [];
+              var activeProj = (window.APD_PROJECT && window.APD_PROJECT.getActiveId()) || 'default';
+              for (var i = 0; i < batchArr.length; i++) {
+                var d = batchArr[i];
+                var record = Object.assign({
+                  id: d.id || ('local-' + Date.now() + '-' + i + '-' + Math.random().toString(36).substr(2, 6)),
+                  project_id: d.project_id || (entityKey === 'projects' ? undefined : activeProj),
+                  created_date: new Date().toISOString()
+                }, d);
+                items.push(record);
+                created.push(record);
+              }
+              saveAll(items);
+              return created;
             },
             update: async function(id, patch) {
               var items = getAll();
@@ -572,6 +692,7 @@
     <script src="/modules/thesis-studio/formatting-ribbon.js"></script>
     <script src="/modules/thesis-studio/document-canvas.js"></script>
     <script src="/modules/thesis-studio/writing-inspector.js"></script>
+    <script src="/modules/thesis-studio/workspace-overview.js"></script>
     <script src="/modules/thesis-studio/index.js"></script>
 
     <!-- Ingestion Workflow Modules -->

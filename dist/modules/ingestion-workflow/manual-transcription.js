@@ -8,6 +8,19 @@
 (function () {
   'use strict';
 
+  function safeCall(action, payload, projectId) {
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function') {
+      return window.APD_BRIDGE.callNative(action, payload, projectId);
+    }
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function') {
+      return window.APD_BRIDGE.call(action, payload, projectId);
+    }
+    if (window.nativeBridge && typeof window.nativeBridge.call === 'function') {
+      return window.nativeBridge.call(action, payload, projectId);
+    }
+    return Promise.resolve(null);
+  }
+
   function showManualTranscriptionModal(sourceId, initialPage) {
     var existing = document.getElementById('apd-wf-modal-root');
     if (existing) existing.remove();
@@ -139,8 +152,7 @@
 
     function loadTemplate(page) {
       container.innerHTML = '<div style="font-size:12px; color:hsl(var(--muted-foreground));">Loading schema...</div>';
-      if (!window.APD_BRIDGE) return;
-      window.APD_BRIDGE.callNative('get_transcription_template', { source_id: sourceId, page_number: page })
+      safeCall('get_transcription_template', { source_id: sourceId, page_number: page })
         .then(function (res) {
           container.innerHTML = '';
           if (res && res.fields && res.fields.length > 0) {
@@ -198,12 +210,11 @@
       var statusDiv = document.getElementById('apd-wf-trans-status');
       statusDiv.innerHTML = '<div style="font-size:12px; color:hsl(var(--muted-foreground));">Committing verified claims to storage...</div>';
 
-      if (window.APD_BRIDGE) {
-        window.APD_BRIDGE.callNative('submit_manual_transcription', {
-          source_id: sourceId,
-          page_number: curPage,
-          facts: facts
-        })
+      safeCall('submit_manual_transcription', {
+        source_id: sourceId,
+        page_number: curPage,
+        facts: facts
+      })
         .then(function () {
           closeModal();
           if (window.APD_MODAL) window.APD_MODAL.toast('Transcription committed successfully for Page ' + curPage, 'success');
@@ -211,7 +222,6 @@
         .catch(function (err) {
           statusDiv.innerHTML = '<div style="color:red; font-size:12px;">Error committing transcription: ' + (err.message || err) + '</div>';
         });
-      }
     });
 
     loadTemplate(curPage);

@@ -8,6 +8,19 @@
 (function () {
   'use strict';
 
+  function safeCall(action, payload, projectId) {
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function') {
+      return window.APD_BRIDGE.callNative(action, payload, projectId);
+    }
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function') {
+      return window.APD_BRIDGE.call(action, payload, projectId);
+    }
+    if (window.nativeBridge && typeof window.nativeBridge.call === 'function') {
+      return window.nativeBridge.call(action, payload, projectId);
+    }
+    return Promise.resolve(null);
+  }
+
   function showVerificationQueueModal(sourceIdFilter) {
     var existing = document.getElementById('apd-wf-modal-root');
     if (existing) existing.remove();
@@ -62,8 +75,7 @@
       var body = document.getElementById('apd-wf-vqueue-body');
       body.innerHTML = '<div style="padding:20px; font-size:13px; color:hsl(var(--muted-foreground));">Loading queue...</div>';
 
-      if (!window.APD_BRIDGE) return;
-      window.APD_BRIDGE.callNative('get_verification_queue', { source_id: sourceIdFilter || '' })
+      safeCall('get_verification_queue', { source_id: sourceIdFilter || '' })
         .then(function (items) {
           if (!items || items.length === 0) {
             body.innerHTML = `
@@ -191,8 +203,7 @@
       `;
 
       function resolveItem(decision, val) {
-        if (!window.APD_BRIDGE) return;
-        window.APD_BRIDGE.callNative('resolve_verification_candidate', {
+        safeCall('resolve_verification_candidate', {
           item_id: item.id,
           decision: decision,
           resolved_value: val

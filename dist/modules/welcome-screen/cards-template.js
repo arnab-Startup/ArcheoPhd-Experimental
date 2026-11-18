@@ -85,7 +85,7 @@
             <div class="apd-w-card-desc">Try a sample research project with real data</div>
           </div>
 
-          <!-- Card 2: Get Started -->
+          <!-- Card 2: New Project -->
           <div class="apd-w-card apd-w-card-glass" id="apd-card-start">
             <div class="apd-w-card-icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px; color:#d4a359;">
@@ -94,31 +94,30 @@
                 <line x1="8" y1="12" x2="16" y2="12"></line>
               </svg>
             </div>
-            <div class="apd-w-card-title">Get Started</div>
-            <div class="apd-w-card-desc">Create a new account and set up your workspace</div>
+            <div class="apd-w-card-title">New Project</div>
+            <div class="apd-w-card-desc">Define research question, period, and site scope</div>
           </div>
 
-          <!-- Card 3: Open Workspace -->
+          <!-- Card 3: Scholar Dashboard -->
           <div class="apd-w-card apd-w-card-glass" id="apd-card-workspace">
             <div class="apd-w-card-icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px; color:#d4a359;">
                 <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
               </svg>
             </div>
-            <div class="apd-w-card-title">Open Workspace</div>
-            <div class="apd-w-card-desc">Continue with your existing projects</div>
+            <div class="apd-w-card-title">Scholar Dashboard</div>
+            <div class="apd-w-card-desc">Access research portfolio, thesis studio, and monographs</div>
           </div>
 
-          <!-- Card 4: Sign In -->
+          <!-- Card 4: Project Portfolio -->
           <div class="apd-w-card apd-w-card-glass" id="apd-card-signin">
             <div class="apd-w-card-icon-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px; height:24px; color:#d4a359;">
-                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
               </svg>
             </div>
-            <div class="apd-w-card-title">Sign In</div>
-            <div class="apd-w-card-desc">Access your account and research data.</div>
+            <div class="apd-w-card-title">Project Portfolio</div>
+            <div class="apd-w-card-desc">Manage and switch between your fieldwork workspaces</div>
           </div>
         </div>
 

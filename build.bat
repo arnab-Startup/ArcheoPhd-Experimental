@@ -49,6 +49,13 @@ g++ -std=c++20 -O2 -s -mwindows -static -static-libgcc -static-libstdc++ ^
     -I engine\validation ^
     -I third_party\llama.cpp\include ^
     -I third_party\llama.cpp\ggml\include ^
+    src\app_context.cpp ^
+    src\runtime_locator.cpp ^
+    src\window.cpp ^
+    src\navigation_handlers.cpp ^
+    src\ipc_bridge_handler.cpp ^
+    src\live_ui_tester.cpp ^
+    src\webview_host.cpp ^
     src\main.cpp ^
     src\resource.res ^
     third_party\llama.cpp\build\src\libllama.a ^
@@ -72,6 +79,9 @@ if %ERRORLEVEL% EQU 0 (
     echo.
     echo To run the desktop application:
     echo   .\release\ArchaeoPhD.exe
+    if exist "%LOCALAPPDATA%\ArchaeoPhD" (
+        powershell -ExecutionPolicy Bypass -File scripts\sync_local_appdata.ps1 >nul 2>&1
+    )
 ) else (
     echo.
     echo [ERROR] Build failed with exit code %ERRORLEVEL%.

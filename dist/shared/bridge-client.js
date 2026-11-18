@@ -15,6 +15,9 @@
       var bridge = window.nativeBridge;
       if (!bridge || typeof bridge.call !== 'function') {
         console.warn('[BridgeClient] window.nativeBridge is not available for action:', action);
+        if (action === 'get_data_root_status') {
+          return { configured: true, data_root: '' };
+        }
         return null;
       }
 
@@ -25,6 +28,10 @@
         console.error('[BridgeClient] Error executing action ' + action + ':', err);
         throw err;
       }
+    },
+
+    callNative: function (action, payload, projectId) {
+      return this.call(action, payload, projectId);
     },
 
     getClaims: async function (projectId) {
@@ -54,4 +61,3 @@
 
   window.APD_BRIDGE = APD_BRIDGE;
 })();
-

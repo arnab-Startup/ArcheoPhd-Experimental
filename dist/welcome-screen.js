@@ -19,6 +19,7 @@
       },
       navigate: function (path) {
         if (window.WelcomeNavigation) window.WelcomeNavigation.navigateTo(path);
+        else if (typeof window.__appNavigate === 'function') window.__appNavigate(path);
         else window.location.href = path;
       }
     };

@@ -60,14 +60,22 @@
 
     try {
       var controller = new AbortController();
-      var tid = setTimeout(function () { controller.abort(); }, 1200);
-      var resp = await fetch('/downloads/manifest.json', { signal: controller.signal });
+      var tid = setTimeout(function () { controller.abort(); }, 3000);
+      var resp = await fetch('https://archeophd.vercel.app/downloads/manifest.json', { signal: controller.signal });
       clearTimeout(tid);
       if (resp && resp.ok) {
         var m = await resp.json();
         if (m && m.version) targetVer = m.version;
       }
-    } catch (e) {}
+    } catch (e) {
+      try {
+        var localResp = await fetch('/downloads/manifest.json');
+        if (localResp && localResp.ok) {
+          var lm = await localResp.json();
+          if (lm && lm.version) targetVer = lm.version;
+        }
+      } catch (err) {}
+    }
 
     var hasUpdate = isNewer(targetVer, currentVer);
     updateState.checked = true;
@@ -87,14 +95,35 @@
     updateState.updating = true;
     injectButton();
 
-    var targetVer = updateState.latestVersion || '1.2.0';
+    var targetVer = updateState.latestVersion || '1.2.1';
     var bridge = window.APD_BRIDGE;
+    var modalApi = window.APD_UPDATER_MODAL;
+    var progressCtrl = null;
+
+    if (modalApi && typeof modalApi.showProgressModal === 'function') {
+      try {
+        progressCtrl = modalApi.showProgressModal(targetVer);
+      } catch (e) {}
+    }
 
     try {
-      if (bridge && typeof bridge.call === 'function') {
-        await bridge.call('apply_update', { target_version: targetVer });
-      } else {
-        await new Promise(function (resolve) { setTimeout(resolve, 800); });
+      if (progressCtrl) {
+        progressCtrl.setStep(1, 28, 'Verifying package integrity from archeophd.vercel.app...');
+      }
+
+      // Invoke native bridge immediately
+      var bridgePromise = (bridge && typeof bridge.call === 'function')
+        ? bridge.call('apply_update', { target_version: targetVer })
+        : Promise.resolve();
+
+      if (progressCtrl) {
+        progressCtrl.setStep(2, 60, 'Creating safe pre-update database snapshot...');
+      }
+
+      await bridgePromise;
+
+      if (progressCtrl) {
+        progressCtrl.setStep(3, 88, 'Updating application configuration and clearing cache...');
       }
 
       try {
@@ -106,14 +135,34 @@
       updateState.updating = false;
       injectButton();
 
-      showToast('Updated to latest version. Restarting...');
-      setTimeout(function () {
-        window.location.reload();
-      }, 900);
+      var doRestart = function () {
+        var base = (typeof window !== 'undefined' && window.location && window.location.origin && window.location.origin !== 'null')
+          ? window.location.origin
+          : '';
+        // CRITICAL: Explicitly navigate to /index.html.
+        // Calling window.location.reload() on subroutes like /projects or /dashboard
+        // causes WebView2 to look for a folder and return ERR_ACCESS_DENIED (blank white screen).
+        if (typeof window !== 'undefined' && window.location) {
+          if (typeof window.location.assign === 'function') {
+            window.location.assign((base ? base : '') + '/index.html');
+          } else {
+            window.location.href = (base ? base : '') + '/index.html';
+          }
+        }
+      };
+
+      if (progressCtrl && typeof progressCtrl.finish === 'function') {
+        progressCtrl.finish(doRestart);
+      } else {
+        showToast('Updated to latest version. Restarting...');
+        setTimeout(doRestart, 500);
+      }
     } catch (err) {
       console.error('[AutoUpdater] Update failed:', err);
       updateState.updating = false;
       injectButton();
+      var overlay = document.getElementById('apd-update-overlay');
+      if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
       showToast('Update failed. Please retry.');
     }
   }

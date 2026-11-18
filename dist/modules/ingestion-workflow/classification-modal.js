@@ -8,6 +8,19 @@
 (function () {
   'use strict';
 
+  function safeCall(action, payload, projectId) {
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.callNative === 'function') {
+      return window.APD_BRIDGE.callNative(action, payload, projectId);
+    }
+    if (window.APD_BRIDGE && typeof window.APD_BRIDGE.call === 'function') {
+      return window.APD_BRIDGE.call(action, payload, projectId);
+    }
+    if (window.nativeBridge && typeof window.nativeBridge.call === 'function') {
+      return window.nativeBridge.call(action, payload, projectId);
+    }
+    return Promise.resolve(null);
+  }
+
   function showClassificationModal(sourceId) {
     var existing = document.getElementById('apd-wf-modal-root');
     if (existing) existing.remove();
@@ -112,9 +125,8 @@
     var currentSource = null;
     var selectedTier = 'CLASS_B';
 
-    if (window.APD_BRIDGE) {
-      window.APD_BRIDGE.callNative('get_sources')
-        .then(function (sources) {
+    safeCall('get_sources')
+      .then(function (sources) {
           for (var i = 0; sources && i < sources.length; i++) {
             if (sources[i].id === sourceId) {
               currentSource = sources[i];
@@ -137,7 +149,6 @@
         .catch(function () {
           document.getElementById('apd-wf-class-source-subtitle').textContent = 'Source ID: ' + sourceId;
         });
-    }
 
     function selectTier(tier) {
       selectedTier = tier;
@@ -179,37 +190,33 @@
         return;
       }
 
-      if (window.APD_BRIDGE) {
-        window.APD_BRIDGE.callNative('set_source_degradation_class', {
-          source_id: sourceId,
-          degradation_class: selectedTier
-        })
-        .then(function () {
-          closeModal();
-          if (window.APD_MODAL) window.APD_MODAL.toast('Document degradation tier set to ' + selectedTier, 'success');
-        })
-        .catch(function (err) {
-          if (window.APD_MODAL) window.APD_MODAL.toast('Failed to save tier: ' + (err.message || err), 'error');
-        });
-      }
+      safeCall('set_source_degradation_class', {
+        source_id: sourceId,
+        degradation_class: selectedTier
+      })
+      .then(function () {
+        closeModal();
+        if (window.APD_MODAL) window.APD_MODAL.toast('Document degradation tier set to ' + selectedTier, 'success');
+      })
+      .catch(function (err) {
+        if (window.APD_MODAL) window.APD_MODAL.toast('Failed to save tier: ' + (err.message || err), 'error');
+      });
     };
 
     // Reflag button
     document.getElementById('apd-wf-reflag-btn').onclick = function () {
       if (confirm('Reflag to Class B and purge automated consensus claims?')) {
-        if (window.APD_BRIDGE) {
-          window.APD_BRIDGE.callNative('reflag_source_degradation_class', {
-            source_id: sourceId,
-            new_degradation_class: 'CLASS_B'
-          })
-          .then(function () {
-            closeModal();
-            if (window.APD_MODAL) window.APD_MODAL.toast('Source downgraded to Class B. Automated claims purged.', 'warning');
-          })
-          .catch(function (err) {
-            if (window.APD_MODAL) window.APD_MODAL.toast('Reflagging error: ' + (err.message || err), 'error');
-          });
-        }
+        safeCall('reflag_source_degradation_class', {
+          source_id: sourceId,
+          new_degradation_class: 'CLASS_B'
+        })
+        .then(function () {
+          closeModal();
+          if (window.APD_MODAL) window.APD_MODAL.toast('Source downgraded to Class B. Automated claims purged.', 'warning');
+        })
+        .catch(function (err) {
+          if (window.APD_MODAL) window.APD_MODAL.toast('Reflagging error: ' + (err.message || err), 'error');
+        });
       }
     };
   }

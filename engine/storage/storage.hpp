@@ -400,7 +400,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Site> res;
         for (const auto& kv : sites_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -417,7 +417,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Stratum> res;
         for (const auto& kv : strata_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -427,7 +427,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Artifact> res;
         for (const auto& kv : artifacts_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -437,7 +437,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Sample> res;
         for (const auto& kv : samples_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -447,7 +447,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Claim> res;
         for (const auto& kv : claims_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -457,7 +457,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<EvidenceLink> res;
         for (const auto& kv : evidence_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -467,7 +467,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Source> res;
         for (const auto& kv : sources_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -477,7 +477,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Note> res;
         for (const auto& kv : notes_) {
-            if (project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default")
+            if (project_id.empty() || kv.second.project_id == project_id)
                 res.push_back(kv.second);
         }
         return res;
@@ -535,7 +535,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Claim> res;
         for (const auto& kv : claims_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 std::find(kv.second.site_ids.begin(), kv.second.site_ids.end(), site_id) != kv.second.site_ids.end()) {
                 res.push_back(kv.second);
             }
@@ -547,7 +547,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Claim> res;
         for (const auto& kv : claims_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 std::find(kv.second.strata_ids.begin(), kv.second.strata_ids.end(), stratum_id) != kv.second.strata_ids.end()) {
                 res.push_back(kv.second);
             }
@@ -559,7 +559,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Stratum> res;
         for (const auto& kv : strata_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 kv.second.site_id == site_id) {
                 res.push_back(kv.second);
             }
@@ -571,7 +571,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Artifact> res;
         for (const auto& kv : artifacts_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 kv.second.stratum_id == stratum_id) {
                 res.push_back(kv.second);
             }
@@ -583,7 +583,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Sample> res;
         for (const auto& kv : samples_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 kv.second.stratum_id == stratum_id) {
                 res.push_back(kv.second);
             }
@@ -595,7 +595,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<EvidenceLink> res;
         for (const auto& kv : evidence_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 kv.second.claim_id == claim_id) {
                 res.push_back(kv.second);
             }
@@ -607,7 +607,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<Claim> res;
         for (const auto& kv : claims_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 kv.second.source_id == source_id) {
                 res.push_back(kv.second);
             }
@@ -663,7 +663,7 @@ public:
         NativeGuard lock(mutex_);
         std::vector<VerificationItem> res;
         for (const auto& kv : verification_items_) {
-            if ((project_id.empty() || kv.second.project_id == project_id || kv.second.project_id == "default") &&
+            if ((project_id.empty() || kv.second.project_id == project_id) &&
                 (source_id.empty() || kv.second.source_id == source_id)) {
                 res.push_back(kv.second);
             }

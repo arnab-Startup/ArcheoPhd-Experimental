@@ -1,0 +1,19 @@
+Artifact_ID,Site_Sector,Trench_ID,Stratigraphic_Layer,Period_Phase,Material,Typology_Description,Depth_cm,Estimated_Date_Year,Preservation_Score,Conservation_Status
+CKG-KMD-001,Khana-Mihirer Dhipi,Trench A4,Layer 7,Period I (Pre-Mauryan),Ceramic,Punch-Marked Silver Coin Hoard & PGW Sherds,610,-500,82,Catalogued
+CKG-ITK-002,Itkhola,Trench B2,Layer 6,Period II (Mauryan),Ceramic,Northern Black Polished Ware (NBPW) Dish,535,-250,91,Catalogued
+CKG-HAD-003,Hadipur,Trench C1,Layer 6,Period II (Mauryan),Terracotta,Inscribed Mauryan Brahmi Sealing,510,-220,88,Verified
+CKG-BER-004,Berachampa,Trench D3,Layer 5,Period III (Shunga),Terracotta,Panchachuda Yakshi Plaque with 5 Hairpins,440,-120,95,Displayed
+CKG-KMD-005,Khana-Mihirer Dhipi,Trench A2,Layer 5,Period III (Shunga),Terracotta,Winged Deity & Mithuna Narrative Plaque,425,-100,89,Catalogued
+CKG-NOO-006,Noongola,Trench E1,Layer 5,Period III (Shunga),Bone/Ivory,Carved Ivory Comb with Auspicious Motifs,410,-80,76,Needs Conservation
+CKG-ITK-007,Itkhola,Trench B4,Layer 4,Period IV (Kushana),Ceramic,Mediterranean-Type Rouletted Ware Bowl,345,75,94,Verified
+CKG-HAD-008,Hadipur,Trench C3,Layer 4,Period IV (Kushana),Terracotta,Kharosthi-Brahmi Bilingual Vessel Seal (Triratna),330,110,97,Displayed
+CKG-KMD-009,Khana-Mihirer Dhipi,Trench A1,Layer 4,Period IV (Kushana),Ceramic,Double-Handled Amphora Neck Fragment,315,130,84,Verified
+CKG-BER-010,Berachampa,Trench D1,Layer 4,Period IV (Kushana),Metal (Copper),Cast Copper Coin with Ship Motif,300,150,79,Catalogued
+CKG-NOO-011,Noongola,Trench E2,Layer 4,Period IV (Kushana),Stone (Jasper),Intaglio Carnelian & Jasper Trade Beads,290,180,92,Catalogued
+CKG-KMD-012,Khana-Mihirer Dhipi,Trench A5,Layer 3,Period V (Gupta),Brick/Architectural,Moulded Polygonal Temple Brick (Sarvatobhadra),220,420,86,Verified
+CKG-KMD-013,Khana-Mihirer Dhipi,Trench A5,Layer 3,Period V (Gupta),Stone (Sandstone),Carved Surya Plaque in Low Relief,205,460,90,Displayed
+CKG-BER-014,Berachampa,Trench D2,Layer 3,Period V (Gupta),Terracotta,Gupta Script Votive Seal from Guild,195,510,85,Catalogued
+CKG-ITK-015,Itkhola,Trench B1,Layer 2,Period VI (Post-Gupta),Terracotta,Stucco Head of Bodhisattva Fragment,150,650,74,Needs Conservation
+CKG-HAD-016,Hadipur,Trench C2,Layer 2,Period VI (Post-Gupta),Ceramic,Stamped Grey & Red Slipped Storage Jar,140,710,81,Catalogued
+CKG-KMD-017,Khana-Mihirer Dhipi,Trench A3,Layer 1,Period VII (Pala-Sena),Stone (Phyllite),Black Basalt Vishnu Stele Fragment,85,950,93,Displayed
+CKG-NOO-018,Noongola,Trench E3,Layer 1,Period VII (Pala-Sena),Metal (Bronze),Miniature Votive Tara Image,70,1080,88,Verified
