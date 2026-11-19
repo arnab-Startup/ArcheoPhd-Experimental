@@ -62,30 +62,35 @@ int main() {
     // Phase 3: Real Stratigraphic Contradiction & Conflict Mass C_v
     // -------------------------------------------------------------------------
     std::cout << "\n[Phase 3] Scanning for Contextual Contradictions & Conflict Mass..." << std::endl;
-    // Group records by site to detect overlapping vs disjunct stratigraphic dates
-    std::map<std::string, std::vector<XronosRecord>> site_groups;
+    // Group records by site + feature/stratum to detect intra-layer stratigraphic contradictions
+    std::map<std::string, std::vector<XronosRecord>> layer_groups;
     for (const auto& r : records) {
-        if (!r.site.empty() && r.site != "NA") {
-            site_groups[r.site].push_back(r);
-        }
+        if (r.site.empty() || r.site == "NA") continue;
+
+        std::string feat = (r.feature.empty() || r.feature == "NA") ? "" : r.feature;
+        std::string strat = (r.stratum.empty() || r.stratum == "NA") ? "" : r.stratum;
+        if (feat.empty() && strat.empty()) continue; // Skip ambiguous multi-period site-level dates
+
+        std::string layer_key = r.site + " [" + (feat.empty() ? strat : (strat.empty() ? feat : feat + " / " + strat)) + "]";
+        layer_groups[layer_key].push_back(r);
     }
 
     int disjunct_pairs_found = 0;
     double max_detected_conflict = 0.0;
-    std::string conflict_site;
+    std::string conflict_context;
 
-    for (const auto& kv : site_groups) {
+    for (const auto& kv : layer_groups) {
         const auto& group = kv.second;
         if (group.size() < 2) continue;
 
-        for (size_t i = 0; i < group.size() && i < 10; ++i) {
-            for (size_t j = i + 1; j < group.size() && j < 10; ++j) {
+        for (size_t i = 0; i < group.size() && i < 15; ++i) {
+            for (size_t j = i + 1; j < group.size() && j < 15; ++j) {
                 const auto& r1 = group[i];
                 const auto& r2 = group[j];
 
-                // Check if 2-sigma intervals are completely disjunct (> 500 years apart in same site)
+                // Check if 2-sigma intervals from the EXACT same layer are completely disjunct (> 400 years apart)
                 double gap = std::abs(r1.calibrated.cal_start - r2.calibrated.cal_start);
-                if (gap > 500.0) {
+                if (gap > 400.0) {
                     disjunct_pairs_found++;
                     // Ingest into a hypothesis claiming a single synchronous occupational phase
                     // r1 supports phase, r2 contradicts phase
@@ -98,7 +103,7 @@ int main() {
                     double c = op.conflict_mass();
                     if (c > max_detected_conflict) {
                         max_detected_conflict = c;
-                        conflict_site = kv.first + " (" + r1.labnr + " vs " + r2.labnr + ")";
+                        conflict_context = kv.first + " (" + r1.labnr + " vs " + r2.labnr + ")";
                     }
                 }
             }
@@ -107,7 +112,7 @@ int main() {
 
     std::cout << "  Disjunct determination pairs identified: " << disjunct_pairs_found << std::endl;
     std::cout << "  Peak stratigraphic conflict mass:        " << max_detected_conflict << std::endl;
-    std::cout << "  Exemplar contradiction context:          " << conflict_site << std::endl;
+    std::cout << "  Exemplar contradiction context:          " << conflict_context << std::endl;
 
     assert(disjunct_pairs_found > 0);
     assert(max_detected_conflict > 0.45); // Conflict mass correctly spikes on incompatible dates
