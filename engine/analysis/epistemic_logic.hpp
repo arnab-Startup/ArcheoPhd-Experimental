@@ -7,7 +7,6 @@
 #include <cmath>
 #include <algorithm>
 #include <numeric>
-#include <json.hpp>
 
 namespace archaeophd {
 
@@ -27,6 +26,15 @@ struct ConformalPredictionSet {
     double calibrated_support = 0.0;
     double calibrated_contradiction = 0.0;
     double signed_weight = 0.0;
+};
+
+struct OpenQuestionNode {
+    std::string id;
+    std::string premise_id;
+    std::string target_id;
+    double p_support = 0.0;
+    double p_contradiction = 0.0;
+    std::string reason;
 };
 
 class ConformalNliGate {
@@ -157,6 +165,8 @@ struct UpgradedHyperedgeWarrant {
     double warrant_weight = 5.0;
     double leak_tolerance = 0.02;       // epsilon_u in [0, 0.1]
     double previous_satisfaction = 0.0;
+    double phi_at_last_acknowledgement = 1.0;
+    mutable double cumulative_drift = 0.0;
 
     // Patched Equation 3A: Asymmetric Godel-Frank Operator
     // Sufficiency uses cardinality-invariant geometric mean: exp(sum gamma * ln(P_bar))
@@ -211,7 +221,9 @@ struct UpgradedHyperedgeWarrant {
             defeater_veto *= std::clamp(term, 0.0, 1.0);
         }
 
-        return support_term * falsification_veto * defeater_veto;
+        double sat = support_term * falsification_veto * defeater_veto;
+        cumulative_drift = std::abs(sat - phi_at_last_acknowledgement);
+        return sat;
     }
 };
 
@@ -226,26 +238,35 @@ struct UpgradedEpistemicNode {
     double previous_belief = 0.0;
     bool is_exonerated = false;
     double last_shockwave_delta = 0.0;
+    bool is_immutable_observation = false;
+    double phi_at_last_acknowledgement = 1.0;
+    double cumulative_drift = 0.0;
+    bool is_bifurcated = false;
 };
 
 class UpgradedEpistemicHypergraph {
 private:
     std::map<std::string, UpgradedEpistemicNode> nodes_;
     std::vector<UpgradedHyperedgeWarrant> hyperedges_;
+    std::vector<OpenQuestionNode> ambiguity_queue_;
+    bool has_multi_world_fork_ = false;
+    std::vector<std::pair<std::string, std::string>> bifurcated_pairs_;
     double damping_factor_zeta_ = 0.65; // Spectral contraction damping
 
 public:
     explicit UpgradedEpistemicHypergraph(double zeta = 0.65)
         : damping_factor_zeta_(std::clamp(zeta, 0.1, 0.95)) {}
 
-    void add_node(const std::string& id, const std::string& label, double direct_plus = 0.0, double direct_minus = 0.0, double base_rate = 0.5) {
+    void add_node(const std::string& id, const std::string& label, double direct_plus = 0.0, double direct_minus = 0.0, double base_rate = 0.5, bool is_immutable = false) {
         UpgradedEpistemicNode n;
         n.id = id;
         n.label = label;
         n.r_direct_plus = direct_plus;
         n.r_direct_minus = direct_minus;
+        n.is_immutable_observation = is_immutable;
         n.opinion = OpinionTuple4::from_evidence(direct_plus, direct_minus, base_rate);
         n.previous_belief = n.opinion.belief;
+        n.phi_at_last_acknowledgement = n.opinion.projected_probability();
         nodes_[id] = n;
     }
 
@@ -257,6 +278,79 @@ public:
     std::map<std::string, UpgradedEpistemicNode>& mutable_nodes() { return nodes_; }
     const std::vector<UpgradedHyperedgeWarrant>& hyperedges() const { return hyperedges_; }
     std::vector<UpgradedHyperedgeWarrant>& mutable_hyperedges() { return hyperedges_; }
+    const std::vector<OpenQuestionNode>& ambiguity_queue() const { return ambiguity_queue_; }
+    void route_to_ambiguity_queue(const OpenQuestionNode& q) { ambiguity_queue_.push_back(q); }
+    bool has_multi_world_fork() const { return has_multi_world_fork_; }
+    const std::vector<std::pair<std::string, std::string>>& bifurcated_pairs() const { return bifurcated_pairs_; }
+
+    void acknowledge_state() {
+        for (auto& hedge : hyperedges_) {
+            hedge.phi_at_last_acknowledgement = hedge.previous_satisfaction;
+            hedge.cumulative_drift = 0.0;
+        }
+        for (auto& kv : nodes_) {
+            kv.second.phi_at_last_acknowledgement = kv.second.opinion.projected_probability();
+            kv.second.cumulative_drift = 0.0;
+        }
+    }
+
+    double get_max_cumulative_drift() const {
+        double max_d = 0.0;
+        for (const auto& hedge : hyperedges_) max_d = std::max(max_d, hedge.cumulative_drift);
+        for (const auto& kv : nodes_) {
+            double d = std::abs(kv.second.opinion.projected_probability() - kv.second.phi_at_last_acknowledgement);
+            max_d = std::max(max_d, d);
+        }
+        return max_d;
+    }
+
+    void detect_bifurcations() {
+        bifurcated_pairs_.clear();
+        has_multi_world_fork_ = false;
+        for (size_t i = 0; i < hyperedges_.size(); ++i) {
+            for (size_t j = i + 1; j < hyperedges_.size(); ++j) {
+                const auto& e1 = hyperedges_[i];
+                const auto& e2 = hyperedges_[j];
+                bool e1_in_e2_out = std::find(e2.out_list.begin(), e2.out_list.end(), e1.conclusion_id) != e2.out_list.end();
+                bool e2_in_e1_out = std::find(e1.out_list.begin(), e1.out_list.end(), e2.conclusion_id) != e1.out_list.end();
+                if (e1_in_e2_out && e2_in_e1_out) {
+                    has_multi_world_fork_ = true;
+                    bifurcated_pairs_.push_back({e1.conclusion_id, e2.conclusion_id});
+                    if (nodes_.count(e1.conclusion_id)) nodes_[e1.conclusion_id].is_bifurcated = true;
+                    if (nodes_.count(e2.conclusion_id)) nodes_[e2.conclusion_id].is_bifurcated = true;
+                }
+            }
+        }
+    }
+
+    void propagate_backward_modus_tollens() {
+        for (const auto& hedge : hyperedges_) {
+            auto it_conc = nodes_.find(hedge.conclusion_id);
+            if (it_conc == nodes_.end()) continue;
+            double d_conc = it_conc->second.opinion.disbelief;
+            if (d_conc < 0.20) continue;
+
+            for (size_t i = 0; i < hedge.in_list.size(); ++i) {
+                const auto& target_id = hedge.in_list[i];
+                auto it_target = nodes_.find(target_id);
+                if (it_target == nodes_.end() || it_target->second.is_immutable_observation) continue;
+
+                double other_prod = 1.0;
+                for (size_t j = 0; j < hedge.in_list.size(); ++j) {
+                    if (i == j) continue;
+                    auto it_other = nodes_.find(hedge.in_list[j]);
+                    if (it_other != nodes_.end()) other_prod *= it_other->second.opinion.belief;
+                }
+                double back_disbelief = d_conc * other_prod * hedge.warrant_weight;
+                it_target->second.r_prop_minus += back_disbelief;
+                it_target->second.opinion = OpinionTuple4::from_evidence(
+                    it_target->second.r_direct_plus + it_target->second.r_prop_plus,
+                    it_target->second.r_direct_minus + it_target->second.r_prop_minus,
+                    it_target->second.opinion.base_rate
+                );
+            }
+        }
+    }
 
     void propagate_damped_belief_revision(int max_iterations = 15, double convergence_threshold = 1e-4) {
         for (int iter = 0; iter < max_iterations; ++iter) {
@@ -310,6 +404,7 @@ public:
 
             if (max_delta < convergence_threshold) break;
         }
+        detect_bifurcations();
     }
 };
 
@@ -381,6 +476,7 @@ struct EpistemicInterventionResultV2 {
     std::string target_node_id;
     double cvar_score = 0.0;
     std::string rationale;
+    int collapsed_downstream_count = 0;
 };
 
 class DistributionalCvarPolicy {
@@ -402,28 +498,53 @@ public:
         best.cvar_score = 0.0;
         best.rationale = "Risk-averse CVaR criterion: preserved scholar focus.";
 
-        std::string max_conflict_node;
-        double max_conflict = 0.0;
-        std::string exonerated_node;
+        // 1. Super-hub cascading collapse (Consolidates mass downstream failures into 1 root action)
+        std::map<std::string, int> upstream_impact;
+        for (const auto& hedge : graph.hyperedges()) {
+            if (hedge.previous_satisfaction < 0.25) {
+                for (const auto& p : hedge.in_list) upstream_impact[p]++;
+            }
+        }
+        std::string super_hub_id;
+        int max_impact = 0;
+        for (const auto& kv : upstream_impact) {
+            if (kv.second > max_impact) { max_impact = kv.second; super_hub_id = kv.first; }
+        }
+        if (max_impact >= 10 && !super_hub_id.empty()) {
+            best.action = EpistemicActionV2::PROPOSE_ASSUMPTION_TEST;
+            best.target_node_id = super_hub_id;
+            best.cvar_score = 2.50;
+            best.collapsed_downstream_count = max_impact;
+            best.rationale = "Super-hub assumption collapse: consolidated " + std::to_string(max_impact) + " downstream hypothesis alerts into 1 root-cause action.";
+            return best;
+        }
 
+        // 2. Multi-world bifurcation detection
+        if (graph.has_multi_world_fork()) {
+            best.action = EpistemicActionV2::SURFACE_CONTRADICTION;
+            best.target_node_id = graph.bifurcated_pairs().empty() ? "" : graph.bifurcated_pairs()[0].first;
+            best.cvar_score = 1.80;
+            best.rationale = "Multi-world bifurcation detected: mutual defeater cycle identified.";
+            return best;
+        }
+
+        // 3. Dialectic conflict and exoneration evaluation
+        std::string max_conflict_node, exonerated_node;
+        double max_conflict = 0.0;
         for (const auto& kv : graph.nodes()) {
             const auto& node = kv.second;
             double c = node.opinion.conflict_mass();
-            if (c > max_conflict) {
-                max_conflict = c;
-                max_conflict_node = node.id;
-            }
-            if (node.is_exonerated && exonerated_node.empty()) {
-                exonerated_node = node.id;
-            }
+            if (c > max_conflict) { max_conflict = c; max_conflict_node = node.id; }
+            if (node.is_exonerated && exonerated_node.empty()) exonerated_node = node.id;
         }
 
         if (!max_conflict_node.empty() && max_conflict > 0.40) {
-            double intensity = tracker.compute_intensity(max_conflict_node, current_time);
-            double worst_case_sample = (1.5 * max_conflict * intensity * 0.70) - cognitive_cost_interruption_;
+            const auto& node = graph.nodes().at(max_conflict_node);
+            double delta_jump = std::max({node.last_shockwave_delta, std::abs(node.opinion.belief - node.previous_belief), node.cumulative_drift});
+            double intensity = tracker.compute_intensity(max_conflict_node, current_time, delta_jump);
+            double worst_case = (1.5 * max_conflict * intensity * 0.70) - cognitive_cost_interruption_;
             double median_sample = (1.5 * max_conflict * intensity) - cognitive_cost_interruption_;
-            double cvar_estimate = (worst_case_sample + median_sample * 0.5) / 1.5;
-
+            double cvar_estimate = (worst_case + median_sample * 0.5) / 1.5;
             if (cvar_estimate > best.cvar_score) {
                 best.action = EpistemicActionV2::SURFACE_CONTRADICTION;
                 best.target_node_id = max_conflict_node;
@@ -435,12 +556,30 @@ public:
         if (!exonerated_node.empty()) {
             const auto& node = graph.nodes().at(exonerated_node);
             double intensity = tracker.compute_intensity(exonerated_node, current_time, node.last_shockwave_delta);
-            double worst_case_exoneration = (2.0 * intensity * 0.75) - cognitive_cost_interruption_;
-            if (worst_case_exoneration > best.cvar_score) {
+            double worst_case_ex = (2.0 * intensity * 0.75) - cognitive_cost_interruption_;
+            if (worst_case_ex > best.cvar_score) {
                 best.action = EpistemicActionV2::REACTIVATE_FORGOTTEN_INSIGHT;
                 best.target_node_id = exonerated_node;
-                best.cvar_score = worst_case_exoneration;
+                best.cvar_score = worst_case_ex;
                 best.rationale = "Upward exoneration shockwave: forgotten insight restored with high confidence.";
+            }
+        }
+
+        // 4. Slow-boil cumulative drift detection (Catches sub-threshold drift across multiple notes)
+        double max_drift = graph.get_max_cumulative_drift();
+        if (max_drift >= 0.40) {
+            for (const auto& kv : graph.nodes()) {
+                if (std::abs(kv.second.opinion.projected_probability() - kv.second.phi_at_last_acknowledgement) >= max_drift - 1e-4) {
+                    double intensity = tracker.compute_intensity(kv.first, current_time, max_drift);
+                    double drift_score = (1.8 * max_drift * intensity) - cognitive_cost_interruption_;
+                    if (drift_score > best.cvar_score) {
+                        best.action = EpistemicActionV2::SURFACE_CONTRADICTION;
+                        best.target_node_id = kv.first;
+                        best.cvar_score = drift_score;
+                        best.rationale = "Slow-boil cumulative drift detected: belief shifted significantly from last acknowledged baseline.";
+                    }
+                    break;
+                }
             }
         }
 
