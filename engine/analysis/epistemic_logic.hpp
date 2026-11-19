@@ -164,6 +164,7 @@ struct UpgradedHyperedgeWarrant {
     std::string conclusion_id;          // v_e
     double warrant_weight = 5.0;
     double leak_tolerance = 0.02;       // epsilon_u in [0, 0.1]
+    double noise_deadband = 0.05;       // Measurement noise floor
     double previous_satisfaction = 0.0;
     double phi_at_last_acknowledgement = 1.0;
     mutable double cumulative_drift = 0.0;
@@ -205,7 +206,8 @@ struct UpgradedHyperedgeWarrant {
             if (it != node_states.end()) {
                 d_u = it->second.disbelief;
             }
-            double term = 1.0 - ((1.0 - leak_tolerance) * d_u);
+            double eff_d = (d_u <= noise_deadband) ? 0.0 : (d_u - noise_deadband) / (1.0 - noise_deadband);
+            double term = 1.0 - ((1.0 - leak_tolerance) * eff_d);
             falsification_veto *= std::clamp(term, 0.0, 1.0);
         }
 
