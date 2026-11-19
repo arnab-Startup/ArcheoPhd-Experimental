@@ -70,15 +70,17 @@ int main() {
     // Block 2: Harris Matrix Superposition Evaluation (L1 <_above L2)
     // -------------------------------------------------------------------------
     std::cout << "\n[Block 2: Harris Matrix Superposition Inversions Flagged]" << std::endl;
-    // Group records by site for layers with explicit depth ranks
+    // Group records by site and sector for layers with explicit depth ranks
     std::map<std::string, std::vector<NeoNetRecord>> site_layer_records;
     for (const auto& r : records) {
         if (r.layer_depth_rank > 0 && !r.site.empty()) {
-            site_layer_records[r.site].push_back(r);
+            std::string group_key = r.site + (r.sector.empty() ? "" : ("#" + r.sector));
+            site_layer_records[group_key].push_back(r);
         }
     }
 
     int stratigraphic_inversions_flagged = 0;
+    int total_layer_pairs_scanned = 0;
     std::vector<StratigraphicInversionExample> inversions;
 
     for (const auto& kv : site_layer_records) {
@@ -89,8 +91,10 @@ int main() {
                 const auto& upper = grp[i];
                 const auto& lower = grp[j];
 
-                // Upper layer has smaller depth rank than lower layer (e.g. rank 2 is above rank 3 or 4)
+                // Upper layer has smaller depth rank than lower layer (e.g. couche 1 is above couche 3)
                 if (upper.layer_depth_rank < lower.layer_depth_rank) {
+                    total_layer_pairs_scanned++;
+
                     // In astronomical years, older is more negative (e.g. -6000 is older than -5000)
                     // If upper layer is older than lower layer by > 150 years, SUPERPOSITION VIOLATED!
                     double year_upper = (upper.calibrated.cal_start + upper.calibrated.cal_end) * 0.5;
@@ -99,12 +103,17 @@ int main() {
                     if (year_upper < year_lower - 150.0) {
                         stratigraphic_inversions_flagged++;
 
-                        // Compute epistemic conflict mass for the inversion
-                        OpinionTuple4 op = OpinionTuple4::from_evidence(10.0, 10.0, 0.5, 2.0);
+                        // Dynamic taphonomic Subjective Logic evidence mass (no constant multiplier)
+                        OpinionTuple4 op = OpinionTuple4::from_evidence(
+                            upper.taphonomic_weight,
+                            lower.taphonomic_weight,
+                            0.5,
+                            2.0
+                        );
                         double c = op.conflict_mass();
 
                         StratigraphicInversionExample ex;
-                        ex.site = kv.first;
+                        ex.site = upper.site;
                         ex.upper_layer = upper.phase_code + " (" + upper.labnr + ")";
                         ex.upper_date_display = upper.calibrated.cal_display_start + " to " + upper.calibrated.cal_display_end;
                         ex.upper_cal_year = year_upper;
@@ -201,14 +210,15 @@ int main() {
     // Block 5: Stage 5 Policy & Alert Rate
     // -------------------------------------------------------------------------
     std::cout << "\n[Block 5: Stage 5 CVaR Policy & Alert Rate]" << std::endl;
-    int total_candidate_links = stratigraphic_inversions_flagged + typo_chronological_conflicts;
-    // In Stage 5, severe inversions (>300y gap) and severe typo-chronological conflicts clear the CVaR hurdle
+    // Total candidate links scanned across the full dataset: layer superposition links + typo-chronology validations
+    int total_candidate_links = total_layer_pairs_scanned + static_cast<int>(records.size());
+    // In Stage 5, severe anomalies (inversion gap >= 400y with C_v >= 0.08 or typo discrepancy >= 700y) clear the CVaR hurdle
     int alerts_surfaced = 0;
     for (const auto& inv : inversions) {
-        if (inv.inversion_years >= 300.0) alerts_surfaced++;
+        if (inv.inversion_years >= 400.0 && inv.conflict_mass >= 0.08) alerts_surfaced++;
     }
     for (const auto& tc : typo_examples) {
-        if (tc.conflict_years >= 400.0) alerts_surfaced++;
+        if (tc.conflict_years >= 700.0) alerts_surfaced++;
     }
 
     double alert_rate_pct = (total_candidate_links > 0) ? (100.0 * alerts_surfaced / total_candidate_links) : 0.0;
